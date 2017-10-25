@@ -1,4 +1,4 @@
-from Max.txt_crad import *
+from Max.csv_crad import *
 
 
 shopping_list = ["Banane", "Apfel"]
@@ -9,11 +9,25 @@ def show_list():
     #print("Einkaufszettel:")
     #print("")
     count = 0
-    lines = get_all_lines()
-    for v in lines:
-        print(count + 1, ": ", lines[count])
+    lines = get_all_entries()
+    print("   " + lines[count][0] + "          " + lines[count][1])
+    count = 1
+    while count < len(lines):
+        spacing = set_spacing(lines[count][0], 16)
+        print(str(count) + ": " + lines[count][0] + spacing + lines[count][1])
         count = count + 1
     print("------------")
+
+
+def set_spacing(string, x):
+    i = len(string)
+    spacing = ""
+    while i <= x:
+        space = " "
+        spacing = spacing + space
+        i = i + 1
+
+    return spacing
 
 
 def change_entry():
@@ -21,14 +35,14 @@ def change_entry():
 
     if index.isnumeric():
         index = int(index)
-        lines = get_all_lines()
+        lines = get_all_entries()
         if index <= len(lines):
             old_value = lines[index-1]
             new_value = input("--> Welchen neuen Eintrag möchten Sie vornehmen?")
             do_change = input("--> Möchten Sie die Änderung wirklich vornehmen? (ja oder nein)")
 
             if do_change == "ja":
-                change_line(index - 1, new_value)
+                change_entry(index - 1, new_value)
                 print("Die Position " + str(index) + " wurde erfolgreich von " + old_value + " zu " + new_value + " geändert!")
             elif do_change == "nein":
                 print("Abgebrochen!")
@@ -42,11 +56,11 @@ def change_entry():
 
 def add_item():
     new_item = input("--> Welches Produkt wollen Sie dem Einkaufszettel hinzufügen?")
-    new_entry = input("--> Möchten Sie " + new_item + " wirklich der Liste hinzufügen? (ja oder nein)")
+    answer = input("--> Möchten Sie " + new_item + " wirklich der Liste hinzufügen? (ja oder nein)")
     if new_entry == "ja":
-        set_line(new_item)
+        new_entry(new_item)
         print("Produkt %s wurde dem Einkaufszettel hinzugefügt" % new_item)
-    elif new_entry == "nein":
+    elif answer == "nein":
         print("Abgebrochen!")
 
 
@@ -54,12 +68,12 @@ def delete_item():
     index = input("--> Welche Position möchten Sie löschen?")
     if index.isnumeric():
         index = int(index)
-        lines = get_all_lines()
+        lines = get_all_entries()
         if index <= len(lines):
             delete = input("--> Möchten Sie " + lines[index-1] + " an der Position " + str(index) + " wirklich löschen? (ja oder nein)")
             if delete == "ja":
-                old_value = get_line(index-1)
-                delete_line(index - 1)
+                old_value = new_entry(index-1)
+                delete_entry(index - 1)
                 print(old_value + " an der Position " + str(index) + " wurde erfolgreich gelöscht!")
             elif delete == "nein":
                 print("Abgebrochen!")
@@ -78,7 +92,7 @@ def show_item():
     index = int(index)
     if index <= len(shopping_list):
         print("------------")
-        print(str(index) + ": " + get_line(index-1))
+        print(str(index) + ": " + get_entry(index-1))
         print("------------")
     else:
         print("Diese Position ist nicht vergeben!")
