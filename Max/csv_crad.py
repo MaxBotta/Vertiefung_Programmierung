@@ -1,3 +1,6 @@
+import os
+
+
 def new_entry(item, value):
     with open("./Max/files/list.csv", "a") as f:
         f.write(item + ";" + value + "\n")
@@ -32,7 +35,7 @@ def change_entry(i, item, value):
 
     with open("./Max/files/list.csv", "w") as file:
         # Zeile an Stelle i ändern und file überschreiben
-        lines[i] = [item, value]
+        result[i] = [item, value]
         for v in result:
             file.write(v[0] + ";" + v[1] + "\n")
 
@@ -63,3 +66,6 @@ def get_all_entries():
 
     return result
 
+
+def open_file():
+    os.system("open " + "./Max/files/list.csv")
