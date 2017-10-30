@@ -1,7 +1,7 @@
 from Max.csv_crud import *
 
 
-shopping_list = ["Banane", "Apfel"]
+shopping_list = []
 
 
 def show_list():
@@ -42,21 +42,27 @@ def change_item():
             #decision = input("--> 1:Name oder 2:Menge ändern?")
 
             new_item = input("--> Welchen neuen Eintrag möchten Sie vornehmen?")
-            amount = input("--> Wie viel von " + new_item + " möchten Sie hinzufügen?")
-            do_change = input("--> Möchten Sie die Änderung wirklich vornehmen? (ja oder nein)")
-
-            while repeat:
-                if do_change == "ja":
-                    repeat = False
-                    change_entry(index, new_item, amount)
-                    print("Die Position " + str(index) + " wurde erfolgreich von " + old_item + " zu " + new_item + " geändert!")
-                elif do_change == "nein":
-                    repeat = False
-                    print("Abgebrochen!")
-                else:
-                    repeat = True
-                    print("Falsche Eingabe")
+            if input_validation(new_item):
+                amount = input("--> Wie viel von " + new_item + " möchten Sie hinzufügen?")
+                if amount_input_validation(amount):
                     do_change = input("--> Möchten Sie die Änderung wirklich vornehmen? (ja oder nein)")
+
+                    while repeat:
+                        if do_change == "ja":
+                            repeat = False
+                            change_entry(index, new_item, amount)
+                            print("Die Position " + str(index) + " wurde erfolgreich von " + old_item + " zu " + new_item + " geändert!")
+                        elif do_change == "nein":
+                            repeat = False
+                            print("Abgebrochen!")
+                        else:
+                            repeat = True
+                            print("Falsche Eingabe")
+                            do_change = input("--> Möchten Sie die Änderung wirklich vornehmen? (ja oder nein)")
+                else:
+                    print("Falsche Eingabe! (Nur Zahlen)")
+            else:
+                print("Falsche Eingabe! (Nur Buchstaben)")
         else:
             print("Diese Position ist nicht vergeben!")
     else:
