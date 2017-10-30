@@ -66,24 +66,30 @@ def change_item():
 def add_item():
     repeat = True
     new_item = input("--> Welches Produkt wollen Sie dem Einkaufszettel hinzufügen (Maximal 16 Zeichen)?")
-
-    if len(new_item) <= 16:
-        amount = input("--> Wie viel von " + new_item + " möchten Sie hinzufügen?")
-        answer = input("--> Möchten Sie " + new_item + " wirklich der Liste hinzufügen? (ja oder nein)")
-        while repeat:
-            if answer == "ja":
-                repeat = False
-                new_entry(new_item, amount)
-                print("Produkt %s wurde dem Einkaufszettel hinzugefügt" % new_item)
-            elif answer == "nein":
-                repeat = False
-                print("Abgebrochen!")
-            else:
-                repeat = True
-                print("Falsche Eingabe!")
+    if input_validation(new_item):
+        if len(new_item) <= 16:
+            amount = input("--> Wie viel von " + new_item + " möchten Sie hinzufügen?")
+            if amount_input_validation(amount):
                 answer = input("--> Möchten Sie " + new_item + " wirklich der Liste hinzufügen? (ja oder nein)")
+                while repeat:
+                    if answer == "ja":
+                        repeat = False
+                        new_entry(new_item, amount)
+                        print("Produkt %s wurde dem Einkaufszettel hinzugefügt" % new_item)
+                    elif answer == "nein":
+                        repeat = False
+                        print("Abgebrochen!")
+                    else:
+                        repeat = True
+                        print("Falsche Eingabe!")
+                        answer = input("--> Möchten Sie " + new_item + " wirklich der Liste hinzufügen? (ja oder nein)")
+            else:
+                print("Falsche Eingabe! (Nur Zahlen)")
+        else:
+            print("Zu viele Zeichen! (Maximal 16)")
+
     else:
-        print("Zu viele Zeichen! (Maximal 16)")
+        print("Falsche Eingabe! (Nur Buchstaben)")
 
 
 def delete_item():
@@ -132,6 +138,23 @@ def show_item():
             print("Diese Position ist nicht vergeben!")
     else:
         print("Falsche Eingabe!")
+
+
+def input_validation(item):
+    valid_item = True
+    if item.isalpha():
+        if item.isdigit():
+            valid_item = False
+        elif item == "":
+            valid_item = False
+        return valid_item
+
+
+def amount_input_validation(amount):
+    valid_item = True
+    if amount.isdigit() is False:
+        valid_item = False
+    return valid_item
 
 
 def execute():
