@@ -1,7 +1,6 @@
 import csv_CRUD
 
 
-
 def anzeigen(option):
     einkaufsliste = csv_CRUD.readfile()
     listenlaenge = len(einkaufsliste)
