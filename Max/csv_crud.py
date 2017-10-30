@@ -35,7 +35,7 @@ def change_entry(i, item, value):
 
     with open("./Max/files/list.csv", "w") as file:
         # Zeile an Stelle i ändern und file überschreiben
-        result[i] = [item, value]
+        result1[i] = [item, value]
         for v in result:
             file.write(v[0] + ";" + v[1] + "\n")
 
