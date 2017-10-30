@@ -87,7 +87,6 @@ def bearbeiten():
             bezeichnung = input("Auf welchen Wert wollen Sie '" + listeneintrag[1] + "' ändern?")
             menge = input("Auf welchen Wert wollen Sie '" + listeneintrag[0] + "' ändern?")
             csv_CRUD.changefile(bearbIndex_int, menge, bezeichnung)
-            print("~~~Bearbeiten erfolgreich~~~")
             anzeigen(1)
         else:
             print("~~~Listennummer ausserhalb des Listenbereichs~~~")

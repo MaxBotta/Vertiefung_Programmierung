@@ -47,8 +47,12 @@ def changefile(index, anzahl, bezeichnung):
         lines[index] = zeile
         with open("einkaufsliste.csv", "w") as file:
             for v in lines:
-                file.write(str(v[0])+";")
-                file.write(v[1]+"\n")
+                if len(v[1])<=15:
+                    file.write(str(v[0])+";")
+                    file.write(v[1]+"\n")
+                    print("~~~Bearbeiten erfolgreich~~~")
+                else:
+                    print("Bitte weniger als 16 Zeichen eingeben")
 
 
 #Eine spezifische Zeile aus der csv-datei löschen.
@@ -63,3 +67,18 @@ def deletefile(index):
 
 
 
+def input_validation(item):
+    valid_item = True
+    if item.isalpha():
+        if item.isdigit():
+            valid_item = False
+        elif item == "":
+            valid_item = False
+        return valid_item
+
+
+def amount_input_validation(amount):
+    valid_item = True
+    if amount.isdigit() is False:
+        valid_item = False
+    return valid_item
