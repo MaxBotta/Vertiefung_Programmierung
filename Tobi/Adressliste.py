@@ -28,6 +28,52 @@ def neuerEintrag():
         print("\n~~~~Kontaktdaten verworfen~~~~\n")
 
 
+def kontaktSuchen():
+    fragenstatus = True
+
+    while fragenstatus:
+        name = input("Wollen Sie nach Vor- oder Nachname suchen?\n1. Vorname\n2. Nachname\n3. Abrechen\n")
+        if name.isnumeric():
+            if name == "1":
+                vorname = input("Bitte geben Sie den Vornamen ein:\n")
+                ergebnis = getSuchresultate(1, vorname)
+                if len(ergebnis) > 0:
+                    alleAnzeigen(ergebnis)
+                else:
+                    print("\n~~~~Suche ergab keine Treffer~~~~\n")
+                fragenstatus = False
+            elif name == "2":
+                nachname = input("Bitte geben Sie den Nachnamen ein:\n")
+                ergebnis = getSuchresultate(2, nachname)
+                if len(ergebnis) > 0:
+                    alleAnzeigen(ergebnis)
+                else:
+                    print("\n~~~~Suche ergab keine Treffer~~~~\n")
+                fragenstatus = False
+            elif name == "3":
+                return
+            else:
+                print("\n~~~~Fehlerhafte Eingabe~~~~\n")
+        else:
+            print("\n~~~~Fehlerhafte Eingabe~~~~\n")
+
+
+def getSuchresultate(option, suchbegriff):
+    ergebnis = []
+    if option == 1:
+        for v in kontakte:
+            if suchbegriff.lower() in v['Vorname'].lower():
+                ergebnis.append(v)
+    elif option == 2:
+        for v in kontakte:
+            if suchbegriff.lower() in v['Name'].lower():
+                ergebnis.append(v)
+    return ergebnis
+
+
+
+
+
 def alleAnzeigen(listOfDicts):
     if len(listOfDicts) > 0:
         print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------")
@@ -71,7 +117,7 @@ while True:
             if auswahl_index == 1:
                 neuerEintrag()
             elif auswahl_index == 2:
-                print("hallo welt")
+                kontaktSuchen()
             elif auswahl_index == 3:
                 print("hallo welt")
             elif auswahl_index == 4:
