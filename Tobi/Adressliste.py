@@ -79,15 +79,19 @@ def alleAnzeigen(listOfDicts):
         print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------")
         header = listOfDicts[0].keys()
         counter = 0
+        rowcounter = 0
         different_spaces = [7, 20, 15, 20, 11, 7, 20, 15, 15, 20]
+        print("     ", end="")
         for i in header:
             print(i + define_spacing(i, different_spaces[counter]), end="")
             counter = counter + 1
         print("")
         for v in listOfDicts:
             print("")
+            rowcounter = int(rowcounter) + 1
             values = v.values()
             counter = 0
+            print(str(rowcounter) + define_spacing(rowcounter, 4), end="")
             for s in values:
                 print(s + define_spacing(s, different_spaces[counter]), end="")
                 counter = counter + 1
@@ -99,7 +103,7 @@ def alleAnzeigen(listOfDicts):
 
 
 def define_spacing(string, spaltenbreite):
-    laenge = len(string)
+    laenge = len(str(string))
     spacing = ""
     while laenge <= spaltenbreite:
         leerzeichen = " "
