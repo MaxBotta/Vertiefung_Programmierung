@@ -1,25 +1,7 @@
-from Max.csv_crud import *
+import crud
 
-
-contact = {"Anrede": "", "Name": "", "Vorname": "", "Straße": "", "Hausnummer": "", "PLZ": "", "Stadt": "", "Telefon": "", "Email": ""}
-contacts = {}
-
-def set_contacts(c):
-
-
-def show_list():
-    print("----------------------------")
-    print("Adressbuch")
-    print("----------------------------")
-    lines = get_all_entries()
-    print("Pos  " + lines[0][0] + "          " + lines[0][1])
-    count = 1
-    while count < len(lines):
-        spacing = set_spacing(lines[count][0], 16)
-        spacing2 = set_spacing(str(count), 4)
-        print(str(count) + spacing2 + lines[count][0] + spacing + lines[count][1])
-        count = count + 1
-    print("----------------------------")
+contacts = crud.read()
+range = {"anrede": 10, "name": 15, "vorname": 15, "strasse": 20, "hausnummer:": 15, "plz": 10, "stadt": 15, "telefon1": 15, "telefon2": 15, "email": 20}
 
 
 def set_spacing(string, x):
@@ -29,8 +11,91 @@ def set_spacing(string, x):
         space = " "
         spacing = spacing + space
         i = i + 1
-
     return spacing
+
+
+def is_alphabetic(value):
+    if all(i.isalpha() or i == ' ' for i in value):
+        return True
+    return False
+
+
+def is_number(value):
+    if value.isdigit():
+        return True
+    return False
+
+
+def is_in_range(value, header):
+    if len(value) <= range[header]:
+        return True
+    return False
+
+
+def show_list():
+    print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+    print("Adressbuch")
+    print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+
+    # Abstand zwischen den Einträgen (für die Methode set_spacing)
+    range_values = []
+    for key in range:
+        range_values.append(range[key])
+
+    # Überschriften ausgeben
+    counter = 0
+    for key in contacts[0]:
+        print(key + ":" + set_spacing(key + ":", range_values[counter]), end="")
+        counter = counter + 1
+    print("")
+
+    # Alle Einträge ausgeben
+    for contact in contacts:
+        counter = 0
+        for key in contact:
+            print(contact[key] + set_spacing(contact[key], range_values[counter]), end="")
+            counter = counter + 1
+        print("")
+    print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+
+
+def add_item():
+    repeat = True
+    anrede = input("--> Anrede: (Max. 10 Zeichen)")
+    name = input("--> Nachname: (Max. 15 Zeichen)")
+    vorname = input("--> Vorname: (Max. 15 Zeichen)")
+    strasse = input("--> Straße: (Max. 20 Zeichen)")
+    hausnummer = input("--> Hausnummer: (Max. 15 Zeichen)")
+    plz = input("--> Postleitzahl: (Max. 10 Zeichen)")
+    stadt = input("--> Stadt: (Max. 15 Zeichen)")
+    telefon1 = input("--> Telefon 1: (Max. 15 Zeichen)")
+    telefon2 = input("--> Telefon 2: (Max. 15 Zeichen)")
+    email = input("--> Email: (Max. 20 Zeichen)")
+
+    if input_validation(new_item):
+        if len(new_item) <= 16:
+            amount = input("--> Wie viel von " + new_item + " möchten Sie hinzufügen?")
+            if amount_input_validation(amount):
+                answer = input("--> Möchten Sie " + new_item + " wirklich der Liste hinzufügen? (ja oder nein)")
+                while repeat:
+                    if answer == "ja":
+                        repeat = False
+                        new_entry(new_item, amount)
+                        print("Produkt %s wurde dem Einkaufszettel hinzugefügt" % new_item)
+                    elif answer == "nein":
+                        repeat = False
+                        print("Abgebrochen!")
+                    else:
+                        repeat = True
+                        print("Falsche Eingabe!")
+                        answer = input("--> Möchten Sie " + new_item + " wirklich der Liste hinzufügen? (ja oder nein)")
+            else:
+                print("Falsche Eingabe! (Nur Zahlen)")
+        else:
+            print("Zu viele Zeichen! (Maximal 16)")
+
+    else:
+        print("Falsche Eingabe! (Nur Buchstaben)")
 
 
 def change_item():
@@ -70,35 +135,6 @@ def change_item():
             print("Diese Position ist nicht vergeben!")
     else:
         print("Bitte geben Sie eine Nummer an!")
-
-
-def add_item():
-    repeat = True
-    new_item = input("--> Welches Produkt wollen Sie dem Einkaufszettel hinzufügen (Maximal 16 Zeichen)?")
-    if input_validation(new_item):
-        if len(new_item) <= 16:
-            amount = input("--> Wie viel von " + new_item + " möchten Sie hinzufügen?")
-            if amount_input_validation(amount):
-                answer = input("--> Möchten Sie " + new_item + " wirklich der Liste hinzufügen? (ja oder nein)")
-                while repeat:
-                    if answer == "ja":
-                        repeat = False
-                        new_entry(new_item, amount)
-                        print("Produkt %s wurde dem Einkaufszettel hinzugefügt" % new_item)
-                    elif answer == "nein":
-                        repeat = False
-                        print("Abgebrochen!")
-                    else:
-                        repeat = True
-                        print("Falsche Eingabe!")
-                        answer = input("--> Möchten Sie " + new_item + " wirklich der Liste hinzufügen? (ja oder nein)")
-            else:
-                print("Falsche Eingabe! (Nur Zahlen)")
-        else:
-            print("Zu viele Zeichen! (Maximal 16)")
-
-    else:
-        print("Falsche Eingabe! (Nur Buchstaben)")
 
 
 def delete_item():
@@ -149,23 +185,6 @@ def show_item():
         print("Falsche Eingabe!")
 
 
-def input_validation(item):
-    valid_item = True
-    if item.isalpha():
-        if item.isdigit():
-            valid_item = False
-        elif item == "":
-            valid_item = False
-        return valid_item
-
-
-def amount_input_validation(amount):
-    valid_item = True
-    if amount.isdigit() is False:
-        valid_item = False
-    return valid_item
-
-
 def execute():
     welcome = True
     while True:
@@ -200,4 +219,4 @@ def execute():
             print("Falsche Eingabe")
 
 
-execute()
+#execute()
