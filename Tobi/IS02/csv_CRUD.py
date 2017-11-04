@@ -66,7 +66,7 @@ def deletefile(index):
                 file.write(v[1]+"\n")
 
 
-
+'''
 def input_validation(item):
     valid_item = True
     if item.isalpha():
@@ -82,3 +82,4 @@ def amount_input_validation(amount):
     if amount.isdigit() is False:
         valid_item = False
     return valid_item
+'''
