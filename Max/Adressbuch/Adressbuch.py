@@ -1,12 +1,14 @@
 import crud
 
-# Anmerkung: Wir manipulieren eine Liste von Dictioniaries. Diese wird am Anfang ausgelesen,
+# Anmerkung: Wir manipulieren eine Liste von Dictioniaries. Diese wird am Anfang ausgelesen
 # und erst beim speichern wird die csv-Datei überschrieben.
 
-contacts = crud.read()
+#contacts = crud.read("contacts.csv")
+contacts = []
+path = ""
 
 # Gibt an, wie viele Zeichen für die jeweilige Spalte erlaubt sind.
-range = {"Anrede": 10, "Name": 15, "Vorname": 15, "Straße": 20, "Hausnummer": 15, "PLZ": 10, "Stadt": 15, "Telefon1": 15, "Telefon2": 15, "Email": 20}
+range = {"Anrede": 10, "Name": 15, "Vorname": 15, "Straße": 20, "Hausnummer": 15, "PLZ": 10, "Stadt": 15, "Telefon 1": 15, "Telefon 2": 15, "Email": 30}
 
 
 def set_spacing(string, x):
@@ -93,6 +95,32 @@ def is_email(value):
         return False, "Leerzeichen vorhanden!"
 
 
+def get_files():
+    repeat = True
+    while repeat:
+        csv = crud.get_all_csv()
+        answer = input("Welche CSV-Datei wollen Sie laden? ('cancel' für Abbrechen)\n")
+        if answer.isnumeric():
+            answer_int = int(answer)
+            if answer_int == "cancel":
+                return
+            elif answer_int > 0 and answer_int <= len(csv):
+                global path
+                path = csv[answer_int - 1]
+                print(path)
+                global contacts
+                contacts = crud.read(path)
+                print(contacts)
+                print("\nDatei geladen!\n")
+
+                return
+            else:
+                print("\nFalsche Eingabe!\n")
+        else:
+            print("\nFalsche Eingabe!\n")
+
+
+
 # Alle Abfragen laufen über diese Funktion. Ermöglicht sich wiederholende Abfragen,
 # sowie die Abfrage einzelner Eingaben.
 def get_input(header):
@@ -101,7 +129,7 @@ def get_input(header):
         answer = input("--> " + header + ": (Max. " + str(range[header]) + " Zeichen)")
 
         # Wenn es sich um eine numerische Eingabe handelt
-        if header == "Hausnummer" or header == "PLZ" or header == "Telefon1" or header == "Telefon2":
+        if header == "Hausnummer" or header == "PLZ" or header == "Telefon 1" or header == "Telefon 2":
 
             # Auf Ziffern prüfen und ob es zu viele Zeichen sind
             if is_number(answer) and is_in_range(answer, header):
@@ -114,9 +142,12 @@ def get_input(header):
         # is_email gibt einen boolean und String zurück
         elif header == "Email":
 
-            if is_email(answer)[0] and is_in_range(answer, header):
-                repeat = False
-                return answer
+            if is_email(answer)[0]:
+                if is_in_range(answer, header):
+                    repeat = False
+                    return answer
+                else:
+                    print("Zu viele Zeichen!")
             else:
                 print(is_email(answer)[1])
 
@@ -137,31 +168,33 @@ def show_list(list):
     print("Adressbuch")
     print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
 
-    # Abstand zwischen den Einträgen (für die Methode set_spacing)
-    range_values = []
-    for key in range:
-        range_values.append(range[key])
+    if len(contacts) > 0:
+        # Abstand zwischen den Einträgen (für die Methode set_spacing)
+        range_values = []
+        for key in range:
+            range_values.append(range[key])
 
-    # Überschriften ausgeben
-    counter = 0
-    print("Pos:" + set_spacing("Pos:", 5), end="")
-    for key in list[0]:
-        print(key + ":" + set_spacing(key + ":", range_values[counter]), end="")
-        counter = counter + 1
-    print("")
-
-    position = 0
-    # Alle Einträge ausgeben
-    for contact in list:
+        # Überschriften ausgeben
         counter = 0
-        print(str(position + 1) + set_spacing(str(position + 1), 5), end="")
-        for key in contact:
-            print(contact[key] + set_spacing(contact[key], range_values[counter]), end="")
+        print("Pos:" + set_spacing("Pos:", 5), end="")
+        for key in list[0]:
+            print(key + ":" + set_spacing(key + ":", range_values[counter]), end="")
             counter = counter + 1
         print("")
-        position = position + 1
-    print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
 
+        position = 0
+        # Alle Einträge ausgeben
+        for contact in list:
+            counter = 0
+            print(str(position + 1) + set_spacing(str(position + 1), 5), end="")
+            for key in contact:
+                print(contact[key] + set_spacing(contact[key], range_values[counter]), end="")
+                counter = counter + 1
+            print("")
+            position = position + 1
+        print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+    else:
+        print("Die Liste ist leer!")
 
 def add_item():
     anrede = get_input("Anrede")
@@ -171,8 +204,8 @@ def add_item():
     hausnummer = get_input("Hausnummer")
     plz = get_input("PLZ")
     stadt = get_input("Stadt")
-    telefon1 = get_input("Telefon1")
-    telefon2 = get_input("Telefon2")
+    telefon1 = get_input("Telefon 1")
+    telefon2 = get_input("Telefon 2")
     email = get_input("Email")
 
     repeat = True
@@ -188,8 +221,8 @@ def add_item():
                         "Hausnummer": hausnummer,
                         "PLZ": plz,
                         "Stadt": stadt,
-                        "Telefon1": telefon1,
-                        "Telefon2": telefon2,
+                        "Telefon 1": telefon1,
+                        "Telefon 2": telefon2,
                         "Email": email}
 
             contacts.append(new_dict)
@@ -202,43 +235,64 @@ def add_item():
             print("Falsche Eingabe!")
 
 
-def change_item():
-    index = input("--> Welche Position möchten Sie ändern?")
+def change_contact():
+    contact_index = input("--> Welche Position möchten Sie ändern?")
 
-    if index.isnumeric():
-        index = int(index)
-        lines = get_all_entries()
-        if index <= len(lines)-1:
-            repeat = True
-            old_item = lines[index][0]
-            #decision = input("--> 1:Name oder 2:Menge ändern?")
+    repeat = True
 
-            new_item = input("--> Welchen neuen Eintrag möchten Sie vornehmen?")
-            if input_validation(new_item):
-                amount = input("--> Wie viel von " + new_item + " möchten Sie hinzufügen?")
-                if amount_input_validation(amount):
-                    do_change = input("--> Möchten Sie die Änderung wirklich vornehmen? (ja oder nein)")
+    # Prüfen, ob die Eingabe numerisch ist und ob die Position existiert.
+    while repeat:
+        if contact_index.isnumeric():
+            contact_index = int(contact_index)
+            if contact_index <= len(contacts)-1:
+                repeat = False
 
-                    while repeat:
-                        if do_change == "ja":
-                            repeat = False
-                            change_entry(index, new_item, amount)
-                            print("Die Position " + str(index) + " wurde erfolgreich von " + old_item + " zu " + new_item + " geändert!")
-                        elif do_change == "nein":
-                            repeat = False
-                            print("Abgebrochen!")
+                # Kontakt als Variable festhalten.
+                contact = contacts[contact_index - 1]
+
+                # Abfragen, welche Spalte geändert werden soll.
+                repeat2 = True
+                while repeat2:
+                    print("")
+                    print("Welche Spalte möchten Sie ändern?\n"
+                          "1: Anrede    2: Name    3: Vorname   4: Straße   5: Hausnummer 6: PLZ\n"
+                          "7: Stadt     8: Tel. 1  9: Tel. 2   10: E-Mail  11: Abbrechen")
+                    print("")
+                    column_index = input("Ihre Eingabe:")
+
+                    # Überprüfen, ob Eingabe numerisch und kleiner 11.
+                    if column_index.isnumeric():
+                        column_index = int(column_index)
+                        if column_index <= 10:
+                            repeat2 = False
+
+
+                            # Änderung wird abgebrochen.
+                            if column_index == 11:
+                                repeat2 = False
+
+                            # Spalte wurde ausgewählt und entsprechende Abfrage wird ausgeführt.
+                            else:
+
+                                # Liste, um die Strings den Funktionen get_input und change_column zu übergeben.
+                                columns = ["Anrede", "Name", "Vorname", "Straße", "Hausnummer", "PLZ", "Stadt", "Telefon 1", "Telefon 2", "Email"]
+                                column = columns[column_index - 1]
+
+                                old_value = contact[column]
+                                new_value = get_input(column)
+
+                                # Alten Wert überschreiben
+                                contact[column] = new_value
+
+                                print("Die Spalte " + column + " wurde erfolreich von " + old_value + " zu " + new_value + " geändert!")
                         else:
-                            repeat = True
-                            print("Falsche Eingabe")
-                            do_change = input("--> Möchten Sie die Änderung wirklich vornehmen? (ja oder nein)")
-                else:
-                    print("Falsche Eingabe! (Nur Zahlen)")
+                            print("Bitte einen Wert zwischen 1 und 10 eingeben!")
+                    else:
+                        print("Bitte eine Nummer eingeben!")
             else:
-                print("Falsche Eingabe! (Nur Buchstaben)")
+                print("Diese Position ist nicht vergeben!")
         else:
-            print("Diese Position ist nicht vergeben!")
-    else:
-        print("Bitte geben Sie eine Nummer an!")
+            print("Bitte geben Sie eine Nummer ein!")
 
 
 def delete_contact():
@@ -248,8 +302,8 @@ def delete_contact():
         if index <= len(contacts)-1:
             repeat = True
             while repeat:
-                name = contacts[index-1]["Name"]
-                vorname = contacts[index-1]["Vorname"]
+                name = contacts[index - 1]["Name"]
+                vorname = contacts[index - 1]["Vorname"]
                 delete = input("--> Möchten Sie den Kontakt" + vorname + " " + name + "wirklich löschen? (j/n)")
                 if delete == "j":
                     repeat = False
@@ -291,15 +345,22 @@ def search_contact():
                             result_list.append(contact)
 
     if len(result_list) > 0:
-        print("Alle Kontakte mit dem Namen '" + name + "'.")
+        print("")
+        print("Alle Kontakte mit dem Namen '" + name + "':")
         show_list(result_list)
     else:
         print("Keine Kontake gefunden!")
 
 
 def save(list_of_dicts):
-    crud.write(list_of_dicts)
-    print("Erfolgreich gespeichert!")
+    global path
+    if path == "":
+        name = input("Bitte geben Sie einen Dateinamen ein:")
+        path = name + ".csv"
+        crud.write(path, list_of_dicts)
+    elif len(path) > 0:
+        crud.write(path, list_of_dicts)
+        print("Erfolgreich gespeichert!")
 
 
 def execute():
@@ -315,7 +376,10 @@ def execute():
             print("-------------------------------------------------------------------------------------------")
             welcome = False
 
-        x = input("\nMenü: \n1: Liste anzeigen    2: Kontakt suchen    3: Neuer Eintrag    4: Eintrag ändern \n5: Eintrag löschen   6: In Excel öffnen      7: Beenden \n\nIhre Eingabe: ")
+        x = input("\nMenü: \n1: Liste anzeigen      2: Kontakt suchen      3: Neuer Eintrag      4: Eintrag ändern \n"
+                  "5: Eintrag löschen     6: In Excel öffnen     7: Als CSV Speichern  8: CSV-Datei laden\n"
+                  "9: Neue Liste         10: Beenden"
+                  "\n\nIhre Eingabe: ")
 
         if x == "Liste anzeigen" or x == "1":
             show_list(contacts)
@@ -324,20 +388,41 @@ def execute():
         elif x == "Neuer Eintrag" or x == "3":
             add_item()
         elif x == "Eintrag ändern" or x == "4":
-            change_item()
+            change_contact()
         elif x == "Eintrag löschen" or x == "5":
-            delete_item()
+            delete_contact()
         elif x == "In Excel öffnen" or x == "6":
             crud.open_file()
         elif x == "Speichern" or x == "7":
-            save()
-        elif x == "Beenden" or x == "8":
-            print("Auf Wiedersehen!")
-            exit()
+            save(contacts)
+        elif x == "Liste laden" or x == "8":
+            get_files()
+        elif x == "Neue Liste" or x == "9":
+            new_file(contacts)
+        elif x == "Beenden" or x == "10":
+            if check_if_saved():
+                exit()
         else:
             print("Falsche Eingabe")
 
 
-#execute()
-#add_item()
-show_list(contacts)
+def new_file(name):
+    print(name)
+
+
+def check_if_saved():
+    old_contacts = crud.read()
+    if contacts == old_contacts:
+        return True
+    else:
+        answer = input("Es gibt nicht gespeicherte Änderungen. Möchten Sie jetzt Speichen? (j/n)")
+        if answer == "j":
+            save(contacts)
+            print("Erfolgreich gespeichert. Auf Wiedersehen!")
+        elif answer == "n":
+            print("Auf Wiedersehen!")
+        else:
+            print("Falsche Eingabe")
+
+
+execute()
