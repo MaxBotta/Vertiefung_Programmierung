@@ -1,6 +1,11 @@
 import crud
 
+# Anmerkung: Wir manipulieren eine Liste von Dictioniaries. Diese wird am Anfang ausgelesen,
+# und erst beim speichern wird die csv-Datei überschrieben.
+
 contacts = crud.read()
+
+# Gibt an, wie viele Zeichen für die jeweilige Spalte erlaubt sind.
 range = {"Anrede": 10, "Name": 15, "Vorname": 15, "Straße": 20, "Hausnummer": 15, "PLZ": 10, "Stadt": 15, "Telefon1": 15, "Telefon2": 15, "Email": 20}
 
 
@@ -12,6 +17,11 @@ def set_spacing(string, x):
         spacing = spacing + space
         i = i + 1
     return spacing
+
+
+def split_string(name):
+        names = name.split(" ")
+        return names
 
 
 def is_alphabetic(value):
@@ -31,13 +41,11 @@ def is_in_range(value, header):
         return True
     return False
 
+
 def is_number_or_alpha(value):
     if is_number(value) or is_alphabetic(value):
         return True
     return False
-
-
-#print(is_alphabetic("Herr") and is_in_range("Herr", "Anrede"))
 
 
 def is_email(value):
@@ -63,8 +71,8 @@ def is_email(value):
     if is_number_or_alpha(value[at_index+1]):
         after = True
 
-    # Überprüfe ob mindestens ein Punkt vorhanden ist
-    if value.find(".") >= 0:
+    # Überprüfe ob ein Punkt nach dem @ vorhanden ist
+    if value.find(".", at_index) >= 0:
         dot = True
 
     # Überprüfe ob ein Leerzeichen existiert
@@ -85,13 +93,6 @@ def is_email(value):
         return False, "Leerzeichen vorhanden!"
 
 
-
-
-
-
-test = "maxgmail.com"
-print(is_email(test)[1])
-
 # Alle Abfragen laufen über diese Funktion. Ermöglicht sich wiederholende Abfragen,
 # sowie die Abfrage einzelner Eingaben.
 def get_input(header):
@@ -101,6 +102,7 @@ def get_input(header):
 
         # Wenn es sich um eine numerische Eingabe handelt
         if header == "Hausnummer" or header == "PLZ" or header == "Telefon1" or header == "Telefon2":
+
             # Auf Ziffern prüfen und ob es zu viele Zeichen sind
             if is_number(answer) and is_in_range(answer, header):
                 repeat = False
@@ -108,15 +110,15 @@ def get_input(header):
             else:
                 print("Falsche Eingabe oder zu viele Zeichen!")
 
-        # Wenn es sich um die Email handelt. Hier sind alle Zeichen erlaubt
-        # und es wird auf ein @ Zeichen geprüft
+        # Überprüfen, ob es sich um eine gültige Email handelt
+        # is_email gibt einen boolean und String zurück
         elif header == "Email":
 
-            if is_email(answer) and is_in_range(answer, header):
+            if is_email(answer)[0] and is_in_range(answer, header):
                 repeat = False
                 return answer
             else:
-                print("Falsche Eingabe (@ Zeichen vergessen?) oder zu viele Zeichen!")
+                print(is_email(answer)[1])
 
         # Wenn es sich um eine alphabetische Eingabe handelt
         else:
@@ -130,7 +132,7 @@ def get_input(header):
                 print("Falsche Eingabe oder zu viele Zeichen!")
 
 
-def show_list():
+def show_list(list):
     print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
     print("Adressbuch")
     print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
@@ -142,18 +144,22 @@ def show_list():
 
     # Überschriften ausgeben
     counter = 0
-    for key in contacts[0]:
+    print("Pos:" + set_spacing("Pos:", 5), end="")
+    for key in list[0]:
         print(key + ":" + set_spacing(key + ":", range_values[counter]), end="")
         counter = counter + 1
     print("")
 
+    position = 0
     # Alle Einträge ausgeben
-    for contact in contacts:
+    for contact in list:
         counter = 0
+        print(str(position + 1) + set_spacing(str(position + 1), 5), end="")
         for key in contact:
             print(contact[key] + set_spacing(contact[key], range_values[counter]), end="")
             counter = counter + 1
         print("")
+        position = position + 1
     print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
 
 
@@ -161,7 +167,7 @@ def add_item():
     anrede = get_input("Anrede")
     name = get_input("Name")
     vorname = get_input("Vorname")
-    strasse = get_input("Straße")
+    straße = get_input("Straße")
     hausnummer = get_input("Hausnummer")
     plz = get_input("PLZ")
     stadt = get_input("Stadt")
@@ -169,33 +175,31 @@ def add_item():
     telefon2 = get_input("Telefon2")
     email = get_input("Email")
 
-    # if input_validation(new_item):
-    #     if len(new_item) <= 16:
-    #         amount = input("--> Wie viel von " + new_item + " möchten Sie hinzufügen?")
-    #         if amount_input_validation(amount):
-    #             answer = input("--> Möchten Sie " + new_item + " wirklich der Liste hinzufügen? (ja oder nein)")
-    #             while repeat:
-    #                 if answer == "ja":
-    #                     repeat = False
-    #                     new_entry(new_item, amount)
-    #                     print("Produkt %s wurde dem Einkaufszettel hinzugefügt" % new_item)
-    #                 elif answer == "nein":
-    #                     repeat = False
-    #                     print("Abgebrochen!")
-    #                 else:
-    #                     repeat = True
-    #                     print("Falsche Eingabe!")
-    #                     answer = input("--> Möchten Sie " + new_item + " wirklich der Liste hinzufügen? (ja oder nein)")
-    #         else:
-    #             print("Falsche Eingabe! (Nur Zahlen)")
-    #     else:
-    #         print("Zu viele Zeichen! (Maximal 16)")
-    #
-    # else:
-    #     print("Falsche Eingabe! (Nur Buchstaben)")
+    repeat = True
 
+    # Wiederholen, bis eine korrekte Eingabe stattgefunden hat
+    while repeat:
+        confirm = input("--> Möchten Sie den Kontakt '" + vorname + " " + name + "' wirklich der Liste hinzufügen? (j/n)")
+        if confirm == "j":
+            new_dict = {"Anrede": anrede,
+                        "Name": name,
+                        "Vorname": vorname,
+                        "Straße": straße,
+                        "Hausnummer": hausnummer,
+                        "PLZ": plz,
+                        "Stadt": stadt,
+                        "Telefon1": telefon1,
+                        "Telefon2": telefon2,
+                        "Email": email}
 
-#add_item()
+            contacts.append(new_dict)
+            repeat = False
+            print("Der Kontakt '" + vorname + " " + name + "' wurde hinzugefügt.")
+        elif confirm == "n":
+            print("Abgebrochen!")
+            repeat = False
+        else:
+            print("Falsche Eingabe!")
 
 
 def change_item():
@@ -237,21 +241,21 @@ def change_item():
         print("Bitte geben Sie eine Nummer an!")
 
 
-def delete_item():
+def delete_contact():
     index = input("--> Welche Position möchten Sie löschen?")
     if index.isnumeric():
         index = int(index)
-        lines = get_all_entries()
-        if index <= len(lines)-1:
+        if index <= len(contacts)-1:
             repeat = True
             while repeat:
-                delete = input("--> Möchten Sie " + lines[index][0] + " an der Position " + str(index) + " wirklich löschen? (ja oder nein)")
-                if delete == "ja":
+                name = contacts[index-1]["Name"]
+                vorname = contacts[index-1]["Vorname"]
+                delete = input("--> Möchten Sie den Kontakt" + vorname + " " + name + "wirklich löschen? (j/n)")
+                if delete == "j":
                     repeat = False
-                    old_value = get_entry(index)[0]
-                    delete_entry(int(index))
-                    print(old_value + " an der Position " + str(index) + " wurde erfolgreich gelöscht!")
-                elif delete == "nein":
+                    del contacts[index - 1]
+                    print("Der Kontakt " + vorname + " " + name + "wurde erfolgreich gelöscht!")
+                elif delete == "n":
                     repeat = False
                     print("Abgebrochen!")
                 else:
@@ -265,24 +269,37 @@ def delete_item():
         print("Bitte geben Sie eine Nummer an!")
 
 
-def show_item():
-    index = input("--> Welche Position möchten Sie anzeigen?")
-    if index.isnumeric():
-        index = int(index)
-        lines = get_all_entries()
-        if index <= len(get_all_entries()):
-            print("-------------------------------------")
-            print("Pos:  " + lines[0][0] + ":         " + lines[0][1] + ":")
-            #print("-------------------------------------")
-            item = get_entry(index)
-            spacing = set_spacing(item[0], 16)
-            spacing2 = set_spacing(str(index), 5)
-            print(str(index) + spacing2 + item[0] + spacing + item[1])
-            print("-------------------------------------")
-        else:
-            print("Diese Position ist nicht vergeben!")
+def search_contact():
+    name = input("--> Geben Sie den Vor/Nachnamen oder vollständigen Namen ein.")
+
+    # Eingabe in einzelne Suchwörter aufteilen
+    keywords = split_string(name)
+    result_list = []
+
+    # Nach passenden Kontakten suchen
+    for contact in contacts:
+        if len(keywords) == 1:
+            if contact["Name"].find(keywords[0]) >= 0 or contact["Vorname"].find(keywords[0]) >= 0:
+                    result_list.append(contact)
+        elif len(keywords) > 1:
+            # Jedes Suchwort auf den Namen prüfen
+            for v in keywords:
+                if contact["Name"].find(v) >= 0:
+                    # Falls passender Name, alle suchwörter auf Vornamen prüfen
+                    for x in keywords:
+                        if contact["Vorname"].find(x) >= 0:
+                            result_list.append(contact)
+
+    if len(result_list) > 0:
+        print("Alle Kontakte mit dem Namen '" + name + "'.")
+        show_list(result_list)
     else:
-        print("Falsche Eingabe!")
+        print("Keine Kontake gefunden!")
+
+
+def save(list_of_dicts):
+    crud.write(list_of_dicts)
+    print("Erfolgreich gespeichert!")
 
 
 def execute():
@@ -290,20 +307,20 @@ def execute():
     while True:
         if welcome:
             print("-------------------------------------------------------------------------------------------")
-            print("0000  0  0  0000  0000  0000  0000  0  0  0000      00    0000  0000  0000      0000  0  0 ")
-            print("0     0  0  0  0  0  0  0  0   00   00 0  0         00     00   0      00       0  0  0  0 ")
-            print("0000  0000  0  0  0000  0000   00   0000  0 00      00     00   0000   00       0000  0000 ")
-            print("   0  0  0  0  0  0     0      00   0 00  0  0      00     00      0   00          0     0 ")
-            print("0000  0  0  0000  0     0     0000  0  0  0000      0000  0000  0000   00          0     0 ")
+            print("0000  0000  0  0  0000   0000  0  0    ")
+            print("0     0  0  00 0   00    0  0  0  0    ")
+            print("0     0  0  0000   00    0000  0000    ")
+            print("0     0  0  0 00   00       0     0    ")
+            print("0000  0000  0  0   00       0     0    ")
             print("-------------------------------------------------------------------------------------------")
             welcome = False
 
-        x = input("\nMenü: \n1: Liste anzeigen    2: Position anzeigen    3: Neuer Eintrag    4: Eintrag ändern \n5: Eintrag löschen   6: In Excel öffnen      7: Beenden \n\nIhre Eingabe: ")
+        x = input("\nMenü: \n1: Liste anzeigen    2: Kontakt suchen    3: Neuer Eintrag    4: Eintrag ändern \n5: Eintrag löschen   6: In Excel öffnen      7: Beenden \n\nIhre Eingabe: ")
 
         if x == "Liste anzeigen" or x == "1":
-            show_list()
-        elif x == "Position anzeigen" or x == "2":
-            show_item()
+            show_list(contacts)
+        elif x == "Kontakt suchen" or x == "2":
+            search_contact()
         elif x == "Neuer Eintrag" or x == "3":
             add_item()
         elif x == "Eintrag ändern" or x == "4":
@@ -311,8 +328,10 @@ def execute():
         elif x == "Eintrag löschen" or x == "5":
             delete_item()
         elif x == "In Excel öffnen" or x == "6":
-            open_file()
-        elif x == "Beenden" or x == "7":
+            crud.open_file()
+        elif x == "Speichern" or x == "7":
+            save()
+        elif x == "Beenden" or x == "8":
             print("Auf Wiedersehen!")
             exit()
         else:
@@ -320,3 +339,5 @@ def execute():
 
 
 #execute()
+#add_item()
+show_list(contacts)
