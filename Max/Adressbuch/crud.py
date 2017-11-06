@@ -27,7 +27,7 @@ def write(path, list_of_dicts):
         print('An error occured trying to write the file.')
 
 
-def open_file():
+def open_file(path):
     os.system("open " + path)
 
 
@@ -41,5 +41,6 @@ def get_all_csv():
     index = 0
     for file in new_list:
         index = index + 1
-        print(str(index) + ". '" + file + "'")
+        print(str(index) + ": " + file)
     return new_list
+

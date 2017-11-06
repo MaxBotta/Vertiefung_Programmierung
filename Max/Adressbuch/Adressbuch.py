@@ -98,27 +98,28 @@ def is_email(value):
 def get_files():
     repeat = True
     while repeat:
+        print("Alle CSV-Dateien:\n")
         csv = crud.get_all_csv()
-        answer = input("Welche CSV-Datei wollen Sie laden? ('cancel' für Abbrechen)\n")
+        answer = input("Welche CSV-Datei wollen Sie laden? ('cancel' für Abbrechen)")
+
         if answer.isnumeric():
             answer_int = int(answer)
-            if answer_int == "cancel":
-                return
-            elif answer_int > 0 and answer_int <= len(csv):
+
+            if answer_int > 0 and answer_int <= len(csv):
                 global path
                 path = csv[answer_int - 1]
-                print(path)
                 global contacts
                 contacts = crud.read(path)
-                print(contacts)
                 print("\nDatei geladen!\n")
 
                 return
             else:
                 print("\nFalsche Eingabe!\n")
+
+        elif answer == "cancel":
+            return
         else:
             print("\nFalsche Eingabe!\n")
-
 
 
 # Alle Abfragen laufen über diese Funktion. Ermöglicht sich wiederholende Abfragen,
@@ -196,7 +197,8 @@ def show_list(list):
     else:
         print("Die Liste ist leer!")
 
-def add_item():
+
+def add_contact():
     anrede = get_input("Anrede")
     name = get_input("Name")
     vorname = get_input("Vorname")
@@ -236,15 +238,15 @@ def add_item():
 
 
 def change_contact():
-    contact_index = input("--> Welche Position möchten Sie ändern?")
-
     repeat = True
-
-    # Prüfen, ob die Eingabe numerisch ist und ob die Position existiert.
     while repeat:
+        contact_index = input("--> Welche Position möchten Sie ändern? ('cancel' für Abbrechen)")
+
+        # Prüfen, ob die Eingabe numerisch ist und ob die Position existiert.
         if contact_index.isnumeric():
             contact_index = int(contact_index)
-            if contact_index <= len(contacts)-1:
+
+            if contact_index <= len(contacts) and contact_index > 0:
                 repeat = False
 
                 # Kontakt als Variable festhalten.
@@ -290,21 +292,24 @@ def change_contact():
                     else:
                         print("Bitte eine Nummer eingeben!")
             else:
-                print("Diese Position ist nicht vergeben!")
+                print("Falsche Eingabe!")
+
+        elif contact_index == "cancel":
+            return
         else:
-            print("Bitte geben Sie eine Nummer ein!")
+            print("Falsche Eingabe!")
 
 
 def delete_contact():
     index = input("--> Welche Position möchten Sie löschen?")
     if index.isnumeric():
         index = int(index)
-        if index <= len(contacts)-1:
+        if index <= len(contacts):
             repeat = True
             while repeat:
                 name = contacts[index - 1]["Name"]
                 vorname = contacts[index - 1]["Vorname"]
-                delete = input("--> Möchten Sie den Kontakt" + vorname + " " + name + "wirklich löschen? (j/n)")
+                delete = input("--> Möchten Sie den Kontakt " + vorname + " " + name + " wirklich löschen? (j/n)")
                 if delete == "j":
                     repeat = False
                     del contacts[index - 1]
@@ -363,6 +368,49 @@ def save(list_of_dicts):
         print("Erfolgreich gespeichert!")
 
 
+def check_if_saved():
+    repeat = True
+    while repeat:
+        if len(path) == 0 and len(contacts) > 0:
+            answer = input("Es gibt nicht gespeicherte Änderungen. Möchten Sie jetzt Speichen? (j/n)")
+            if answer == "j":
+                save(contacts)
+                repeat = False
+                print("Erfolgreich gespeichert. Auf Wiedersehen!")
+            elif answer == "n":
+                repeat = False
+                print("Auf Wiedersehen!")
+            else:
+                print("Falsche Eingabe")
+
+        elif len(path) > 0:
+            old_contacts = crud.read(path)
+            if contacts == old_contacts:
+                answer = input("Es gibt nicht gespeicherte Änderungen. Möchten Sie jetzt Speichen? (j/n)")
+                if answer == "j":
+                    save(contacts)
+                    repeat = False
+                    print("Erfolgreich gespeichert. Auf Wiedersehen!")
+                elif answer == "n":
+                    repeat = False
+                    print("Auf Wiedersehen!")
+                else:
+                    print("Falsche Eingabe")
+            else:
+                repeat = False
+                print("Auf Wiedersehen")
+        else:
+            repeat = False
+            print("Auf Wiedersehen!")
+
+
+
+
+
+def new_file(name):
+    print(name)
+
+
 def execute():
     welcome = True
     while True:
@@ -378,7 +426,7 @@ def execute():
 
         x = input("\nMenü: \n1: Liste anzeigen      2: Kontakt suchen      3: Neuer Eintrag      4: Eintrag ändern \n"
                   "5: Eintrag löschen     6: In Excel öffnen     7: Als CSV Speichern  8: CSV-Datei laden\n"
-                  "9: Neue Liste         10: Beenden"
+                  "9: Beenden"
                   "\n\nIhre Eingabe: ")
 
         if x == "Liste anzeigen" or x == "1":
@@ -386,43 +434,26 @@ def execute():
         elif x == "Kontakt suchen" or x == "2":
             search_contact()
         elif x == "Neuer Eintrag" or x == "3":
-            add_item()
+            add_contact()
         elif x == "Eintrag ändern" or x == "4":
             change_contact()
         elif x == "Eintrag löschen" or x == "5":
             delete_contact()
         elif x == "In Excel öffnen" or x == "6":
-            crud.open_file()
+            if len(path) == 0:
+                print("Erst muss die Datei gespeichert werden!")
+            else:
+                crud.open_file(path)
         elif x == "Speichern" or x == "7":
             save(contacts)
         elif x == "Liste laden" or x == "8":
             get_files()
-        elif x == "Neue Liste" or x == "9":
-            new_file(contacts)
-        elif x == "Beenden" or x == "10":
-            if check_if_saved():
-                exit()
-        else:
-            print("Falsche Eingabe")
-
-
-def new_file(name):
-    print(name)
-
-
-def check_if_saved():
-    old_contacts = crud.read()
-    if contacts == old_contacts:
-        return True
-    else:
-        answer = input("Es gibt nicht gespeicherte Änderungen. Möchten Sie jetzt Speichen? (j/n)")
-        if answer == "j":
-            save(contacts)
-            print("Erfolgreich gespeichert. Auf Wiedersehen!")
-        elif answer == "n":
-            print("Auf Wiedersehen!")
+        elif x == "Beenden" or x == "9":
+            check_if_saved()
+            exit()
         else:
             print("Falsche Eingabe")
 
 
 execute()
+
