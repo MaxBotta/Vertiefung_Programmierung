@@ -133,7 +133,7 @@ def get_input(header):
         if header == "Hausnummer" or header == "PLZ" or header == "Telefon 1" or header == "Telefon 2":
 
             # Auf Ziffern prüfen und ob es zu viele Zeichen sind
-            if is_number(answer) and is_in_range(answer, header):
+            if (is_number(answer) and is_in_range(answer, header)) or answer == "":
                 repeat = False
                 return answer
             else:
@@ -143,7 +143,10 @@ def get_input(header):
         # is_email gibt einen boolean und String zurück
         elif header == "Email":
 
-            if is_email(answer)[0]:
+            if answer == "":
+                repeat = False
+                return answer
+            elif is_email(answer)[0]:
                 if is_in_range(answer, header):
                     repeat = False
                     return answer
@@ -155,8 +158,7 @@ def get_input(header):
         # Wenn es sich um eine alphabetische Eingabe handelt
         else:
 
-            if is_alphabetic(answer) and is_in_range(answer, header):
-
+            if (is_alphabetic(answer) and is_in_range(answer, header)) or answer == "":
                 repeat = False
                 return answer
             else:
@@ -325,7 +327,7 @@ def delete_contact():
             print("Diese Position ist nicht vergeben!")
 
     else:
-        print("Bitte geben Sie eine Nummer an!")
+        print("Falsche Eingabe!")
 
 
 def search_contact():
@@ -416,11 +418,11 @@ def execute():
     while True:
         if welcome:
             print("-------------------------------------------------------------------------------------------")
-            print("0000  0000  0  0  0000   0000  0  0    ")
-            print("0     0  0  00 0   00    0  0  0  0    ")
-            print("0     0  0  0000   00    0000  0000    ")
-            print("0     0  0  0 00   00       0     0    ")
-            print("0000  0000  0  0   00       0     0    ")
+            print("   0000   0000  0000  0  0  0000   00   0000  0000  0000    0000  0  0  0000  ")
+            print("         0     0  0  00 0   00   0  0  0      00   0       0  0  0  0        ")
+            print(" 0000   0     0  0  0000   00   0000  0      00   0000    0000  0000  0000  ")
+            print("       0     0  0  0 00   00   0  0  0      00      0       0     0          ")
+            print("0000  0000  0000  0  0   00   0  0  0000   00   0000       0     0  0000  ")
             print("-------------------------------------------------------------------------------------------")
             welcome = False
 
