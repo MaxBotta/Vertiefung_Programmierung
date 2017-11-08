@@ -1,3 +1,21 @@
-Anrede,Name,Vorname,Straße,Hausnummer,PLZ,Stadt,Telefon 1,Telefon 2,Email
+﻿Anrede,Name,Vorname,Straße,Hausnummer,PLZ,Stadt,Telefon 1,Telefon 2,Email
 Herr,Mustermann,Herbert,Musterstrasse,25,70182,Stuttgart,0000000,11111111,muster@muster.de
 Frau,Beispiel,Berta,Beispielstraße,24,72764,Reutlingen,2222222,33333333,beispiel@beispiel.com
+Herr,Spiess,Jonas,Am Nubbenberg 103a ,136,99706, Sondershausen,03632 / 60280663,0176 / 6439922,j.spiess@mail.xyz
+Herr,Apel,Claas,Am Oedingteich 100 ,55,56424, Ebernhahn,02602 / 92961156,0165 / 1387415,claas.apel@mail.xyz
+Frau,Grau,Emely,Enschedeweg 159 ,44,34225, Baunatal,0561 / 60550976,0173 / 5693173,e.grau@mail.xyz
+Frau,Bosch Dienst,Carolin,Rückertstr. 117 ,34,29582, Hanstedt,05822 / 6777789,0173 / 1289404,carolin.bosch dienst
+Frau,Kalb,Hildegard,Hogenbergstr. 64 ,17,13125, Karow,030 / 83755104,0178 / 9319238,h.kalb@mail.xyz
+Frau,Roberts,Anna,Gildenstr. 195a ,36,83123, Amerang,08075 / 26128461,0159 / 8809720,a.roberts@mail.xyz
+Frau,Schweitzer,Swenja,Dammstr. 47 ,5,57482, Wenden,02762 / 54033271,0169 / 2412473,swenja.schweitzer@mail.xyz
+Herr,Gassmann,Rolf,Starweg 150 ,8,9112, Chemnitz,0371 / 60021862,0150 / 8951986,rolf.gassmann@mail.xyz
+Frau,Garrett,Sina,Janningsweg 7 ,14,35510, Butzbach,06033 / 87782848,0158 / 1826593,s.garrett@mail.xyz
+Herr,Markus,Ingo,Heroldstr. 94 ,176,55767, Siesbach,06782 / 95659979,0163 / 8062977,ingo.markus@mail.xyz
+Herr,Renate,André,Telemannstr. 129 ,78,24220, Boksee,04342 / 6995936,0173 / 4871474,andre.renate@mail.xyz
+Frau,Mühlbach,Antje,Eulenbergstr. 71a ,27,83324, Ruhpolding,08663 / 33691974,0169 / 6124700,antje.muehlbach@mail.
+Frau,Moritz,Laura,Studtstr. 174,103,24589, Borgdorf-Seedorf,04392 / 51565442,0156 / 6121599,laura.moritz@mail.xy
+Frau,Ganter,Nadine,Gartenstr. 94,137,39128, Magdeburg,0391 / 86540429,0160 / 9540811,n.ganter@mail.xyz
+Frau,Wassermann,Leandra,Hillscheider Weg 35,3,7806, Dreba,03663 / 23823301,0162 / 1546154,leandra.wassermann@mai
+Herr,Stevenson,Maurice,Offenbergstr. 135,85,56379, Weinähr,02604 / 59670202,0179 / 9702118,maurice.stevenson@mai
+Frau,McGuire,Margarethe,An Lyskirchen 38,75,56242, Selters,02626 / 23117215,0154 / 7521699,margarethe.mcguire@ma
+Herr,Kreutzer,Mohammed,Im Draum 171,58,49846,Hoogstede,05944 / 86526446,0160 / 4030391,mohammed.kreutzer@mail.x

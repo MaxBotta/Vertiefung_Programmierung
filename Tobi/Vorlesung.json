@@ -1,0 +1,14 @@
+{"ID":"int",
+  "Name":"String",
+  "Professor":[],
+  "teilnehmer":[],
+  "zeit":{
+    "startzeit":"",
+    "endzeit": "",
+    "raum":""
+  },
+  "blockverantaltung":"boolean",
+  "ects":"int",
+  "sws":"int"
+
+}
