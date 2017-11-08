@@ -1,2 +1,6 @@
-Anrede,Name,Vorname,Straße,Hausnummer,PLZ,Stadt,Telefon1,Telefon2,Email
-Herr,Botta,Maximilian,Römersteinweg,1,70188,Stuttgart,01741503794,071184638,max.botta@gmail.com
+Anrede,Name,Vorname,Straße,Hausnummer,PLZ,Stadt,Telefon 1,Telefon 2,Email
+Herr,Botta,Maximilian,Römersteinweg,1,70188,Stuttgart,01741503683,0711234756,max.b@gmail.com
+Herr,Reumann,Tobias,Musterstraße,1,70183,Musterstadt,028932902,09318382,tobias.reumann@gmx.de
+Herr,Mustermann,Max,Musterstraße,1,732783,Musterstadt,3719273012,12739127,max.muster@gmail.com
+Frau,Auth,Anna,Finkenstraße,22,70188,Stuttgart,823732893,2392809,anna.auth@gmx.de
+Frau,Müller,Franziska,Rosenstraße,11,70188,Stuttgart,017459375,07192837,müller@gmail.de

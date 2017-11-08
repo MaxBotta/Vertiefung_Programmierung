@@ -1,0 +1,35 @@
+{
+  "Fakultät": {
+    "Studiengang": {
+      "WI7": {
+        "Pflichtbereich": {
+            "name": "",
+            "id": "",
+            "ects": "",
+            "sws": "",
+            "dozenten": [],
+            "raum": "",
+            "anzahl_teilnehmen": "",
+            "teilnehmer": [],
+            "uhrzeit": "",
+            "Studiengang":"",
+            "Fakultät":""
+        },
+        "Wahlbereich": {
+            "name": "",
+            "id": "",
+            "ects": "",
+            "sws": "",
+            "dozenten": [],
+            "raum": "",
+            "anzahl_teilnehmen": "",
+            "teilnehmer": [],
+            "uhrzeit": "",
+            "Fakultät":"",
+            "Studiengänge": []
+        }
+      }
+    }
+
+  }
+}

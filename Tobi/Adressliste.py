@@ -111,7 +111,7 @@ def aendernEintrag():
         if auswahl.isnumeric():
             aus = int(auswahl)
             if aus > 0 and aus <= len(kontakte):
-                change = kontakte[aus-1]
+                change = kontakte[aus - 1]
                 Anrede = input("Auf welchen Wert wollen Sie die Anrede '" + change['Anrede'] + "' ändern? (max. 20 Zeichen, überspringen mit ENTER):")
                 Name = input("Auf welchen Wert wollen Sie den Nachnamen '"+ change['Name'] +"' ändern? (max. 20 Zeichen, überspringen mit ENTER):")
                 Vorname = input("Auf welchen Wert wollen Sie den Vornamen '"+ change['Vorname'] + "' ändern?(max. 20 Zeichen, überspringen mit ENTER):")
@@ -142,7 +142,7 @@ def aendernEintrag():
                     change['Telefon 2'] = Telefon_2[:19]
                 if len(Email) > 0:
                     change['Email'] = Email[:19]
-                kontakte[aus-1] = change
+                kontakte[aus - 1] = change
                 print("\n~~~~Änderung erfolgreich~~~~\n")
             else:
                 print("\n~~~~Fehlerhafte Eingabe~~~~\n")
@@ -159,13 +159,13 @@ def loeschenEintrag():
         if auswahl.isnumeric():
             aus = int(auswahl)
             if aus > 0 and aus <= len(kontakte):
-                delete = kontakte[aus-1]
+                delete = kontakte[aus - 1]
                 show = []
                 show.append(delete)
                 alleAnzeigen(show)
                 ruckfrage = input("Wollen Sie den angezeigten Kontakt wirklich löschen? (ja/nein):")
                 if ruckfrage == "ja":
-                    del kontakte[aus-1]
+                    del kontakte[aus - 1]
                     print("\n~~~~Löschen erfolgreich~~~~\n")
                 else:
                     print("\n~~~~Löschen verworfen~~~~\n")
