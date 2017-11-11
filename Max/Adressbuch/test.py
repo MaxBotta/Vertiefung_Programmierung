@@ -32,6 +32,7 @@ print(contacts)
 #dozenten = find_value(contacts, "dozenten")
 #print(dozenten)
 
+
 def get_all(myjson, key):
     if type(myjson) is dict:
         for jsonkey in myjson:
