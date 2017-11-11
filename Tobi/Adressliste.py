@@ -87,7 +87,6 @@ def alleAnzeigen(listOfDicts):
             print(str(rowcounter) + define_spacing(rowcounter, 4), end="")
             for s in values:
                 print(s[:21] + define_spacing(s, 20), end="")
-
         print("")
         print("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
     else:
@@ -124,21 +123,21 @@ def aendernEintrag():
                 Telefon_2 = input("Auf welchen Wert wollen Sie die zweite Telefonnummer '" + change['Telefon 2'] + "' ändern?  (max. 20 Zeichen, überspringen mit ENTER):")
                 Email = input("Auf welchen Wert wollen Sie die Email-Adresse '" + change['Email'] + "' ändern?  (max. 20 Zeichen, überspringen mit ENTER):")
                 if len(Anrede) > 0:
-                    change['Anrede'] =  Anrede[:19]
+                    change['Anrede'] = Anrede[:19]
                 if len(Name) > 0:
-                    change['Name'] =Name[:19]
+                    change['Name'] = Name[:19]
                 if len(Vorname) > 0:
                     change['Vorname'] = Vorname[:19]
                 if len(Straße) > 0:
                     change['Straße'] = Straße[:19]
                 if len(Hausnummer) > 0:
-                    change['Hausnummer'] =  Hausnummer[:19]
+                    change['Hausnummer'] = Hausnummer[:19]
                 if len(PLZ) > 0:
-                    change['PLZ'] =  PLZ[:19]
+                    change['PLZ'] = PLZ[:19]
                 if len(Stadt) > 0:
                     change['Stadt'] = Stadt[:19]
                 if len(Telefon_1) > 0:
-                    change['Telefon 1'] =  Telefon_1[:19]
+                    change['Telefon 1'] = Telefon_1[:19]
                 if len(Telefon_2) > 0:
                     change['Telefon 2'] = Telefon_2[:19]
                 if len(Email) > 0:

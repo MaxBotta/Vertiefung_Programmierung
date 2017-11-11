@@ -5,7 +5,7 @@ import os
 
 def read(dateiname):
     with open(dateiname, newline='', encoding="utf8") as file:
-        reader = csv.DictReader(file)
+        reader = csv.DictReader(file, skipinitialspace=True)
         list_of_dicts = []
         for v in reader:
             list_of_dicts.append(v)
