@@ -1,0 +1,27 @@
+[{
+			"Anrede": "Herr",
+			"Name": "Botta",
+			"Vorname": "Max",
+			"Straße": "Stuttgarter Straße",
+			"Hausnummer": "240",
+			"PLZ": "71032",
+			"Stadt": "Böblingen",
+			"Rufnummern": [
+                { "Typ": "Telefon",
+                  "Nummer": "01749223384"
+				},
+				{ "Typ": "Mobil",
+                  "Nummer": "012982173982"
+				}
+            ],
+			"E-Mail-Adressen": [
+				{ "Typ": "Privat",
+                  "E-Mail": "max@gmx.de"
+				},
+				{ "Typ": "Geschäftlich",
+                  "E-Mail": "max@musteragentur.de"
+				}
+			]
+		}
+	]
+

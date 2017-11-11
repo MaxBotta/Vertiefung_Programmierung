@@ -1,9 +1,12 @@
 {
-"Autor"​:["Müller,​ ​Andreas​ ​V."​, "Guido,​ ​Sarah"​],
-"Titel"​:"Introduction​ ​to​ ​machine​ ​learning​ ​with​ ​Python​ ​:​ ​a
-guide​ ​for​ ​data​ ​scientists"​,
-"Jahr"​:2016,
-"Verlag"​:"O’Reilly"​,
-"ISBN"​:null​,
-"E-Book"​:true
+  "Autor":["Müller, Andreas V.", "Guido, Sarah"],
+  "Titel":"Introduction to machine learning with Python : a guide for data scientists",
+  "Jahr": 2016,
+  "Verlag": "O’Reilly",
+  "ISBN": null,
+  "E-Book": true
 }
+
+
+
+

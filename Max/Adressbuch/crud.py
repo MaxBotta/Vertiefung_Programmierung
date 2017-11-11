@@ -4,7 +4,7 @@ import os
 
 def read(path):
     try:
-        with open(path, newline='', encoding="utf8") as file:
+        with open(path, "r", newline='', encoding="utf8") as file:
             reader = csv.DictReader(file)
             list_of_dicts = []
             for v in reader:

@@ -1,35 +1,32 @@
 {
-  "Fakultät": {
-    "Studiengang": {
-      "WI7": {
-        "Pflichtbereich": {
-            "name": "",
-            "id": "",
-            "ects": "",
-            "sws": "",
-            "dozenten": [],
-            "raum": "",
-            "anzahl_teilnehmen": "",
-            "teilnehmer": [],
-            "uhrzeit": "",
-            "Studiengang":"",
-            "Fakultät":""
-        },
-        "Wahlbereich": {
-            "name": "",
-            "id": "",
-            "ects": "",
-            "sws": "",
-            "dozenten": [],
-            "raum": "",
-            "anzahl_teilnehmen": "",
-            "teilnehmer": [],
-            "uhrzeit": "",
-            "Fakultät":"",
-            "Studiengänge": []
-        }
-      }
-    }
-
+  "Pflichtbereich": {
+    "name": "Vertiefung Programmierung",
+    "id": "",
+    "ects": "",
+    "sws": "",
+    "dozenten": [
+      "Pfeffer",
+      "Eckert"
+    ],
+    "raum": "",
+    "anzahl_teilnehmer": "",
+    "teilnehmer": [],
+    "uhrzeit": "",
+    "Studiengang": "",
+    "Fakultät": ""
+  },
+  "Wahlbereich": {
+    "name": "",
+    "id": "",
+    "ects": "",
+    "sws": "",
+    "dozenten": [],
+    "raum": "",
+    "anzahl_teilnehmen": "",
+    "teilnehmer": [],
+    "uhrzeit": "",
+    "Fakultät": "",
+    "Studiengänge": []
   }
 }
+
