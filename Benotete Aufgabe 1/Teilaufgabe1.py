@@ -2,6 +2,8 @@ import CrudOperationen
 
 
 def landkreiseAufklärung():
+    read = CrudOperationen.read()
+    for i in read:
 
     return
 
