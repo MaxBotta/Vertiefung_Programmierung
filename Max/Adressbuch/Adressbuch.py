@@ -3,12 +3,15 @@ import crud
 # Anmerkung: Wir manipulieren eine Liste von Dictioniaries. Diese wird am Anfang ausgelesen
 # und erst beim speichern wird die csv-Datei überschrieben.
 
-#contacts = crud.read("contacts.csv")
+global contacts
 contacts = []
+global path
 path = ""
+global file_type
+file_type = ""
 
 # Gibt an, wie viele Zeichen für die jeweilige Spalte erlaubt sind.
-range = {"Anrede": 10, "Name": 15, "Vorname": 15, "Straße": 20, "Hausnummer": 15, "PLZ": 10, "Stadt": 15, "Telefon 1": 15, "Telefon 2": 15, "Email": 30}
+range = {"Anrede": 10, "Name": 15, "Vorname": 15, "Straße": 20, "Hausnummer": 15, "PLZ": 10, "Stadt": 15, "Telefon": 15, "Mobil": 15, "Email": 30}
 
 
 def set_spacing(string, x):
@@ -50,6 +53,8 @@ def is_number_or_alpha(value):
     return False
 
 
+#Überarbeiten
+# - Zeichen nach @ gibt Fehler, wenn kein Zeichen nach @ (Index nicht vorhanden)
 def is_email(value):
     at = False
     second_at = False
@@ -70,8 +75,9 @@ def is_email(value):
     # Überprüfe ob Zeichen vor und nach dem @-Zeichen existieren
     if is_number_or_alpha(value[at_index-1]):
         before = True
-    if is_number_or_alpha(value[at_index+1]):
-        after = True
+    if len(value) > at_index + 1:
+        if is_number_or_alpha(value[at_index+1]):
+            after = True
 
     # Überprüfe ob ein Punkt nach dem @ vorhanden ist
     if value.find(".", at_index) >= 0:
@@ -95,21 +101,47 @@ def is_email(value):
         return False, "Leerzeichen vorhanden!"
 
 
+# Dieser Funktion wird ein Key übergeben und gibt dann den Inhalt zurück.
+# Vorsicht, der Inhalt kann auch eine Liste sein!
+def get_key(myjson, key):
+    if type(myjson) is dict:
+        for jsonkey in myjson:
+            if jsonkey == key:
+                print(myjson[jsonkey])
+            elif type(myjson[jsonkey]) in (list, dict):
+                get_key(myjson[jsonkey], key)
+    elif type(myjson) is list:
+        for item in myjson:
+            if type(item) in (list, dict):
+                get_key(item, key)
+
+
+def get_file_type(filename):
+    if filename.find(".csv"):
+        return "csv"
+    elif filename.find(".json"):
+        return "json"
+
+
 def get_files():
     repeat = True
     while repeat:
         print("Alle CSV-Dateien:\n")
-        csv = crud.get_all_csv()
+        file = crud.get_all_csv_and_json()
         answer = input("Welche CSV-Datei wollen Sie laden? ('cancel' für Abbrechen)")
 
         if answer.isnumeric():
             answer_int = int(answer)
 
-            if answer_int > 0 and answer_int <= len(csv):
+            if answer_int > 0 and answer_int <= len(file):
                 global path
-                path = csv[answer_int - 1]
+                path = file[answer_int - 1]
                 global contacts
-                contacts = crud.read(path)
+
+                # Überprüfe Dateiendung und rufe READ-Funktion auf.
+                file_type = get_file_type(path)
+                contacts = crud.read(path, file_type)
+
                 print("\nDatei geladen!\n")
 
                 return
@@ -181,7 +213,7 @@ def show_list(list):
         counter = 0
         print("Pos:" + set_spacing("Pos:", 5), end="")
         for key in list[0]:
-            print(key + ":" + set_spacing(key + ":", range_values[counter]), end="")
+            print(key + ":" + set_spacing(key + ":", range[key]), end="")
             counter = counter + 1
         print("")
 
@@ -191,7 +223,7 @@ def show_list(list):
             counter = 0
             print(str(position + 1) + set_spacing(str(position + 1), 5), end="")
             for key in contact:
-                print(contact[key] + set_spacing(contact[key], range_values[counter]), end="")
+                print(contact[key] + set_spacing(contact[key], range[key]), end="")
                 counter = counter + 1
             print("")
             position = position + 1
@@ -427,7 +459,7 @@ def execute():
             welcome = False
 
         x = input("\nMenü: \n1: Liste anzeigen      2: Kontakt suchen      3: Neuer Eintrag      4: Eintrag ändern \n"
-                  "5: Eintrag löschen     6: In Excel öffnen     7: Als CSV Speichern  8: CSV-Datei laden\n"
+                  "5: Eintrag löschen     6: In Excel öffnen     7: Speichern          8: CSV/JSON-Datei laden\n"
                   "9: Beenden"
                   "\n\nIhre Eingabe: ")
 
