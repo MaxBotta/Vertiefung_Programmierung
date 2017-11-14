@@ -1,6 +1,7 @@
 import csv
 import os
 
+test = "Adressliste.csv"
 
 
 def read(dateiname):
@@ -33,3 +34,6 @@ def getAllCSV():
         index = index + 1
         print(str(index) + ". '" + File + "'")
     return newList
+
+
+print(read(test))
