@@ -67,26 +67,79 @@ def get_fieldname(d):
 
 
 # Alle Header ausgeben mit Index.
-def show_header_names(d):
+def show_header_with_index(d):
     index = 0
     for key in d[0]:
         index = index + 1
         print(str(index) + ": " + key)
 
 
+def set_spacing(string, x):
+    i = len(string)
+    spacing = ""
+    while i <= x:
+        space = " "
+        spacing = spacing + space
+        i = i + 1
+    return spacing
+
+
+def get_range(d, header):
+    #Höchsten Wert finden und zurückgeben.
+    result = 0
+    string = ""
+    for item in d:
+        if len(item[header]) > result:
+            result = len(item[header])
+            string = item[header]
+    return result, string
+
+
+def get_range_list(d):
+    result_dict = {}
+    for key in d[0]:
+        if get_range(d, key)[0] >= 14:
+            result_dict[key] = get_range(d, key)[0]
+        else:
+            result_dict[key] = 14
+    return result_dict
+
+
+print(get_range_list(daten))
+
+
+def show_result(d):
+    print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+    print("Ergebnis")
+    print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+
+    range_dict = get_range_list(d)
+
+    # Überschriften ausgeben
+    for key in d[0]:
+        print(key + ":" + set_spacing(key + ":", range_dict[key]), end="")
+    print("")
+    print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+
+    # Alle Einträge ausgeben
+    for item in d:
+        for key in item:
+            print(item[key] + set_spacing(item[key], range_dict[key]), end="")
+        print("")
+    print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+
+
 def suchen_von_daten(d):
     # ---1. Suchfeld angeben und überprüfen.---
     print("In welchem Feld möchten Sie suchen?")
-    show_header_names(d)
+    show_header_with_index(d)
     suchfeld = get_fieldname(d)
     # ---2. Suchwort angeben und überprüfen.---
     suchwort = get_keyword()
     # ---3. Nach Einträgen suchen.---
     result_list = search_for_header_and_key(d, suchfeld, suchwort)
     # ---4. Ergebnis in der Konsole ausgeben oder als CSV Speichern.---
-    print("Ergebnis:")
-    for item in result_list:
-        print(item)
+    show_result(result_list)
 
 
 suchen_von_daten(daten)
