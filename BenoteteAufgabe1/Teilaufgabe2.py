@@ -55,6 +55,8 @@ def get_keyword():
             "Falsche Eingabe!"
 
 
+# Feldnamen abfragen.
+# Wiederholen, bis eine korrekte Eingabe vorgenommen wurde.
 def get_fieldname(d):
     while True:
         fieldname = input("Ihre Eingabe: ")
@@ -64,6 +66,7 @@ def get_fieldname(d):
             print("Falsche Eingabe!")
 
 
+# Alle Header ausgeben mit Index.
 def show_header_names(d):
     index = 0
     for key in d[0]:
@@ -72,31 +75,19 @@ def show_header_names(d):
 
 
 def suchen_von_daten(d):
-    # search:
-    # 1. Suchfeld angeben und überprüfen.
-    # 2. Suchwort angeben und überprüfen.
-    # 3. Nach Einträgen suchen
-    # 4. Ergebnis in der Konsole ausgeben oder als CSV Speichern.
-
     # ---1. Suchfeld angeben und überprüfen.---
     print("In welchem Feld möchten Sie suchen?")
-    # Alle Header ausgeben mit Index.
     show_header_names(d)
-
-    # Eingabe überprüfen
-    # Wiederholen, bis eine korrekte Eingabe vorgenommen wurde.
     suchfeld = get_fieldname(d)
-
     # ---2. Suchwort angeben und überprüfen.---
     suchwort = get_keyword()
-
     # ---3. Nach Einträgen suchen.---
     result_list = search_for_header_and_key(d, suchfeld, suchwort)
-
     # ---4. Ergebnis in der Konsole ausgeben oder als CSV Speichern.---
     print("Ergebnis:")
     for item in result_list:
         print(item)
+
 
 suchen_von_daten(daten)
 
