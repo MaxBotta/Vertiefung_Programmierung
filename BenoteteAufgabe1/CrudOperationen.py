@@ -9,7 +9,7 @@ feldnamen=['Schluessel', 'Straftat', 'Gemeindeschluessel', 'Stadt-/Landkreis', '
 
 
 def read(dateiname):
-    with open(dateiname, newline='') as file:
+    with open(dateiname, "r", newline='', encoding="utf8") as file:
         reader = csv.DictReader(file, delimiter=';')
         list_of_dicts = []
         for v in reader:
@@ -25,4 +25,5 @@ def write(dateiname, list_of_dicts, feldnamen):
 
 
 
-print(read("tb01_FaelleGrundtabelleKreise_csv.csv")[0])
+#print(read("tb01_FaelleGrundtabelleKreise_csv.csv")[0])
+#print(read("/Users/maxbotta/PycharmProjects/Vertiefung_Programmierung/BenoteteAufgabe1/tb01_FaelleGrundtabelleKreise_csv.csv"))
