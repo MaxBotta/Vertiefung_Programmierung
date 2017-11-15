@@ -3,7 +3,6 @@ import json
 import os
 
 
-# Diese Methode kann JSON und CSV Dateien lesen und als Liste zurückgeben.
 def read(path):
     try:
         with open(path) as file:
@@ -16,7 +15,7 @@ def read(path):
 def write(path, data):
     try:
         with open(path, 'w') as outfile:
-            json.dump(data, outfile)
+            json.dump(data, outfile, indent=4)
 
     except IOError:
         print('An error occured trying to write the file.')

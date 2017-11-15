@@ -1,7 +1,7 @@
-import crud
+import Max.Adressbuch_Json.crud as crud
 
 # Anmerkung: Wir manipulieren eine Liste von Dictioniaries. Diese wird am Anfang ausgelesen
-# und erst beim speichern wird die csv-Datei überschrieben.
+# und erst beim speichern wird die json-Datei überschrieben.
 
 
 global contacts
@@ -154,7 +154,6 @@ def get_files():
                 contacts = crud.read(path)
 
                 print("\nDatei geladen!\n")
-
                 return
             else:
                 print("\nFalsche Eingabe!\n")
@@ -181,18 +180,26 @@ def get_input(header):
                 print("Falsche Eingabe oder zu viele Zeichen!")
 
         # Wenn es sich um eine alphabetische Eingabe handelt
+        elif header == "Name" or header == "Vorname":
+            if (is_alphabetic(answer) and is_in_range(answer, header)):
+                repeat = False
+                return answer
+            elif answer == "":
+                print("Dieses Feld muss ausgefüllt werden!")
+            else:
+                print("Falsche Eingabe oder zu viele Zeichen!")
+
         else:
             if (is_alphabetic(answer) and is_in_range(answer, header)) or answer == "":
                 repeat = False
                 return answer
             else:
-                print(answer)
                 print("Falsche Eingabe oder zu viele Zeichen!")
 
 
 def get_email_input():
     # Typbezeichnung abfragen.
-    email_typ = input("--> E-Mail Bezeichnung (Leerzeichen für leeren Eintrag): ")
+    email_typ = input("--> E-Mail Bezeichnung: ")
     if email_typ == "":
         return {"Typ": "", "E-Mail": ""}
     elif len(email_typ) > 0:
@@ -210,7 +217,7 @@ def get_email_input():
 
 def get_phone_number_input():
     # Typbezeichnung abfragen.
-    number_typ = input("--> Rufnummer Bezeichnung (Leerzeichen für leeren Eintrag): ")
+    number_typ = input("--> Rufnummer Bezeichnung: ")
     if number_typ == "":
         return {"Typ": "", "Nummer": ""}
     elif len(number_typ) > 0:
@@ -257,8 +264,8 @@ def set_rufnummern_and_email_range():
 
 def show_list(list):
     largest_strings = set_rufnummern_and_email_range()
-    for item in contacts:
-        print(item)
+    # for item in contacts:
+    #     print(item)
 
     if len(contacts) > 0:
         print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
@@ -361,6 +368,7 @@ def add_contact():
 # Diese Funktion kann eine Rufnummer löschen oder bearbeiten.
 def change_phone_number(contact):
     # Alle Rufnummern eines Kontaktes ausgeben.
+    print("\nDer Kontakt hat folgende Rufnummern: ")
     counter = 0
     for item in contact["Rufnummern"]:
         counter = counter + 1
@@ -369,7 +377,7 @@ def change_phone_number(contact):
     # Abfrage, welche Rufnummer geändert werden soll.
     repeat = True
     while repeat:
-        index = input("Welche Rufnummer möchten sie bearbeiten? ('cancel' für Abbrechen)")
+        index = input("\nWelche Rufnummer möchten sie bearbeiten? ('cancel' für Abbrechen)")
         if is_number(index):
             index = int(index)
             # Überprüfen, ob der angegebene Index existiert.
@@ -406,6 +414,7 @@ def change_phone_number(contact):
 # Diese Funktion kann eine E-Mail-Adresse löschen oder bearbeiten.
 def change_email(contact):
     # Alle E-Mails eines Kontaktes ausgeben.
+    print("\nDer Kontakt hat folgende E-Mail-Adressen: ")
     counter = 0
     for item in contact["E-Mail-Adressen"]:
         counter = counter + 1
@@ -414,7 +423,7 @@ def change_email(contact):
     # Abfrage, welche E-Mail geändert werden soll.
     repeat = True
     while repeat:
-        index = input("Welche E-Mail-Adresse möchten sie bearbeiten? ('cancel' für Abbrechen)")
+        index = input("\nWelche E-Mail-Adresse möchten sie bearbeiten? ('cancel' für Abbrechen)")
         if is_number(index):
             index = int(index)
             # Überprüfen, ob der angegebene Index existiert.
@@ -426,7 +435,7 @@ def change_email(contact):
                     change_or_delete = input("Möchten Sie die E-Mail-Adresse ändern (change) oder löschen (delete)? ('cancel' für Abbrechen)")
                     if change_or_delete == "change":
                         repeat2 = False
-                        contact["E-Mail-Adressen"][index - 1] = get_phone_number_input()
+                        contact["E-Mail-Adressen"][index - 1] = get_email_input()
                         made_changes = True
                         print("Erfolgreich geändert!")
                     elif change_or_delete == "delete":
@@ -463,7 +472,9 @@ def change_contact():
     # 1. Liste auf Einträge prüfen.
     # 2. Position (Kontakt) auswählen.
     # 3. Die zu bearbeitende Spalte auswählen.
-    # 4.
+    # 4. Falls Email oder Rufnummer: bearbeiten oder neues Objekt hinzufügen
+    #    Entsprechende change und add Funktionen aufrufen.
+    # 5. Falls Name, Straße etc. nach Input abfragen.
 
     # Überprüfen, ob die Liste leer ist.
     if len(contacts) == 0:
@@ -489,7 +500,7 @@ def change_contact():
                         print("")
                         print("Welche Spalte möchten Sie bearbeiten?\n"
                               "1: Anrede   2: Name    3: Vorname       4: Straße            5: Hausnummer")
-                        print("6: PLZ      7: Stadt   8: Rufnummern   9: E-Mail-Adressen  10: Abbrechen")
+                        print("6: PLZ      7: Stadt   8: Rufnummern    9: E-Mail-Adressen  10: Abbrechen")
                         print("")
                         column_index = input("Ihre Eingabe:")
 
@@ -524,7 +535,7 @@ def change_contact():
                                                 return
                                             else:
                                                 print("Falsche Eingabe!")
-                                    elif column == "E-Mail_Adressen":
+                                    elif column == "E-Mail-Adressen":
                                         repeat3 = True
                                         while repeat3:
                                             change_or_add = input("Möchten Sie eine E-Mail-Adresse bearbeiten (change) oder hinzufügen (new)? ('cancel' für abbrechen)")
@@ -546,7 +557,7 @@ def change_contact():
                                         # Alten Wert überschreiben
                                         contact[column] = new_value
                                         made_changes = True
-                                        print("Die Spalte " + column + " wurde erfolgreich von " + old_value + " zu " + new_value + " geändert!")
+                                        print("Die Spalte wurde geändert!")
 
                             else:
                                 print("Bitte einen Wert von 1 bis 9 eingeben!")
@@ -591,40 +602,46 @@ def delete_contact():
 
 
 def search_contact():
-    name = input("--> Geben Sie den Vor/Nachnamen oder vollständigen Namen ein.")
-
-    # Eingabe in einzelne Suchwörter aufteilen
-    keywords = split_string(name)
-    result_list = []
-
-    # Nach passenden Kontakten suchen
-    for contact in contacts:
-        if len(keywords) == 1:
-            if contact["Name"].find(keywords[0]) >= 0 or contact["Vorname"].find(keywords[0]) >= 0:
-                    result_list.append(contact)
-        elif len(keywords) > 1:
-            # Jedes Suchwort auf den Namen prüfen
-            for v in keywords:
-                if contact["Name"].find(v) >= 0:
-                    # Falls passender Name, alle suchwörter auf Vornamen prüfen
-                    for x in keywords:
-                        if contact["Vorname"].find(x) >= 0:
-                            result_list.append(contact)
-
-    if len(result_list) > 0:
-        print("")
-        print("Alle Kontakte mit dem Namen '" + name + "':")
-        show_list(result_list)
+    if len(contacts) == 0:
+        print("Die Liste ist leer!")
     else:
-        print("Keine Kontake gefunden!")
+        name = input("--> Geben Sie den Vor/Nachnamen oder vollständigen Namen ein.")
+
+        # Eingabe in einzelne Suchwörter aufteilen
+        keywords = split_string(name)
+        result_list = []
+
+        # Nach passenden Kontakten suchen
+        for contact in contacts:
+            if len(keywords) == 1:
+                if contact["Name"].find(keywords[0]) >= 0 or contact["Vorname"].find(keywords[0]) >= 0:
+                        result_list.append(contact)
+            elif len(keywords) > 1:
+                # Jedes Suchwort auf den Namen prüfen
+                for v in keywords:
+                    if contact["Name"].find(v) >= 0:
+                        # Falls passender Name, alle suchwörter auf Vornamen prüfen
+                        for x in keywords:
+                            if contact["Vorname"].find(x) >= 0:
+                                result_list.append(contact)
+
+        if len(result_list) > 0:
+            print("")
+            print("Alle Kontakte mit dem Namen '" + name + "':")
+            show_list(result_list)
+        else:
+            print("Keine Kontake gefunden!")
 
 
 def save(list_of_dicts):
     global path
     if path == "":
-        name = input("Bitte geben Sie einen Dateinamen ein:")
-        path = name + ".json"
-        crud.write(path, list_of_dicts)
+        name = input("Bitte geben Sie einen Dateinamen ein ('cancel' für abbrechen):")
+        if name == "cancel":
+            print("Nicht gespeichert!")
+        else:
+            path = name + ".json"
+            crud.write(path, list_of_dicts)
     elif len(path) > 0:
         crud.write(path, list_of_dicts)
         print("Erfolgreich gespeichert!")
@@ -647,7 +664,6 @@ def check_if_saved():
         else:
             repeat = False
             print("Auf Wiedersehen!")
-
 
 
 def execute():
@@ -679,7 +695,10 @@ def execute():
         x = input("\n\nIhre Eingabe: ")
 
         if x == "Liste anzeigen" or x == "1":
-            show_list(contacts)
+            try:
+                show_list(contacts)
+            except IOError:
+                print('An error occured trying to read the file.')
         elif x == "Kontakt suchen" or x == "2":
             search_contact()
         elif x == "Neuer Eintrag" or x == "3":
