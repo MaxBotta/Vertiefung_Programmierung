@@ -186,30 +186,38 @@ def get_all_csv():
     return new_list
 
 
+def print_to_csv_or_console(d):
+    while True:
+        csv_or_console = input("Möchten Sie die Ergebnisse als CSV-Datei ('csv') speichern oder in der Konsole ('con') anzeigen?")
+        if csv_or_console == "con":
+            show_result(d)
+            return
+        elif csv_or_console == "csv":
+            save_as_csv(d)
+            return
+        else:
+            print("Falsche Eingabe!")
+
+
 def suchen_von_daten(d):
     # ---1. Suchfeld angeben und überprüfen.---
     print("In welchem Feld möchten Sie suchen?")
     show_header_with_index(d)
     suchfeld = get_fieldname_input(d)
+
     # ---2. Suchwort angeben und überprüfen.---
     suchwort = get_keyword_input()
+
     # ---3. Nach Einträgen suchen.---
     result_list = search_for_header_and_key(d, suchfeld, suchwort)
+
     # ---4. Ergebnis in der Konsole ausgeben oder als CSV Speichern.---
     if len(result_list) == 0:
         print("Keine Einträge gefunden!")
-        return
+    else:
+        print_to_csv_or_console(result_list)
 
-    while True:
-        csv_or_console = input("Möchten Sie die Ergebnisse als CSV-Datei ('csv') speichern oder in der Konsole ('con') anzeigen?")
-        if csv_or_console == "con":
-            show_result(result_list)
-            return
-        elif csv_or_console == "csv":
-            save_as_csv(result_list)
-            return
-        else:
-            print("Falsche Eingabe!")
+
 
 
 suchen_von_daten(daten)
