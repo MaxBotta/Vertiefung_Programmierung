@@ -32,6 +32,7 @@ def read(dateiname):
 
 def write(dateiname, list_of_dicts, feldnamen):
     with open(dateiname, "w", newline='',) as file:
+        #Der DictWriter schreibt eine CSV-Datei mit einem definierten Dateinamen mit den vorgegebenen Headern und deren Spalten. Als Trennzeichen ist ein ';' definiert.
         writer = csv.DictWriter(file, feldnamen, delimiter=';', extrasaction='ignore')
         writer.writeheader()
         writer.writerows(list_of_dicts)

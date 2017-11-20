@@ -25,8 +25,8 @@ def landkreiseAufklärung():
     for i in read:
         #Zunächst werden alle Landkreise ('LK') aus dem Gesamtdatensatz gefiltert...
         if i['Kreisart'] == "LK":
-            #...und anschließend jene, mit einer Aufklärungsquote von über '50.0'.
-            if float(i['Aufklaerungsquote']) <= 50.0:
+            #...und anschließend jene, mit einer Aufklärungsquote von unter '50.0'.
+            if float(i['Aufklaerungsquote']) < 50.0:
                 aufgabe1_1.append(i)
     #Die Ergebnisliste wird als Datei 'aufgabe1-1.csv' abgespeichert.
     CrudOperationen.write("aufgabe1-1.csv", aufgabe1_1, feldnamen)
@@ -84,13 +84,12 @@ def sortiertSummeStraftaten():
     return
 
 
-'''
 while True:
     user_auswahl = input(
             "Bitte geben Sie Ziffer einer der nachfolgenden Optionen ein: \n1. Landkreise mit Aufklärungsquote < 50%, \n2. Summen aller erfassten Fälle je Straftat, \n3. Absteigend sortierte Summen aller erfassten Fälle je Straftat \n")
     if user_auswahl.isnumeric():
         auswahl_index = int(user_auswahl)
-        if auswahl_index > 0 < 8:
+        if auswahl_index > 0 < 4:
             if auswahl_index == 1:
                 landkreiseAufklärung()
             elif auswahl_index == 2:
@@ -101,4 +100,4 @@ while True:
             print("Bitte geben Sie eine gültige Ziffer aus der Liste ein!")
     else:
         print("Bitte geben Sie eine gültige Ziffer aus der Liste ein!")
-'''
+
