@@ -38,7 +38,7 @@ def write(dateiname, list_of_dicts, feldnamen):
         writer.writerows(list_of_dicts)
 
 
-def get_all_json():
+def get_all_csv():
     # Liste mit sämtlichen Dateien ertsellen, die sich im selben Ordner befinden.
     dir_list = os.listdir('.')
     new_list = []
@@ -50,5 +50,5 @@ def get_all_json():
     index = 0
     for file in new_list:
         index = index + 1
-        print("  " + str(index) + ": " + file)
+        print(" " + str(index) + ": " + file)
     return new_list

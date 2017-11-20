@@ -29,7 +29,7 @@ def search_for_header_and_key(d, header, keyword):
 
 def get_keyword_input():
     while True:
-        keyword = input("Geben Sie ein Suchwort ein: ")
+        keyword = input("--> Geben Sie ein Suchwort ein: ")
         if len(keyword) > 0:
             return keyword
         else:
@@ -40,7 +40,7 @@ def get_keyword_input():
 # Wiederholen, bis eine korrekte Eingabe vorgenommen wurde.
 def get_fieldname_input(d):
     while True:
-        fieldname = input("Wählen Sie ein Feld aus: ")
+        fieldname = input("--> Wählen Sie ein Feld aus: ")
         if fieldname.isnumeric() and int(fieldname) <= len(d):
             return fieldname
         else:
@@ -50,14 +50,16 @@ def get_fieldname_input(d):
 # Alle Header ausgeben mit Index.
 def show_header_with_index(d):
     index = 0
-    if isinstance(d, dict):
+    if isinstance(d[0], dict):
         for key in d[0]:
             index = index + 1
             print(str(index) + ": " + key)
-    elif isinstance(d, list):
+        print("")
+    else:
         for item in d:
             index = index + 1
-            print(str(index) + ": " + item)
+            print(str(index) + ": " + str(item))
+        print("")
 
 
 def set_spacing(string, x):
@@ -121,7 +123,6 @@ def show_result(d):
 
 def check_if_file_exists(name):
     file_list = get_all_csv()
-    print(file_list)
     for item in file_list:
         if item == name + ".csv":
             return True
@@ -208,7 +209,7 @@ def get_numeric_fields(d):
 # Fragt den Nutzer nach dem Vergleichsoperator
 def get_operator_input():
     while True:
-        operator = input("Geben Sie einen Vergleichsoperator ein (>, <, =): ")
+        operator = input("--> Geben Sie einen Vergleichsoperator ein (>, <, =): ")
         if len(operator) > 0 and operator == "<" or operator == ">" or operator == "=":
             return operator
         else:
@@ -218,7 +219,7 @@ def get_operator_input():
 # Fragt den Nutzer nach dem zu Vergleichenden Wert.
 def get_comparison_input():
     while True:
-        comparison = input("Geben Sie einen Vergleichswert ein: ")
+        comparison = input("--> Geben Sie einen Vergleichswert ein: ")
         if len(comparison) > 0 and comparison.isdigit():
             return comparison
         else:
@@ -228,7 +229,7 @@ def get_comparison_input():
 # Fragt den Nutzer nach dem logischen Operator.
 def get_logical_operator_input():
     while True:
-        logical_operator = input("Geben Sie einen logischen Operator ein (UND oder ODER): ")
+        logical_operator = input("--> Geben Sie einen logischen Operator ein (UND oder ODER): ")
         if len(logical_operator) > 0 and logical_operator == "UND" or logical_operator == "ODER":
             return logical_operator
         else:
@@ -282,26 +283,20 @@ def get_logical_operator_result(d, fieldname1, fieldname2, operator1, operator2,
 def get_files():
     repeat = True
     while repeat:
-        print("Alle CSV-Dateien:\n")
-        file = Crud.get_all_csv
-        answer = input("Welche CSV-Datei wollen Sie laden? ('cancel' für Abbrechen)")
-
+        print("Alle CSV-Dateien:")
+        file = Crud.get_all_csv()
+        answer = input("\n-->Welche CSV-Datei wollen Sie laden? ('cancel' für Abbrechen)")
         if answer.isnumeric():
             answer_int = int(answer)
-
             if answer_int > 0 and answer_int <= len(file):
                 global path
                 path = file[answer_int - 1]
-                global contacts
-
+                global data
                 data = Crud.read(path)
-
                 print("\nDatei geladen!\n")
-
                 return
             else:
                 print("\nFalsche Eingabe!\n")
-
         elif answer == "cancel":
             return
         else:
@@ -309,62 +304,69 @@ def get_files():
 
 
 def suchen_von_daten(d):
-    # ---1. Suchfeld angeben und überprüfen.---
-    show_header_with_index(d)
-    suchfeld = get_fieldname_input(d)
+    if len(d) > 0:
+        print("\n--- SUCHEN VON DATEN ---\n")
+        # ---1. Suchfeld angeben und überprüfen.---
+        show_header_with_index(d)
+        suchfeld = get_fieldname_input(d)
 
-    # ---2. Suchwort angeben und überprüfen.---
-    suchwort = get_keyword_input()
+        # ---2. Suchwort angeben und überprüfen.---
+        suchwort = get_keyword_input()
 
-    # ---3. Nach Einträgen suchen.---
-    result_list = search_for_header_and_key(d, suchfeld, suchwort)
+        # ---3. Nach Einträgen suchen.---
+        result_list = search_for_header_and_key(d, suchfeld, suchwort)
 
-    # ---4. Ergebnis in der Konsole ausgeben oder als CSV Speichern.---
-    if len(result_list) == 0:
-        print("Keine Einträge gefunden!")
+        # ---4. Ergebnis in der Konsole ausgeben oder als CSV Speichern.---
+        if len(result_list) == 0:
+            print("Keine Einträge gefunden!")
+        else:
+            print_to_csv_or_console(result_list)
     else:
-        print_to_csv_or_console(result_list)
+        print("Die Liste ist leer!")
 
 
 def filtern_von_daten(d):
-    #1. Zwei Felder mit numerischen Inhalt auswählen.
-    #2. Für jedes Feld einen Wert und einen Vergleichsoperator (größer, kleiner, gleich) angeben.
-    #3. Diese beiden Vergleiche können nach Benutzerwunsch mit UND oder ODER logisch verknüpft werden.
-    #4. Ergebnise als CSV speichern oder in der Konsole ausgeben.
+    if len(d) > 0:
+        #1. Zwei Felder mit numerischen Inhalt auswählen.
+        #2. Für jedes Feld einen Wert und einen Vergleichsoperator (größer, kleiner, gleich) angeben.
+        #3. Diese beiden Vergleiche können nach Benutzerwunsch mit UND oder ODER logisch verknüpft werden.
+        #4. Ergebnise als CSV speichern oder in der Konsole ausgeben.
 
-    # Alle Numerischen Felder anzeigen.
-    numeric_fields = get_numeric_fields(d)
-    show_header_with_index(numeric_fields)
+        # Alle Numerischen Felder anzeigen.
+        numeric_fields = get_numeric_fields(d)
+        show_header_with_index(numeric_fields)
 
-    # 1. Zwei Felder mit numerischen Inhalt auswählen.
-    # 2. Für jedes Feld einen Wert und einen Vergleichsoperator (größer, kleiner, gleich) angeben.
+        # 1. Zwei Felder mit numerischen Inhalt auswählen.
+        # 2. Für jedes Feld einen Wert und einen Vergleichsoperator (größer, kleiner, gleich) angeben.
 
-    # Erste Eingabe abfragen.
-    field1 = get_fieldname_input(numeric_fields)
-    fieldname1 = numeric_fields[int(field1) - 1]
-    operator1 = get_operator_input()
-    comparison_value1 = get_comparison_input()
-    # Erste Eingabe ausgeben.
-    print("Erste Eingabe: " + fieldname1 + " " + operator1 + " " + comparison_value1)
+        # Erste Eingabe abfragen.
+        field1 = get_fieldname_input(numeric_fields)
+        fieldname1 = numeric_fields[int(field1) - 1]
+        operator1 = get_operator_input()
+        comparison_value1 = get_comparison_input()
+        # Erste Eingabe ausgeben.
+        print("Erste Eingabe: " + fieldname1 + " " + operator1 + " " + comparison_value1)
 
-    # Nach logischem Operator fragen und hinterlegen.
-    logical_operator = get_logical_operator_input()
+        # Nach logischem Operator fragen und hinterlegen.
+        logical_operator = get_logical_operator_input()
 
-    # Zweite Eingabe abfragen.
-    field2 = get_fieldname_input(numeric_fields)
-    fieldname2 = numeric_fields[int(field2) - 1]
-    operator2 = get_operator_input()
-    comparison_value2 = get_comparison_input()
-    print("Zweite Eingabe: " + fieldname2 + " " + operator2 + " " + comparison_value2)
+        # Zweite Eingabe abfragen.
+        field2 = get_fieldname_input(numeric_fields)
+        fieldname2 = numeric_fields[int(field2) - 1]
+        operator2 = get_operator_input()
+        comparison_value2 = get_comparison_input()
+        print("Zweite Eingabe: " + fieldname2 + " " + operator2 + " " + comparison_value2)
 
-    # 3. Diese beiden Vergleiche mit UND oder ODER logisch verknüpfen.
-    result_list = get_logical_operator_result(d, fieldname1, fieldname2, operator1, operator2, int(comparison_value1), int(comparison_value2), logical_operator)
+        # 3. Diese beiden Vergleiche mit UND oder ODER logisch verknüpfen.
+        result_list = get_logical_operator_result(d, fieldname1, fieldname2, operator1, operator2, int(comparison_value1), int(comparison_value2), logical_operator)
 
-    # 4. Ergebnise als CSV speichern oder in der Konsole ausgeben.
-    if len(result_list) == 0:
-        print("Keine Einträge gefunden!")
+        # 4. Ergebnise als CSV speichern oder in der Konsole ausgeben.
+        if len(result_list) == 0:
+            print("Keine Einträge gefunden!")
+        else:
+            print_to_csv_or_console(result_list)
     else:
-        print_to_csv_or_console(result_list)
+        print("Die Liste ist leer!")
 
 
 def execute():
@@ -389,10 +391,13 @@ def execute():
         print("\nMENÜ")
         print("------------------------------------------------------------------------------------------")
 
-        print("Datei: " + dateiname + "    Kontakte: " + str(len(contacts)))
+        print("Datei: " + dateiname + "    Einträge: " + str(len(data)))
         print("------------------------------------------------------------------------------------------")
-        print("1: CSV-Datei Laden   2: Liste anzeigen   3: Suchen von Daten   4: Filtern von Daten   5: Beenden")
-        x = input("\n\nIhre Eingabe: ")
+        print("1: CSV-Datei Laden   2: Liste anzeigen   3: Suchen von Daten   4: Filtern von Daten")
+        print("5: Beenden")
+
+        x = input("\nIhre Eingabe: ")
+        print("")
 
         if x == "1":
             get_files()
@@ -407,5 +412,7 @@ def execute():
         else:
             print("Falsche Eingabe")
 
+
+execute()
 
 
