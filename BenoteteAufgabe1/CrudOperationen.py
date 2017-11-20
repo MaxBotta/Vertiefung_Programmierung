@@ -3,6 +3,7 @@ In dieser Datei sollen die Lese- und Schreibzugriffe unseres Programms auf und i
 '''
 
 import csv
+import os
 
 
 
@@ -37,3 +38,18 @@ def write(dateiname, list_of_dicts, feldnamen):
         writer.writeheader()
         writer.writerows(list_of_dicts)
 
+
+def get_all_csv():
+    # Liste mit sämtlichen Dateien ertsellen, die sich im selben Ordner befinden.
+    dir_list = os.listdir('.')
+    new_list = []
+    # Jeden Dateinamen mit der Endung '.csv' der Liste new_list hinzufügen.
+    for file in dir_list:
+        if file.find(".csv") > -1:
+            new_list.append(file)
+
+    index = 0
+    for file in new_list:
+        index = index + 1
+        print(" " + str(index) + ": " + file)
+    return new_list
