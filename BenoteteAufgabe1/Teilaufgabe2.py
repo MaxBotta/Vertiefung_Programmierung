@@ -1,29 +1,9 @@
 import BenoteteAufgabe1.CrudOperationen as Crud
-import csv
 import os
 import operator
 
-
-def read(path, type):
-    try:
-        list_of_dicts = []
-        if type == "csv":
-            with open(path, "r", newline='', encoding="utf8") as file:
-                reader = csv.DictReader(file)
-                for v in reader:
-                    list_of_dicts.append(v)
-                return list_of_dicts
-        elif type == "json":
-            with open(path) as file:
-                list_of_dicts = json.load(file)
-                return list_of_dicts
-    except IOError:
-        print('An error occured trying to read the file.')
-
-#Der Name der einzulesenden Datei
-dateiname = "tb01_FaelleGrundtabelleKreise_csv.csv"
-#dateiname = "/Users/maxbotta/PycharmProjects/Vertiefung_Programmierung/Max/Adressbuch/contacts.csv"
-daten = Crud.read(dateiname)
+path = ""
+data = []
 
 
 def set_key_list(d):
@@ -116,24 +96,27 @@ def get_range_list(d):
 
 # TODO Try catch falls es ein Problem mit der Darstellung gibt, einfach Liste ausgeben.
 def show_result(d):
-    print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-    print("Ergebnis")
-    print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+    if len(d) > 0:
+        print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+        print("Ergebnis")
+        print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
 
-    range_dict = get_range_list(d)
+        range_dict = get_range_list(d)
 
-    # Überschriften ausgeben
-    for key in d[0]:
-        print(key + ":" + set_spacing(key + ":", range_dict[key]), end="")
-    print("")
-    print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-
-    # Alle Einträge ausgeben
-    for item in d:
-        for key in item:
-            print(item[key] + set_spacing(item[key], range_dict[key]), end="")
+        # Überschriften ausgeben
+        for key in d[0]:
+            print(key + ":" + set_spacing(key + ":", range_dict[key]), end="")
         print("")
-    print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+        print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+
+        # Alle Einträge ausgeben
+        for item in d:
+            for key in item:
+                print(item[key] + set_spacing(item[key], range_dict[key]), end="")
+            print("")
+        print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+    else:
+        print("Die Liste ist leer!")
 
 
 def check_if_file_exists(name):
@@ -196,33 +179,22 @@ def print_to_csv_or_console(d):
         csv_or_console = input("Möchten Sie die Ergebnisse als CSV-Datei ('csv') speichern oder in der Konsole ('con') anzeigen?")
         if csv_or_console == "con":
             show_result(d)
-            return
+            save_yes_no = input("Als CSV-Datei Speichern? (j/n)")
+
+            while True:
+                if save_yes_no == "j":
+                    save_as_csv(d)
+                    return
+                elif save_yes_no == "n":
+                    return
+                else:
+                    print("Falsche Eingabe!")
+
         elif csv_or_console == "csv":
             save_as_csv(d)
             return
         else:
             print("Falsche Eingabe!")
-
-
-def suchen_von_daten(d):
-    # ---1. Suchfeld angeben und überprüfen.---
-    show_header_with_index(d)
-    suchfeld = get_fieldname_input(d)
-
-    # ---2. Suchwort angeben und überprüfen.---
-    suchwort = get_keyword_input()
-
-    # ---3. Nach Einträgen suchen.---
-    result_list = search_for_header_and_key(d, suchfeld, suchwort)
-
-    # ---4. Ergebnis in der Konsole ausgeben oder als CSV Speichern.---
-    if len(result_list) == 0:
-        print("Keine Einträge gefunden!")
-    else:
-        print_to_csv_or_console(result_list)
-
-
-# suchen_von_daten(daten)
 
 
 def get_numeric_fields(d):
@@ -307,6 +279,53 @@ def get_logical_operator_result(d, fieldname1, fieldname2, operator1, operator2,
     return list_of_dicts
 
 
+def get_files():
+    repeat = True
+    while repeat:
+        print("Alle CSV-Dateien:\n")
+        file = Crud.get_all_csv
+        answer = input("Welche CSV-Datei wollen Sie laden? ('cancel' für Abbrechen)")
+
+        if answer.isnumeric():
+            answer_int = int(answer)
+
+            if answer_int > 0 and answer_int <= len(file):
+                global path
+                path = file[answer_int - 1]
+                global contacts
+
+                data = Crud.read(path)
+
+                print("\nDatei geladen!\n")
+
+                return
+            else:
+                print("\nFalsche Eingabe!\n")
+
+        elif answer == "cancel":
+            return
+        else:
+            print("\nFalsche Eingabe!\n")
+
+
+def suchen_von_daten(d):
+    # ---1. Suchfeld angeben und überprüfen.---
+    show_header_with_index(d)
+    suchfeld = get_fieldname_input(d)
+
+    # ---2. Suchwort angeben und überprüfen.---
+    suchwort = get_keyword_input()
+
+    # ---3. Nach Einträgen suchen.---
+    result_list = search_for_header_and_key(d, suchfeld, suchwort)
+
+    # ---4. Ergebnis in der Konsole ausgeben oder als CSV Speichern.---
+    if len(result_list) == 0:
+        print("Keine Einträge gefunden!")
+    else:
+        print_to_csv_or_console(result_list)
+
+
 def filtern_von_daten(d):
     #1. Zwei Felder mit numerischen Inhalt auswählen.
     #2. Für jedes Feld einen Wert und einen Vergleichsoperator (größer, kleiner, gleich) angeben.
@@ -348,10 +367,45 @@ def filtern_von_daten(d):
         print_to_csv_or_console(result_list)
 
 
-filtern_von_daten(daten)
+def execute():
+    welcome = True
+    while True:
+        if welcome:
+            print("-------------------------------------------------------------------------------------------")
+            print("0000  0000  0000  0     000  0000  0000       0000  0  0  0000")
+            print("      0  0  0  0  0      0   0     0          0  0  0  0      ")
+            print("0000  0000  0  0  0      0   0     0000       0000  0000  0000")
+            print("      0     0  0  0      0   0     0             0     0      ")
+            print("0000  0     0000  0000  000  0000  0000          0     0  0000")
+            print("-------------------------------------------------------------------------------------------")
+            welcome = False
 
-#test = get_truth(int(daten[0]["erfasste Faelle"]), ">", 1000)
-#print(test)
+        dateiname = ""
+        if path == "":
+            dateiname = "Keine Datei ausgewählt!"
+        else:
+            dateiname = path
+
+        print("\nMENÜ")
+        print("------------------------------------------------------------------------------------------")
+
+        print("Datei: " + dateiname + "    Kontakte: " + str(len(contacts)))
+        print("------------------------------------------------------------------------------------------")
+        print("1: CSV-Datei Laden   2: Liste anzeigen   3: Suchen von Daten   4: Filtern von Daten   5: Beenden")
+        x = input("\n\nIhre Eingabe: ")
+
+        if x == "1":
+            get_files()
+        elif x == "2":
+            show_result(data)
+        elif x == "3":
+            suchen_von_daten(data)
+        elif x == "4":
+            filtern_von_daten(data)
+        elif x == "5":
+            exit()
+        else:
+            print("Falsche Eingabe")
 
 
 
