@@ -28,9 +28,6 @@ def read(dateiname):
         return list_of_dicts
 
 
-
-
-
 def write(dateiname, list_of_dicts, feldnamen):
     with open(dateiname, "w", newline='',) as file:
         #Der DictWriter schreibt eine CSV-Datei mit einem definierten Dateinamen mit den vorgegebenen Headern und deren Spalten. Als Trennzeichen ist ein ';' definiert.
@@ -39,6 +36,7 @@ def write(dateiname, list_of_dicts, feldnamen):
         writer.writerows(list_of_dicts)
 
 
+# Gibt eine Liste der Namen aller CSV-Dateien zurück und gibt dies in der Konsole aus
 def get_all_csv():
     # Liste mit sämtlichen Dateien ertsellen, die sich im selben Ordner befinden.
     dir_list = os.listdir('.')
@@ -47,9 +45,4 @@ def get_all_csv():
     for file in dir_list:
         if file.find(".csv") > -1:
             new_list.append(file)
-
-    index = 0
-    for file in new_list:
-        index = index + 1
-        print(" " + str(index) + ": " + file)
     return new_list
