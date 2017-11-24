@@ -2,6 +2,7 @@ import csv
 import json
 import os
 import xml.etree.ElementTree as ET
+import io
 
 
 def read_json(path):
@@ -42,14 +43,52 @@ def read_xml(path):
 
             # Den Kontakt zur Liste "contacts" hinzufügen.
             contacts.append(new_contact)
-
         return contacts
 
     except IOError:
         print('An error occured trying to read the XML file.')
 
 
-def write(path, data):
+def write_xml(path, data):
+    try:
+        root = ET.Element('Adressbuch')
+        tree = ET.ElementTree(root)
+        for contact in data:
+            child = ET.SubElement(root, 'Kontakt')
+            anrede = ET.SubElement(child, 'Anrede')
+            anrede.text = contact['Anrede']
+            vorname = ET.SubElement(child, 'Vorname')
+            vorname.text = contact['Vorname']
+            name = ET.SubElement(child, 'Name')
+            name.text = contact["Name"]
+            name = ET.SubElement(child, "Straße")
+            name.text = contact["Straße"]
+            hausnummer = ET.SubElement(child, "Hausnummer")
+            hausnummer.text = contact["Hausnummer"]
+            plz = ET.SubElement(child, "PLZ")
+            plz.text = contact["PLZ"]
+            stadt = ET.SubElement(child, "Stadt")
+            stadt.text = contact["Stadt"]
+
+            rufnummern = ET.SubElement(child, 'Rufnummern')
+            for nummer in contact['Rufnummern']:
+                number = ET.SubElement(rufnummern, 'Rufnummer')
+                number.set('Typ', nummer['Typ'])
+                number.text = nummer['Nummer']
+
+            emails = ET.SubElement(child, 'E-Mail-Adressen')
+            for mail in contact['E-Mail-Adressen']:
+                mal = ET.SubElement(emails, 'E-Mail')
+                mal.set('Typ', mail['Typ'])
+                number.text = mail['E-Mail']
+
+        with open(path, 'w', encoding='utf-8') as outfile:
+            tree.write(outfile, encoding='unicode')
+    except IOError:
+        print('An error occured trying to write the XML file.')
+
+
+def write_json(path, data):
     try:
         with open(path, 'w') as outfile:
             json.dump(data, outfile, indent=4)
@@ -74,4 +113,6 @@ def get_all_json_and_xml():
         index = index + 1
         print("  " + str(index) + ": " + file)
     return new_list
+
+
 

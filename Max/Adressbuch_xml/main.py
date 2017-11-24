@@ -646,9 +646,9 @@ def save(list_of_dicts):
             print("Nicht gespeichert!")
         else:
             path = name + ".json"
-            CRUD.write(path, list_of_dicts)
+            CRUD.write_json(path, list_of_dicts)
     elif len(path) > 0:
-        CRUD.write(path, list_of_dicts)
+        CRUD.write_json(path, list_of_dicts)
         print("Erfolgreich gespeichert!")
 
 
