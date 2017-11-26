@@ -1,20 +1,56 @@
-<?xml version="1.0"?>
-<Adressbuch>
-    <Kontakt>
-        <Anrede>Herr</Anrede>
-        <Vorname>Manfred</Vorname>
-        <Name>Mustermann</Name>
-        <Straße>Musterstraße</Straße>
-        <Hausnummer>1</Hausnummer>
-        <PLZ>12345</PLZ>
-        <Stadt>Musterstadt</Stadt>
-        <Rufnummern>
-            <Rufnummer Typ="Privat">0701245512</Rufnummer>
-            <Rufnummer Typ="Mobil">01761234545</Rufnummer>
-        </Rufnummern>
-        <E-Mail-Adressen>
-            <E-Mail Typ="Privat">max.mustermann@gmx.de</E-Mail>
-            <E-Mail Typ="Geschäftlich">max.mustermann@daimler.com</E-Mail>
-        </E-Mail-Adressen>
-    </Kontakt>
-</Adressbuch>
+[
+    {
+        "Anrede": "Herr",
+        "Vorname": "Manfred",
+        "Name": "Mustermann",
+        "Stra\u00dfe": "Musterstra\u00dfe",
+        "Hausnummer": "1",
+        "PLZ": "12345",
+        "Stadt": "Musterstadt",
+        "Rufnummern": [
+            {
+                "Typ": "Privat",
+                "Nummer": "0701245512"
+            },
+            {
+                "Typ": "Mobil",
+                "Nummer": "01761234545"
+            }
+        ],
+        "E-Mail-Adressen": [
+            {
+                "Typ": "Privat",
+                "E-Mail": "max.mustermann@gmx.de"
+            },
+            {
+                "Typ": "Gesch\u00e4ftlich",
+                "E-Mail": "max.mustermann@daimler.com"
+            }
+        ]
+    },
+    {
+        "Anrede": "Herr",
+        "Name": "Bleistift",
+        "Vorname": "Bert",
+        "Stra\u00dfe": "Beispielstr",
+        "Hausnummer": "11",
+        "PLZ": "51478",
+        "Stadt": "Stadt",
+        "Rufnummern": [
+            {
+                "Typ": "mobil",
+                "Nummer": "0000000000"
+            },
+            {
+                "Typ": "gesch\u00e4ftlich",
+                "Nummer": "5555555555555"
+            }
+        ],
+        "E-Mail-Adressen": [
+            {
+                "Typ": "privat",
+                "E-Mail": "email@email.de"
+            }
+        ]
+    }
+]

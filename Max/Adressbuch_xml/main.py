@@ -645,11 +645,21 @@ def save(list_of_dicts):
         if name == "cancel":
             print("Nicht gespeichert!")
         else:
-            path = name + ".json"
-            CRUD.write_json(path, list_of_dicts)
+            # Dateityp überprüfen
+                if path.find(".json") > -1:
+                    path = name + ".json"
+                    CRUD.write_json(path, list_of_dicts)
+                elif path.find(".xml") > -1:
+                    path = name + ".xml"
+                    CRUD.write_xml(path, list_of_dicts)
+
     elif len(path) > 0:
-        CRUD.write_json(path, list_of_dicts)
-        print("Erfolgreich gespeichert!")
+        if path.find(".json") > -1:
+            CRUD.write_json(path, list_of_dicts)
+            print("Erfolgreich gespeichert!")
+        elif path.find(".xml") > -1:
+            CRUD.write_xml(path, list_of_dicts)
+            print("Erfolgreich gespeichert!")
 
 
 def check_if_saved():
