@@ -80,7 +80,7 @@ def write_xml(path, data):
             for mail in contact['E-Mail-Adressen']:
                 mal = ET.SubElement(emails, 'E-Mail')
                 mal.set('Typ', mail['Typ'])
-                number.text = mail['E-Mail']
+                mal.text = mail['E-Mail']
 
         with open(path, 'w', encoding='utf-8') as outfile:
             tree.write(outfile, encoding='unicode')
