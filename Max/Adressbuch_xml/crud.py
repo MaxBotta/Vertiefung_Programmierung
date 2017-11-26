@@ -94,7 +94,7 @@ def write_json(path, data):
             json.dump(data, outfile, indent=4)
 
     except IOError:
-        print('An error occured trying to write the file.')
+        print('An error occured trying to write the JSON file.')
 
 
 def get_all_json_and_xml():
