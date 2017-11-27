@@ -76,22 +76,30 @@ def get_genres(root):
 def get_directors(root):
     all_directors = []
     result = []
+    final_result = []
     # Alle Regisseure der Liste hinzufügen
     for node in root.findall(".//producer/person/name"):
         all_directors.append(node.text)
 
-    # Anzahl der Vorkommnisse
+    # Doppelte Genres aussortieren
     for director in all_directors:
+        if director in str(result):
+            continue
+        else:
+            result.append(director)
+
+    # Anzahl der Vorkommnisse
+    for director in result:
         dict = {}
         occurrence = all_directors.count(director)
         dict["name"] = director
         dict["occurrence"] = occurrence
-        result.append(dict)
+        final_result.append(dict)
 
     # Liste sortieren
-    result.sort(key=operator.itemgetter('occurrence'), reverse=True)
+    final_result.sort(key=operator.itemgetter('occurrence'), reverse=True)
 
-    return result
+    return final_result
 
 
 def execute():
