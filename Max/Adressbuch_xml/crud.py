@@ -1,8 +1,6 @@
-import csv
 import json
 import os
 import xml.etree.ElementTree as ET
-import io
 
 
 def read_json(path):
