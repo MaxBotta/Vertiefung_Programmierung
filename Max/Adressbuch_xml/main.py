@@ -256,7 +256,7 @@ def set_rufnummern_and_email_range():
         string = ""
         for item in contact["E-Mail-Adressen"]:
             counter = counter + 1
-            string = string + item["Typ"] + item["E-Mail"] + ""
+            string = string + str(item["Typ"]) + str(item["E-Mail"]) + ""
             if int(len(string)) > largest_email:
                 largest_email = int(len(string))
                 email_string = string
@@ -301,8 +301,8 @@ def show_list(list):
                 elif key == "E-Mail-Adressen":
                     string = ""
                     for item in contact[key]:
-                        string = string + item["Typ"] + ": " + item["E-Mail"] + "  "
-                        print(item["Typ"] + ": " + item["E-Mail"], end="  ")
+                        string = string + str(item["Typ"]) + ": " + str(item["E-Mail"]) + "  "
+                        print(str(item["Typ"]) + ": " + str(item["E-Mail"]), end="  ")
                     print(set_spacing(string, range["E-Mail-Adressen"]), end="")
                     #print(string)
                 else:
