@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Adressbuch>
+    <Kontakt>
+        <Anrede>Herr</Anrede>
+        <Vorname>Max</Vorname>
+        <Name>Mustermann</Name>
+        <Straße>Musterstraße</Straße>
+        <Hausnummer>1</Hausnummer>
+        <PLZ>12345</PLZ>
+        <Stadt>Musterstadt</Stadt>
+        <Rufnummern>
+            <Rufnummer Typ="Privat">0701245512</Rufnummer>
+            <Rufnummer Typ="Mobil">01761234545</Rufnummer>
+        </Rufnummern>
+        <E-Mail-Adressen>
+            <E-Mail Typ="Privat">max.mustermann@gmx.de</E-Mail>
+            <E-Mail Typ="Geschäftlich">max.mustermann@daimler.com</E-Mail>
+        </E-Mail-Adressen>
+    </Kontakt>
+</Adressbuch>
