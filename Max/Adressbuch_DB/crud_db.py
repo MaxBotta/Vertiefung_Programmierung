@@ -34,6 +34,7 @@ def write_db(contact):
 def get_all():
     try:
         return datenbank.all()
+
     except IOError:
         print("Fehler beim Laden aller Kontakte.")
 

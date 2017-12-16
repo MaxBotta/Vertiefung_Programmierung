@@ -1,4 +1,5 @@
-import Max.Adressbuch_xml.crud as CRUD
+import Max.Adressbuch_DB.crud as CRUD
+import Max.Adressbuch_DB.crud_db as crud_db
 
 # Anmerkung: Wir manipulieren eine Liste von Dictioniaries. Diese wird am Anfang ausgelesen
 # und erst beim speichern wird die json-Datei überschrieben.
@@ -148,7 +149,6 @@ def get_files():
             answer_int = int(answer)
 
             if answer_int > 0 and answer_int <= len(file):
-                global path
                 path = file[answer_int - 1]
                 contacts = []
 
@@ -233,7 +233,7 @@ def get_phone_number_input():
 
 # Diese Methode liest den höchsten Wert jeweils für Telefonnummern (Alle Nummern + Name) und
 # Emails (Alles Emails + Name) aus und setzt einen Abstandswert für den Header.
-def set_rufnummern_and_email_range(list):
+def set_rufnummern_and_email_range(contacts):
     largest_number = 0
     largest_email = 0
     x_numbers = 0
@@ -241,7 +241,7 @@ def set_rufnummern_and_email_range(list):
     number_string = ""
     email_string = ""
 
-    for contact in list:
+    for contact in contacts:
         #Höchsten Rufnummer Wert finden und setzen.
         counter = 0
         string = ""
@@ -267,8 +267,8 @@ def set_rufnummern_and_email_range(list):
     return number_string, email_string
 
 
-def show_list(list):
-    largest_strings = set_rufnummern_and_email_range(list)
+def show_list(contacts):
+    largest_strings = set_rufnummern_and_email_range(contacts)
     # for item in contacts:
     #     print(item)
 
@@ -280,14 +280,14 @@ def show_list(list):
         # Überschriften ausgeben
         counter = 0
         print("Pos:" + set_spacing("Pos:", 5), end="")
-        for key in list[0]:
+        for key in contacts[0]:
             print(key + ":" + set_spacing(key + ":", range[key]), end="")
             counter = counter + 1
         print("")
 
         position = 0
         # Alle Einträge ausgeben
-        for contact in list:
+        for contact in contacts:
             counter = 0
             print(str(position + 1) + set_spacing(str(position + 1), 5), end="")
             for key in contact:
@@ -643,12 +643,13 @@ def search_contact():
 
         result_list = crud_db.search_by_name(name)
 
-        if len(result_list) > 0:
+        if result_list == -1:
+            print("Keine Kontakte gefunden")
+
+        else:
             print("")
             print("Alle Kontakte mit dem Namen '" + name + "':")
             show_list(result_list)
-        else:
-            print("Keine Kontake gefunden!")
 
 
 def export_as_json():
@@ -686,16 +687,10 @@ def execute():
             print("------------------------------------------------------------------------------------------")
             welcome = False
 
-        dateiname = ""
-        if path == "":
-            dateiname = "Keine Datei ausgewählt!"
-        else:
-            dateiname = path
-
         print("\nMENÜ")
         print("------------------------------------------------------------------------------------------")
 
-        print("Datei: " + dateiname + "    Kontakte: " + str(crud_db.get_len()))
+        print("Kontakte: " + str(crud_db.get_len()))
         print("------------------------------------------------------------------------------------------")
         print("1: Liste anzeigen    2: Kontakt suchen         3: Neuer Eintrag         4: Eintrag ändern")
         print("5: Eintrag löschen   6: Als JSON exportieren   7: Als XML exportieren   8: Kontakte importieren")
@@ -703,7 +698,7 @@ def execute():
         x = input("\n\nIhre Eingabe: ")
 
         if x == "Liste anzeigen" or x == "1":
-            show_list(crud_db.get_all)
+            show_list(crud_db.get_all())
         elif x == "Kontakt suchen" or x == "2":
             search_contact()
         elif x == "Neuer Eintrag" or x == "3":
