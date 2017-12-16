@@ -18,7 +18,7 @@ def print_nodes(root):
             if not movie.find("producer/person/name").text:
                 continue
             else:
-                new_movie["Regisseur"] = movie.find("producer/person/name").text
+                new_movie["Regisseur"] = movie.find("director/person/name").text
             new_movie["Jahr"] = movie.find("year").text
             new_movie["Plot"] = movie.find("plot-outline").text
             result_list.append(new_movie)
