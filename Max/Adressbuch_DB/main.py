@@ -348,7 +348,7 @@ def add_contact():
     while repeat:
         confirm = input("--> Möchten Sie den Kontakt '" + vorname + " " + name + "' wirklich der Liste hinzufügen? (j/n)")
         if confirm == "j":
-            new_dict = {"Anrede": anrede,
+            new_contact = {"Anrede": anrede,
                         "Name": name,
                         "Vorname": vorname,
                         "Straße": straße,
@@ -359,7 +359,9 @@ def add_contact():
                         "E-Mail-Adressen": emails
                         }
 
-            contacts.append(new_dict)
+            # Kontakt wird in die Datenbank geschrieben
+            # TODO CRUD Funktionen implentieren
+            crud_db.write(new_contact)
             repeat = False
             made_changes = True
             print("Der Kontakt '" + vorname + " " + name + "' wurde hinzugefügt.")
@@ -493,11 +495,13 @@ def change_contact():
             if contact_index.isnumeric():
                 contact_index = int(contact_index)
 
-                if contact_index <= len(contacts) and contact_index > 0:
+                # Kontakt als Variable festhalten.
+                contact = crud_db.search_by_id(contact_index)
+
+                # Wenn Contact auch einen Kontakt enthält
+                if not contact == -1:
                     repeat = False
 
-                    # Kontakt als Variable festhalten.
-                    contact = contacts[contact_index - 1]
 
                     # Abfragen, welche Spalte geändert werden soll.
                     repeat2 = True
