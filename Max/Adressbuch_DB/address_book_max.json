@@ -1,0 +1,176 @@
+[
+    {
+        "Anrede": "Herr",
+        "Name": "Botta",
+        "Vorname": "Maximilian",
+        "Stra\u00dfe": "R\u00f6mersteinweg",
+        "Hausnummer": 1,
+        "PLZ": 70188,
+        "Stadt": "Stuttgart",
+        "Rufnummern": [
+            {
+                "Typ": "Mobil",
+                "Nummer": "0174-1489375"
+            }
+        ],
+        "E-Mail-Adressen": [
+            {
+                "Typ": "Privat",
+                "E-Mail": "max.botta@gmx.de"
+            },
+            {
+                "Typ": "Dienst",
+                "E-Mail": "botta@hdm.de"
+            }
+        ]
+    },
+    {
+        "Anrede": "Frau",
+        "Name": "Auth",
+        "Vorname": "Anna",
+        "Stra\u00dfe": "Finkenstra\u00dfe",
+        "Hausnummer": 53,
+        "PLZ": 70188,
+        "Stadt": "Stuttgart",
+        "Rufnummern": [
+            {
+                "Typ": "Telefon",
+                "Nummer": "0711-903823"
+            },
+            {
+                "Typ": "Mobil",
+                "Nummer": "017236723623"
+            }
+        ],
+        "E-Mail-Adressen": [
+            {
+                "Typ": "Privat",
+                "E-Mail": "anna@private.de"
+            },
+            {
+                "Typ": "Gesch\u00e4ftlich",
+                "E-Mail": "anna@business.de"
+            }
+        ]
+    },
+    {
+        "Anrede": "Herr",
+        "Name": "Reumann",
+        "Vorname": "Tobias",
+        "Stra\u00dfe": "Lindenstra\u00dfe",
+        "Hausnummer": 11,
+        "PLZ": 70188,
+        "Stadt": "Stuttgart",
+        "Rufnummern": [
+            {
+                "Typ": "Telefon",
+                "Nummer": "071-903823"
+            },
+            {
+                "Typ": "Mobil",
+                "Nummer": "01723232423"
+            },
+            {
+                "Typ": "Mobil2",
+                "Nummer": "01720938230"
+            }
+        ],
+        "E-Mail-Adressen": [
+            {
+                "Typ": "Privat",
+                "E-Mail": "tobias@private.de"
+            },
+            {
+                "Typ": "Gesch\u00e4ftlich",
+                "E-Mail": "tobias@business.de"
+            }
+        ]
+    },
+    {
+        "Anrede": "Frau",
+        "Name": "Monroe",
+        "Vorname": "Marylin",
+        "Stra\u00dfe": "Privatstra\u00dfe",
+        "Hausnummer": 1,
+        "PLZ": 111111,
+        "Stadt": "Los Angeles",
+        "Rufnummern": [
+            {
+                "Typ": "Telefon",
+                "Nummer": "09021-1938102"
+            },
+            {
+                "Typ": "Mobil",
+                "Nummer": "9012-1231222"
+            }
+        ],
+        "E-Mail-Adressen": [
+            {
+                "Typ": "Privat",
+                "E-Mail": "mary@private.de"
+            },
+            {
+                "Typ": "Gesch\u00e4ftlich",
+                "E-Mail": "monroe@business.de"
+            }
+        ]
+    },
+    {
+        "Anrede": "Herr",
+        "Name": "Jobs",
+        "Vorname": "Steve",
+        "Stra\u00dfe": "Crist Drive",
+        "Hausnummer": 2066,
+        "PLZ": 94024,
+        "Stadt": "Los Altos",
+        "Rufnummern": [
+            {
+                "Typ": "Telefon",
+                "Nummer": "0923-19343231"
+            },
+            {
+                "Typ": "Mobil",
+                "Nummer": "9012-1231222"
+            }
+        ],
+        "E-Mail-Adressen": [
+            {
+                "Typ": "Privat",
+                "E-Mail": "Stevie@hotmail.de"
+            },
+            {
+                "Typ": "Gesch\u00e4ftlich",
+                "E-Mail": "steve.jobs@apple.de"
+            }
+        ]
+    },
+    {
+        "Anrede": "Herr",
+        "Name": "Musk",
+        "Vorname": "Elon",
+        "Stra\u00dfe": "idontknowstreet",
+        "Hausnummer": 189,
+        "PLZ": 128912,
+        "Stadt": "Los Angeles",
+        "Rufnummern": [
+            {
+                "Typ": "Telefon",
+                "Nummer": "2923-2343246"
+            }
+        ],
+        "E-Mail-Adressen": [
+            {
+                "Typ": "Tesla",
+                "E-Mail": "musk@tesla.de"
+            },
+            {
+                "Typ": "SpaceX",
+                "E-Mail": "musk@tesla.de"
+            },
+            {
+                "Typ": "Privat",
+                "E-Mail": "elon.musk@gmail.com"
+            }
+        ]
+    }
+]
