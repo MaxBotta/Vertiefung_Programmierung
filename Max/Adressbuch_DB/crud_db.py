@@ -24,7 +24,7 @@ def get_len():
         print("Fehler beim Suchen eines Kontakts.")
 
 
-def write_db(contact):
+def write(contact):
     try:
         datenbank.insert(contact)
     except IOError:
@@ -50,7 +50,7 @@ def search_by_id(id):
         print("Fehler beim Suchen eines Kontakts.")
 
 
-def update_db(contact):
+def update(contact):
     try:
         contact_id = [contact.doc_id]
         return datenbank.update(contact, doc_ids=contact_id)

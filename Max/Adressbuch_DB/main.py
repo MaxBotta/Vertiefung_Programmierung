@@ -289,7 +289,7 @@ def show_list(contacts):
         # Alle Einträge ausgeben
         for contact in contacts:
             counter = 0
-            print(str(position + 1) + set_spacing(str(position + 1), 5), end="")
+            print(str(contact.doc_id) + set_spacing(str(position + 1), 5), end="")
             for key in contact:
                 if key == "Rufnummern":
                     string = ""
@@ -654,10 +654,11 @@ def search_contact():
 
 def export_as_json():
     contacts = crud_db.get_all()
+    print(contacts)
     if len(contacts) > 0:
         name = input("Bitte geben Sie einen Dateinamen ein ('cancel' für abbrechen):")
         if name == "cancel":
-            print("Nicht gespeichert!")
+            print("Nicht exportiert!")
         else:
             path = name + ".json"
             CRUD.write_json(path, contacts)
@@ -665,10 +666,11 @@ def export_as_json():
 
 def export_as_xml():
     contacts = crud_db.get_all()
+    print(contacts)
     if len(contacts) > 0:
         name = input("Bitte geben Sie einen Dateinamen ein ('cancel' für abbrechen):")
         if name == "cancel":
-            print("Nicht gespeichert!")
+            print("Nicht exportiert!")
         else:
             path = name + ".xml"
             CRUD.write_xml(path, contacts)

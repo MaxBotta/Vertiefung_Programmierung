@@ -58,15 +58,15 @@ def write_xml(path, data):
             vorname = ET.SubElement(child, 'Vorname')
             vorname.text = contact['Vorname']
             name = ET.SubElement(child, 'Name')
-            name.text = contact["Name"]
-            name = ET.SubElement(child, "Straße")
-            name.text = contact["Straße"]
-            hausnummer = ET.SubElement(child, "Hausnummer")
-            hausnummer.text = contact["Hausnummer"]
-            plz = ET.SubElement(child, "PLZ")
-            plz.text = contact["PLZ"]
-            stadt = ET.SubElement(child, "Stadt")
-            stadt.text = contact["Stadt"]
+            name.text = contact['Name']
+            name = ET.SubElement(child, 'Straße')
+            name.text = contact['Straße']
+            hausnummer = ET.SubElement(child, 'Hausnummer')
+            hausnummer.text = str(contact['Hausnummer'])
+            plz = ET.SubElement(child, 'PLZ')
+            plz.text = str(contact['PLZ'])
+            stadt = ET.SubElement(child, 'Stadt')
+            stadt.text = contact['Stadt']
 
             rufnummern = ET.SubElement(child, 'Rufnummern')
             for nummer in contact['Rufnummern']:
