@@ -70,7 +70,7 @@ def search_by_name(name):
     result_list = []
     kontakte = Query()
     try:
-        for kontakt in datenbank.search((kontakte['Vorname'].search(name)) | (kontakte['Nachname'].search(name))):
+        for kontakt in datenbank.search((kontakte['Vorname'].search(name)) | (kontakte['Name'].search(name))):
             result_list.append(kontakt)
         if len(result_list) > 0:
             return result_list
@@ -81,3 +81,4 @@ def search_by_name(name):
 
 
 
+print(search_by_name("Botta"))
