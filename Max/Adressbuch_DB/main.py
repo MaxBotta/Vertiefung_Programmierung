@@ -4,14 +4,14 @@ import Max.Adressbuch_xml.crud as CRUD
 # und erst beim speichern wird die json-Datei überschrieben.
 
 
-global contacts
-contacts = []
+#global contacts
+#contacts = []
 
 #Für Testzwecke
 #contacts = crud.read("Ingo.json")
 
-global path
-path = ""
+#global path
+#path = ""
 
 global made_changes
 made_changes = False
@@ -142,7 +142,7 @@ def get_files():
     while repeat:
         print("\nAlle Dateien:")
         file = CRUD.get_all_json_and_xml()
-        answer = input("\nWelche Datei wollen Sie laden? ('cancel' für Abbrechen)")
+        answer = input("\nWelche Datei wollen Sie importieren? ('cancel' für Abbrechen)")
 
         if answer.isnumeric():
             answer_int = int(answer)
@@ -150,7 +150,7 @@ def get_files():
             if answer_int > 0 and answer_int <= len(file):
                 global path
                 path = file[answer_int - 1]
-                global contacts
+                contacts = []
 
                 # Dateityp überprüfen
                 if path.find(".json") > -1:
@@ -171,22 +171,22 @@ def get_files():
 
 # Alle Abfragen laufen über diese Funktion. Ermöglicht sich wiederholende Abfragen,
 # sowie die Abfrage einzelner Eingaben.
-def get_input(header):
+def get_input(column):
     repeat = True
     while repeat:
-        answer = input("--> " + header + ": (Max. " + str(range[header]) + " Zeichen)")
+        answer = input("--> " + column + ": (Max. " + str(range[column]) + " Zeichen)")
         # Wenn es sich um eine numerische Eingabe handelt
-        if header == "Hausnummer" or header == "PLZ":
+        if column == "Hausnummer" or column == "PLZ":
             # Auf Ziffern prüfen und ob es zu viele Zeichen sind
-            if (is_number(answer) and is_in_range(answer, header)) or answer == "":
+            if (is_number(answer) and is_in_range(answer, column)) or answer == "":
                 repeat = False
                 return answer
             else:
                 print("Falsche Eingabe oder zu viele Zeichen!")
 
         # Wenn es sich um eine alphabetische Eingabe handelt
-        elif header == "Name" or header == "Vorname":
-            if (is_alphabetic(answer) and is_in_range(answer, header)):
+        elif column == "Name" or column == "Vorname":
+            if (is_alphabetic(answer) and is_in_range(answer, column)):
                 repeat = False
                 return answer
             elif answer == "":
@@ -195,7 +195,7 @@ def get_input(header):
                 print("Falsche Eingabe oder zu viele Zeichen!")
 
         else:
-            if (is_alphabetic(answer) and is_in_range(answer, header)) or answer == "":
+            if (is_alphabetic(answer) and is_in_range(answer, column)) or answer == "":
                 repeat = False
                 return answer
             else:
@@ -233,7 +233,7 @@ def get_phone_number_input():
 
 # Diese Methode liest den höchsten Wert jeweils für Telefonnummern (Alle Nummern + Name) und
 # Emails (Alles Emails + Name) aus und setzt einen Abstandswert für den Header.
-def set_rufnummern_and_email_range():
+def set_rufnummern_and_email_range(list):
     largest_number = 0
     largest_email = 0
     x_numbers = 0
@@ -241,7 +241,7 @@ def set_rufnummern_and_email_range():
     number_string = ""
     email_string = ""
 
-    for contact in contacts:
+    for contact in list:
         #Höchsten Rufnummer Wert finden und setzen.
         counter = 0
         string = ""
@@ -268,13 +268,13 @@ def set_rufnummern_and_email_range():
 
 
 def show_list(list):
-    largest_strings = set_rufnummern_and_email_range()
+    largest_strings = set_rufnummern_and_email_range(list)
     # for item in contacts:
     #     print(item)
 
-    if len(contacts) > 0:
+    if crud_db.get_len() > 0:
         print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-        print("Kontakte in " + path)
+        print("Kontakte")
         print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
 
         # Überschriften ausgeben
@@ -312,7 +312,7 @@ def show_list(list):
             position = position + 1
         print("------------------------------------------------------------------------------------------------------------------------------------------------------------------")
     else:
-        print("Die Liste ist leer!")
+        print("Keine Kontakte vorhanden!")
 
 
 def add_contact():
@@ -397,11 +397,15 @@ def change_phone_number(contact):
                     if change_or_delete == "change":
                         repeat2 = False
                         contact["Rufnummern"][index - 1] = get_phone_number_input()
+                        # Geänderten Kontakt in DB schreiben
+                        crud_db.update(contact)
                         made_changes = True
                         print("Erfolgreich geändert!")
                     elif change_or_delete == "delete":
                         repeat2 = False
                         del contact["Rufnummern"][index - 1]
+                        # Geänderten Kontakt in DB schreiben
+                        crud_db.update(contact)
                         made_changes = True
                         print("Erfolgreich gelöscht!")
                     elif change_or_delete == "cancel":
@@ -443,11 +447,17 @@ def change_email(contact):
                     if change_or_delete == "change":
                         repeat2 = False
                         contact["E-Mail-Adressen"][index - 1] = get_email_input()
+
+                        # Geänderten Kontakt in DB schreiben
+                        crud_db.update(contact)
                         made_changes = True
                         print("Erfolgreich geändert!")
                     elif change_or_delete == "delete":
                         repeat2 = False
                         del contact["E-Mail-Adressen"][index - 1]
+
+                        # Geänderten Kontakt in DB schreiben
+                        crud_db.update(contact)
                         made_changes = True
                         print("Erfolgreich gelöscht!")
                     elif change_or_delete == "cancel":
@@ -465,13 +475,19 @@ def change_email(contact):
 
 def add_phone_number(contact):
     new_number = get_phone_number_input()
+
+    # Kontakt ändern
     contact["Rufnummern"].append(new_number)
+
+    # Geänderten Kontakt in DB schreiben
+    crud_db.update(contact)
     made_changes = True
 
 
 def add_email(contact):
     new_email = get_email_input()
     contact["E-Mail-Adressen"].append(new_email)
+    crud_db.update(contact)
     made_changes = True
 
 
@@ -484,7 +500,7 @@ def change_contact():
     # 5. Falls Name, Straße etc. nach Input abfragen.
 
     # Überprüfen, ob die Liste leer ist.
-    if len(contacts) == 0:
+    if crud_db.get_len() == 0:
         print("Die Liste ist leer!")
     else:
         repeat = True
@@ -565,6 +581,9 @@ def change_contact():
                                         new_value = get_input(column)
                                         # Alten Wert überschreiben
                                         contact[column] = new_value
+
+                                        # In DB schreiben
+                                        crud_db.update(contact)
                                         made_changes = True
                                         print("Die Spalte wurde geändert!")
 
@@ -586,15 +605,21 @@ def delete_contact():
     index = input("--> Welche Position möchten Sie löschen?")
     if index.isnumeric():
         index = int(index)
-        if index <= len(contacts) and index > 0:
+
+        contact = crud_db.search_by_id(index)
+
+        if not contact == -1:
             repeat = True
             while repeat:
-                name = contacts[index - 1]["Name"]
-                vorname = contacts[index - 1]["Vorname"]
+                name = contact["Name"]
+                vorname = contact["Vorname"]
                 delete = input("--> Möchten Sie den Kontakt " + vorname + " " + name + " wirklich löschen? (j/n)")
                 if delete == "j":
                     repeat = False
-                    del contacts[index - 1]
+
+                    # Kontakt aus DB löschen
+                    crud_db.delete(index)
+
                     made_changes = True
                     print("Der Kontakt " + vorname + " " + name + " wurde erfolgreich gelöscht!")
                 elif delete == "n":
@@ -611,28 +636,12 @@ def delete_contact():
 
 
 def search_contact():
-    if len(contacts) == 0:
-        print("Die Liste ist leer!")
+    if crud_db.get_len() == 0:
+        print("Es sind keine Kontakte vorhanden!")
     else:
-        name = input("--> Geben Sie den Vor/Nachnamen oder vollständigen Namen ein.")
+        name = input("--> Geben Sie einen Vornamen oder Nachnamen ein.")
 
-        # Eingabe in einzelne Suchwörter aufteilen
-        keywords = split_string(name)
-        result_list = []
-
-        # Nach passenden Kontakten suchen
-        for contact in contacts:
-            if len(keywords) == 1:
-                if contact["Name"].find(keywords[0]) >= 0 or contact["Vorname"].find(keywords[0]) >= 0:
-                        result_list.append(contact)
-            elif len(keywords) > 1:
-                # Jedes Suchwort auf den Namen prüfen
-                for v in keywords:
-                    if contact["Name"].find(v) >= 0:
-                        # Falls passender Name, alle suchwörter auf Vornamen prüfen
-                        for x in keywords:
-                            if contact["Vorname"].find(x) >= 0:
-                                result_list.append(contact)
+        result_list = crud_db.search_by_name(name)
 
         if len(result_list) > 0:
             print("")
@@ -642,47 +651,26 @@ def search_contact():
             print("Keine Kontake gefunden!")
 
 
-def save(list_of_dicts):
-    global path
-    if path == "":
+def export_as_json():
+    contacts = crud_db.get_all()
+    if len(contacts) > 0:
         name = input("Bitte geben Sie einen Dateinamen ein ('cancel' für abbrechen):")
         if name == "cancel":
             print("Nicht gespeichert!")
         else:
-            # Dateityp überprüfen
-                if path.find(".json") > -1:
-                    path = name + ".json"
-                    CRUD.write_json(path, list_of_dicts)
-                elif path.find(".xml") > -1:
-                    path = name + ".xml"
-                    CRUD.write_xml(path, list_of_dicts)
-
-    elif len(path) > 0:
-        if path.find(".json") > -1:
-            CRUD.write_json(path, list_of_dicts)
-            print("Erfolgreich gespeichert!")
-        elif path.find(".xml") > -1:
-            CRUD.write_xml(path, list_of_dicts)
-            print("Erfolgreich gespeichert!")
+            path = name + ".json"
+            CRUD.write_json(path, contacts)
 
 
-def check_if_saved():
-    repeat = True
-    while repeat:
-        if made_changes:
-            answer = input("Es gibt nicht gespeicherte Änderungen. Möchten Sie jetzt Speichern? (j/n)")
-            if answer == "j":
-                save(contacts)
-                repeat = False
-                print("Auf Wiedersehen!")
-            elif answer == "n":
-                repeat = False
-                print("Auf Wiedersehen!")
-            else:
-                print("Falsche Eingabe")
+def export_as_xml():
+    contacts = crud_db.get_all()
+    if len(contacts) > 0:
+        name = input("Bitte geben Sie einen Dateinamen ein ('cancel' für abbrechen):")
+        if name == "cancel":
+            print("Nicht gespeichert!")
         else:
-            repeat = False
-            print("Auf Wiedersehen!")
+            path = name + ".xml"
+            CRUD.write_xml(path, contacts)
 
 
 def execute():
@@ -707,17 +695,15 @@ def execute():
         print("\nMENÜ")
         print("------------------------------------------------------------------------------------------")
 
-        print("Datei: " + dateiname + "    Kontakte: " + str(len(contacts)))
+        print("Datei: " + dateiname + "    Kontakte: " + str(crud_db.get_len()))
         print("------------------------------------------------------------------------------------------")
-        print("1: Liste anzeigen        2: Kontakt suchen       3: Neuer Eintrag        4: Eintrag ändern")
-        print("5: Eintrag löschen       6: Speichern            7: Datei laden          8: Beenden")
+        print("1: Liste anzeigen    2: Kontakt suchen         3: Neuer Eintrag         4: Eintrag ändern")
+        print("5: Eintrag löschen   6: Als JSON exportieren   7: Als XML exportieren   8: Kontakte importieren")
+        print("9: Beenden")
         x = input("\n\nIhre Eingabe: ")
 
         if x == "Liste anzeigen" or x == "1":
-            try:
-                show_list(contacts)
-            except IOError:
-                print('An error occured trying to read the file.')
+            show_list(crud_db.get_all)
         elif x == "Kontakt suchen" or x == "2":
             search_contact()
         elif x == "Neuer Eintrag" or x == "3":
@@ -726,12 +712,13 @@ def execute():
             change_contact()
         elif x == "Eintrag löschen" or x == "5":
             delete_contact()
-        elif x == "Speichern" or x == "6":
-            save(contacts)
-        elif x == "Liste laden" or x == "7":
+        elif x == "Als JSON exportieren" or x == "6":
+            export_as_json()
+        elif x == "Als XML exportieren" or x == "7":
+            export_as_xml()
+        elif x == "Kontakte importieren" or x == "8":
             get_files()
-        elif x == "Beenden" or x == "8":
-            check_if_saved()
+        elif x == "Beenden" or x == "9":
             exit()
         else:
             print("Falsche Eingabe")
