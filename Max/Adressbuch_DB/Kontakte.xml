@@ -1,0 +1,102 @@
+<Adressbuch>
+    <Kontakt>
+        <Anrede>Frau</Anrede>
+        <Vorname>Maximilian</Vorname>
+        <Name>Botta</Name>
+        <Straße>Römersteinweg</Straße>
+        <Hausnummer>1</Hausnummer>
+        <PLZ>70188</PLZ>
+        <Stadt>Stuttgart</Stadt>
+        <Rufnummern>
+            <Rufnummer Typ="Mobil">0174-1489375</Rufnummer>
+        </Rufnummern>
+        <E-Mail-Adressen>
+            <E-Mail Typ="Privat">max.botta@gmx.de</E-Mail>
+            <E-Mail Typ="Dienst">botta@hdm.de</E-Mail>
+        </E-Mail-Adressen>
+    </Kontakt>
+    <Kontakt>
+        <Anrede>Frau</Anrede>
+        <Vorname>Anna</Vorname>
+        <Name>Auth</Name>
+        <Straße>Finkenstraße</Straße>
+        <Hausnummer>53</Hausnummer>
+        <PLZ>70188</PLZ>
+        <Stadt>Stuttgart</Stadt>
+        <Rufnummern>
+            <Rufnummer Typ="Telefon">0711-903823</Rufnummer>
+            <Rufnummer Typ="Mobil">017236723623</Rufnummer>
+        </Rufnummern>
+        <E-Mail-Adressen>
+            <E-Mail Typ="Privat">anna@private.de</E-Mail>
+            <E-Mail Typ="Geschäftlich">anna@business.de</E-Mail>
+        </E-Mail-Adressen>
+    </Kontakt>
+    <Kontakt>
+        <Anrede>Herr</Anrede>
+        <Vorname>Tobias</Vorname>
+        <Name>Reumann</Name>
+        <Straße>Lindenstraße</Straße>
+        <Hausnummer>11</Hausnummer>
+        <PLZ>70188</PLZ>
+        <Stadt>Stuttgart</Stadt>
+        <Rufnummern>
+            <Rufnummer Typ="Telefon">071-903823</Rufnummer>
+            <Rufnummer Typ="Mobil">01723232423</Rufnummer>
+            <Rufnummer Typ="Mobil2">01720938230</Rufnummer>
+        </Rufnummern>
+        <E-Mail-Adressen>
+            <E-Mail Typ="Privat">tobias@private.de</E-Mail>
+            <E-Mail Typ="Geschäftlich">tobias@business.de</E-Mail>
+        </E-Mail-Adressen>
+    </Kontakt>
+    <Kontakt>
+        <Anrede>Herr</Anrede>
+        <Vorname>Steve</Vorname>
+        <Name>Jobs</Name>
+        <Straße>Crist Drive</Straße>
+        <Hausnummer>2066</Hausnummer>
+        <PLZ>94024</PLZ>
+        <Stadt>Los Altos</Stadt>
+        <Rufnummern>
+            <Rufnummer Typ="Telefon">0923-19343231</Rufnummer>
+            <Rufnummer Typ="Mobil">9012-1231222</Rufnummer>
+        </Rufnummern>
+        <E-Mail-Adressen>
+            <E-Mail Typ="Privat">Stevie@hotmail.de</E-Mail>
+            <E-Mail Typ="Geschäftlich">steve.jobs@apple.de</E-Mail>
+        </E-Mail-Adressen>
+    </Kontakt>
+    <Kontakt>
+        <Anrede>Herr</Anrede>
+        <Vorname>Elon</Vorname>
+        <Name>Musk</Name>
+        <Straße>idontknowstreet</Straße>
+        <Hausnummer>189</Hausnummer>
+        <PLZ>128912</PLZ>
+        <Stadt>Los Angeles</Stadt>
+        <Rufnummern>
+            <Rufnummer Typ="Telefon">2923-2343246</Rufnummer>
+        </Rufnummern>
+        <E-Mail-Adressen>
+            <E-Mail Typ="Tesla">musk@tesla.de</E-Mail>
+            <E-Mail Typ="SpaceX">musk@tesla.de</E-Mail>
+            <E-Mail Typ="Privat">elon.musk@gmail.com</E-Mail>
+        </E-Mail-Adressen>
+    </Kontakt>
+    <Kontakt>
+        <Anrede>Herr</Anrede>
+        <Vorname>Georg</Vorname>
+        <Name>Hans</Name>
+        <Straße>wunderstraße</Straße>
+        <Hausnummer>1</Hausnummer>
+        <PLZ>232423</PLZ>
+        <Stadt>Vaihingen</Stadt>
+        <Rufnummern>
+            <Rufnummer Typ="Privat">3190482309</Rufnummer>
+        </Rufnummern>
+        <E-Mail-Adressen>
+            <E-Mail Typ="Privat">georg@privat.de</E-Mail>
+        </E-Mail-Adressen>
+    </Kontakt>
+</Adressbuch>
