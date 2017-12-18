@@ -27,7 +27,7 @@ def get_len():
 def write(contact):
     try:
         datenbank.insert(contact)
-    except IOError:
+    except ValueError:
         print("Fehler beim Hinzufügen eines Kontakts.")
 
 
@@ -81,4 +81,4 @@ def search_by_name(name):
 
 
 
-print(search_by_name("Botta"))
+
