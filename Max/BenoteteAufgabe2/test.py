@@ -66,44 +66,6 @@ print_table()
 
 
 
-file = open("sample-Instance-Proof.xml", "r")
-xbrl_parser = XBRLParser()
-xbrl = xbrl_parser.parse(file)
 
-
-
-Revenue = xbrl.find_all(name=re.compile("gaap:RevenuesGross", re.IGNORECASE | re.MULTILINE))
-#print(Revenue[0].get("contextRef"))
-
-
-gaap_obj = xbrl_parser.parseGAAP(xbrl, doc_date="20021231",context="current", ignore_errors=0)
-
-serializer = GAAPSerializer()
-result = serializer.dump(gaap_obj)
-
-# Print out the serialized GAAP data
-print()
-print()
-#print(result.data)
-
-
-# Parse just the DEI data from the xbrl object
-dei_obj = xbrl_parser.parseDEI(xbrl)
-
-# Serialize the DEI data
-serializer = DEISerializer()
-result = serializer.dump(dei_obj)
-
-# Print out the serialized DEI data
-print()
-#print(result.data)
-
-# Parse the custom data from the xbrl object
-data_obj = xbrl_parser.parseCustom(xbrl)
-result = serializer.dump(data_obj)
-
-# Print out the custom data
-print()
-#print(result)
 
 
