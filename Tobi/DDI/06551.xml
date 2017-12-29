@@ -1,0 +1,2840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE codeBook SYSTEM "http://www.icpsr.umich.edu/DDI/Version2-1.dtd">
+<codeBook> 
+  <docDscr source="archive"> 
+	 <citation source="archive"> 
+		<titlStmt source="archive"> 
+		  <titl source="archive">CBS NEWS/NEW YORK TIMES MONTHLY POLL #2, MARCH
+			 1995 </titl> 
+		  <IDNo agency="ICPSR" source="archive">6551</IDNo> 
+		</titlStmt> 
+		<rspStmt source="archive"> 
+		  <AuthEnty source="archive">CBS NEWS</AuthEnty> 
+		  <AuthEnty source="archive">THE NEW YORK TIMES</AuthEnty> 
+		</rspStmt> 
+		<prodStmt source="archive"> 
+		  <producer abbr="ICPSR" affiliation="Institute for Social Research, University of Michigan" source="archive"> Inter-university Consortium for Political and Social
+			 Research</producer> 
+		  <copyright source="archive">COPYRIGHT ICPSR, 2000</copyright> 
+		  <prodDate date="2000-05-01" source="archive">May 1, 2000</prodDate> 
+		  <prodPlac source="archive"> Inter-university Consortium for Political
+			 and Social Research</prodPlac> 
+		  <software date="1999-05" version="1.0" source="archive">SoftQuad
+			 XMetaL</software> 
+		  <fundAg abbr="NSF" source="archive">National Science
+			 Foundation</fundAg> 
+		  <grantNo source="archive">SBR-9617813</grantNo> 
+		</prodStmt> 
+		<distStmt source="archive"> 
+		  <distrbtr abbr="ICPSR" affiliation="Institute for Social Research, University of Michigan" source="archive"> Inter-university Consortium for Political and Social
+			 Research</distrbtr> 
+		  <distDate date="2000-05-01" source="archive">May 1, 2000</distDate> 
+		</distStmt> 
+		<verStmt source="archive"> 
+		  <version type="edition" date="2000-05-01" source="archive">1</version> 
+		  <verResp affiliation="ICPSR" source="archive">Sanda Ionescu</verResp> 
+		</verStmt> 
+		 
+	 </citation> 
+	 <docSrc source="archive"> 
+		<titlStmt source="archive"> 
+		  <titl source="archive">CBS NEWS/NEW YORK TIMES MONTHLY POLL #2, MARCH
+			 1995</titl> 
+		  <IDNo agency="ICPSR" source="archive">6551</IDNo> 
+		</titlStmt> 
+		<rspStmt source="archive"> 
+		  <AuthEnty source="archive">CBS News</AuthEnty> 
+		  <AuthEnty source="archive">The New York Times</AuthEnty> 
+		</rspStmt> 
+		<prodStmt source="archive"> 
+		  <producer source="archive">CBS News</producer> 
+		  <prodDate date="1995" source="archive">1995</prodDate> 
+		  <prodPlac source="archive">New York, N.Y.: CBS News</prodPlac> 
+		</prodStmt> 
+		<distStmt source="archive"> 
+		  <distrbtr abbr="ICPSR" affiliation="Institute for Social Research, University of Michigan" source="archive"> Inter-university Consortium for Political and Social
+			 Research</distrbtr> 
+		  <distDate date="1996-08" source="archive">August 1996</distDate> 
+		</distStmt> 
+		<verStmt source="archive"> 
+		  <version source="archive" type="version">1</version> 
+		  <verResp affiliation="Institute for Social Research, University of Michigan" source="archive"> Inter-university Consortium for Political and Social
+			 Research</verResp> 
+		</verStmt> 
+		<biblCit source="archive">CBS News/The New York Times. CBS NEWS/NEW YORK
+		  TIMES MONTHLY POLL #2, MARCH 1995 [Computer file]. ICPSR version. New York, NY:
+		  CBS News [producer], 1995. Ann Arbor, MI: Inter- university Consortium for
+		  Political and Social Research [distributor], 1996. </biblCit> 
+	 </docSrc> 
+  </docDscr> 
+  <stdyDscr> 
+	 <citation source="archive"> 
+		<titlStmt source="archive"> 
+		  <titl source="archive">CBS NEWS/NEW YORK TIMES MONTHLY POLL #2, MARCH
+			 1995</titl> 
+		  <altTitl>CBS News / New York Times Poll: March National Survey II -
+			 Colin Powell / Fashion</altTitl> 
+		  <IDNo agency="ICPSR" source="archive">6551</IDNo> 
+		</titlStmt> 
+		<rspStmt source="archive"> 
+		  <AuthEnty source="archive">CBS News</AuthEnty> 
+		  <AuthEnty source="archive">The New York Times</AuthEnty> 
+		</rspStmt> 
+		<prodStmt source="archive"> 
+		  <producer source="archive">CBS News</producer> 
+		  <prodDate date="1995" source="archive">1995</prodDate> 
+		  <prodPlac source="archive">New York, NY: CBS News</prodPlac> 
+		</prodStmt> 
+		<distStmt source="archive"> 
+		  <distrbtr abbr="ICPSR" affiliation="Institute for Social Research, University of Michigan" URI="http://www.icpsr.umich.edu" source="archive">Inter-university Consortium
+			 for Political and Social Research</distrbtr> 
+		  <distDate date="1996-08" source="archive">August 1996</distDate> 
+		</distStmt> 
+		<verStmt source="archive"> 
+		  <version date="1996-08" type="version" source="archive">First ICPSR
+			 Version</version> 
+		  <verResp affiliation="Institute for Social Research, University of Michigan" source="archive">Inter-university Consortium for Political and Social
+			 Research</verResp> 
+		</verStmt> 
+		<biblCit source="archive">CBS News/The New York Times. CBS NEWS/NEW YORK
+		  TIMES MONTHLY POLL #2, MARCH 1995 [Computer file]. ICPSR version. New York, NY:
+		  CBS News [producer], 1995. Ann Arbor, MI: Inter- university Consortium for
+		  Political and Social Research [distributor], 1996. </biblCit> 
+	 </citation> 
+	 <stdyInfo> 
+		<subject source="archive"> 
+		  <topcClas source="archive">XIV. MASS POLITICAL BEHAVIOR AND
+			 ATTITUDES</topcClas> 
+		  <topcClas source="archive">C. Public Opinion on Political
+			 Matters</topcClas> 
+		  <topcClas source="archive">1. United States</topcClas> 
+		</subject> 
+		<abstract source="archive">This poll is part of a continuing series of
+		  monthly surveys that solicit public opinion on the presidency and on a range of
+		  other political and social issues. Specific questions covered respondents'
+		  opinions of Bill Clinton, Jesse Jackson, Newt Gingrich, Ross Perot, Bob Dole,
+		  and Colin Powell. The survey addressed in detail the possible combinations of
+		  presidential election candidates and asked respondents to forecast their vote
+		  in each given situation. Other questions asked whether respondents were
+		  spending more or less on clothes and whether they subscribed to cable
+		  television and watched C-SPAN. Background information on respondents includes
+		  voter registration status, household composition, vote choice in the 1992
+		  presidential election, political party, political orientation, education, age,
+		  sex, race, religious preference, and family income.</abstract> 
+		<sumDscr> 
+		  <timePrd date="1995-03">March 1995</timePrd> 
+		  <collDate event="start" date="1995-03-12" source="producer">March 12,
+			 1995</collDate> 
+		  <collDate date="1995-03-14" event="end" source="producer">March 14,
+			 1995</collDate> 
+		  <nation abbr="USA">United States </nation> 
+		  <geogCover>U.S. - nation, regions, states</geogCover> 
+		  <geogUnit>communities 10 to 50k</geogUnit> 
+		  <anlyUnit>individuals</anlyUnit> 
+		  <universe source="archive">adult population of the United States aged
+			 18 and over having telephones at home</universe> 
+		  <dataKind source="archive">survey data</dataKind> 
+		</sumDscr> 
+	 </stdyInfo> 
+	 <method> 
+		<dataColl> 
+		  <timeMeth>cross-section</timeMeth> 
+		  <dataCollector> CBS News/The New York Times</dataCollector> 
+		  <sampProc source="archive">A variation of random-digit dialing using
+			 primary sampling units (PSUs) was employed, consisting of blocks of 100
+			 telephone numbers identical through the eighth digit and stratified by
+			 geographic region, area code, and size of place. Within households, respondents
+			 were selected using a method developed by Leslie Kish and modified by Charles
+			 Backstrom and Gerald Hursh (see Backstrom and Hursh, SURVEY RESEARCH [Evanston,
+			 IL: Northwestern University Press, 1963]). </sampProc> 
+		  <collMode source="archive">telephone interviews</collMode> 
+		  <resInstru source="archive">structured, with 4 open-ended questions:
+			 Q10, Q28 Q33 AND Q39A. Voluntary responses are coded in Questions 11 - 15, 17,
+			 18, 25, 26, 34, 37, 40, 46 - 48, 51, 53, 54.</resInstru> 
+		  <weight source="archive">A weight variable has been included and must
+			 be used for any analysis</weight> 
+		  <cleanOps source="archive">Documentation reformatted by
+			 ICPSR.</cleanOps> 
+		</dataColl> 
+	 </method> 
+	 <dataAccs source="archive"> 
+		<setAvail source="archive"> 
+		  <accsPlac source="archive" URI="http://www.icpsr.umich.edu">Inter-university Consortium for Political and
+			 Social Research</accsPlac> 
+		  <collSize source="archive">1 data file + machine-readable documentation
+			 (text) </collSize> 
+		  <fileQnty source="archive">3 files</fileQnty> 
+		  <notes source="archive">ICPSR created an appendix to the codebook to
+			 clarify codes for many of the standard demographic variables</notes> 
+		</setAvail> 
+		<useStmt source="archive"> 
+		  <citReq source="archive">Publications based on ICPSR data collections
+			 should acknowledge those sources by means of bibliographic citations. To ensure
+			 that such source attributions are captured for social science bibliographic
+			 utilities, citations must appear in footnotes or in the reference section of
+			 publications. The bibliographic citation for this data collection is: CBS
+			 News/The New York Times. CBS NEWS/NEW YORK TIMES MONTHLY POLL #2, MARCH 1995
+			 [Computer file]. ICPSR version. New York, NY: CBS News [producer], 1995. Ann
+			 Arbor, MI: Inter- university Consortium for Political and Social Research
+			 [distributor], 1996. </citReq> 
+		  <deposReq source="archive">REQUEST FOR INFORMATION ON USE OF ICPSR
+			 RESOURCES: To provide funding agencies with essential information about use of
+			 archival resources and to facilitate the exchange of information about ICPSR
+			 participants' research activities, users of ICPSR data are requested to send to
+			 ICPSR bibliographic citations for each completed manuscript or thesis abstract.
+			 Please indicate in a cover letter which data were used. </deposReq> 
+		  <disclaimer source="archive">DATA DISCLAIMER: The original collector of
+			 the data, ICPSR, and the relevant funding agency bear no responsibility for
+			 uses of this collection or for interpretations or inferences based upon such
+			 uses. </disclaimer> 
+		</useStmt> 
+	 </dataAccs> 
+  </stdyDscr> 
+  <fileDscr source="archive"> 
+	 <fileTxt source="archive"> 
+		<fileName source="archive">CBS NEWS/NEW YORK TIMES MONTHLY POLL #2, MARCH
+		  1995 </fileName> 
+		<fileStrc type="rectangular"> 
+		</fileStrc> 
+		<dimensns source="archive"> 
+		  <caseQnty source="archive">1,022</caseQnty> 
+		  <varQnty source="archive">97</varQnty> 
+		  <logRecL source="archive">240</logRecL> 
+		  <recPrCas source="archive">1</recPrCas> 
+		  <recNumTot source="archive">1,023</recNumTot> 
+		</dimensns> 
+		<format source="archive">Logical Record Length</format> 
+	 </fileTxt> 
+  </fileDscr> 
+  <dataDscr> 
+	 <var ID="V0" name="WEIGHT" wgt="wgt"><location StartPos="209" width="6"/> 
+		<labl level="VAR">WEIGHT</labl> 
+		<valrng><range min="0" max="255"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V1" name="LCARD"><location StartPos="1" width="1"/> 
+		<labl level="VAR">LAST CARD NUMBER</labl> 
+		<valrng><range min="1" max="1"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V2" name="RESPN"><location StartPos="2" width="5"/> 
+		<labl level="VAR">RESPONDENT NUMBER</labl> 
+		<valrng><range min="0" max="255"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V3" name="CLINTON" qstn="Q1"><location StartPos="30" width="1"/> 
+		<labl level="VAR">CLINTON APPROVAL</labl> 
+		<qstn ID="Q1" var="V3"><qstnLit>Do you approve or disapprove of the way
+		  Bill Clinton is handling his job as president? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">APPROVE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">DISAPPROVE</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V4" name="CONGRESS" qstn="Q2"><location StartPos="31" width="1"/> 
+		<labl level="VAR">CONGRESS APPROVAL</labl> 
+		<qstn ID="Q2" var="V4"><qstnLit>Do you approve or disapprove of the way
+		  Congress is handling its job? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">APPROVE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">DISAPPROVE</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V5" name="Q3" qstn="Q3"><location StartPos="32" width="1"/> 
+		<labl level="VAR">OPINION JACKSON</labl> 
+		<qstn ID="Q3" var="V5"><qstnLit>Is your opinion of Jesse Jackson
+		  favorable, not favorable, undecided, or haven't you heard enough about Jesse
+		  Jackson yet to have an opinion? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">FAVORABLE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NOT FAVORABLE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">UNDECIDED</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">HAVEN'T HEARD ENOUGH</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">REFUSED</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V6" name="GINGRICH" qstn="Q4"><location StartPos="33" width="1"/> 
+		<labl level="VAR">OPINION GINGRICH</labl> 
+		<qstn ID="Q4" var="V6"><qstnLit>Is your opinion of Newt Gingrich
+		  favorable, not favorable, undecided, or haven't you heard enough about Newt
+		  Gingrich yet to have an opinion? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">FAVORABLE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NOT FAVORABLE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">UNDECIDED</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">HAVEN'T HEARD ENOUGH</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">REFUSED</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V7" name="Q5" qstn="Q5"><location StartPos="34" width="1"/> 
+		<labl level="VAR">OPINION CLINTON</labl> 
+		<qstn ID="Q5" var="V7"><qstnLit>Is your opinion of Bill Clinton
+		  favorable, not favorable, undecided, or haven't you heard enough about Bill
+		  Clinton yet to have an opinion? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">FAVORABLE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NOT FAVORABLE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">UNDECIDED</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">HAVEN'T HEARD ENOUGH</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">REFUSED</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V8" name="Q6" qstn="Q6"><location StartPos="35" width="1"/> 
+		<labl level="VAR">OPINION PEROT</labl> 
+		<qstn ID="Q6" var="V8"><qstnLit>Is your opinion of Ross Perot favorable,
+		  not favorable, undecided, or haven't you heard enough about Ross Perot yet to
+		  have an opinion? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">FAVORABLE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NOT FAVORABLE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">UNDECIDED</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">HAVEN'T HEARD ENOUGH</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">REFUSED</labl> 
+		</catgry> 
+	 </var> 
+	 <var name="Q7" ID="V9" qstn="Q7"><location StartPos="36" width="1"/> 
+		<labl level="VAR">OPINION DOLE</labl> 
+		<qstn ID="Q7" var="V9"><qstnLit>Is your opinion of Bob Dole favorable,
+		  not favorable, undecided, or haven't you heard enough about Bob Dole yet to
+		  have an opinion? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">FAVORABLE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NOT FAVORABLE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">UNDECIDED</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">HAVEN'T HEARD ENOUGH</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">REFUSED</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V10" name="Q8" qstn="Q8"><location StartPos="37" width="1"/> 
+		<labl level="VAR">OPINION POWELL</labl> 
+		<qstn ID="Q8" var="V10"><qstnLit>Is your opinion of Colin Powell
+		  favorable, not favorable, undecided, or haven't you heard enough about Colin
+		  Powell yet to have an opinion? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">FAVORABLE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NOT FAVORABLE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">UNDECIDED (GO TO Q9)<Link refs="Q9"/></labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">HAVEN'T HEARD ENOUGH (GO TO Q9)<Link refs="Q9"/></labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">REFUSED</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V11" name="Q9" qstn="Q9"><location StartPos="38" width="1"/> 
+		<labl level="VAR">POWELL LEAN</labl> 
+		<qstn ID="Q9" var="V11"><backward qstn="Q8"/><ivuInstr>IF
+		  UNDECIDED/HAVEN'T HEARD ENOUGH, ASK</ivuInstr><qstnLit> If you had to choose,
+		  would you say your opinion of Colin Powell is favorable or not favorable?
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">FAVORABLE (GO TO Q10)<Link refs="Q10"/></labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NOT FAVORABLE (GO TO Q11)<Link refs="Q11"/></labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">DK/NA (GO TO Q11)<Link refs="Q11"/></labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V12" name="Q10" qstn="Q10"><location StartPos="39" width="2"/> 
+		<labl level="VAR">LIKE BEST POWELL</labl> 
+		<qstn ID="Q10" var="V12"><backward qstn="Q9"/><ivuInstr>IF
+		  FAVORABLE, ASK</ivuInstr><qstnLit>What do you like BEST about Colin Powell?
+		  </qstnLit></qstn> 
+		<valrng><range min="0" max="99"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">STRONG LEADER / TAKES CHARGE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NOT A POLITICIAN / HAS NEVER HELD OFFICE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">MILITARY SERVICE / WAR VETERAN</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">HONESTY / INTEGRITY / TRUSTWORTHY</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">MORAL / ETHICAL / STRONG CHARACTER</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>6</catValu> 
+		  <labl level="CAT">HE'S BLACK / AFRICAN-AMERICAN / HIS RACE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>7</catValu> 
+		  <labl level="CAT">FAMILY MAN / MARRIED / HAS KIDS / FAMILY
+			 VALUES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>8</catValu> 
+		  <labl level="CAT">SELF-MADE MAN / SON OF IMMIGRANTS / FROM POOR
+			 BACKGROUND</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">HAS NO POLITICAL PARTY / IS AN INDEPENDENT / ABOVE
+			 POLITICS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>10</catValu> 
+		  <labl level="CAT">GENERALLY GOOD MAN / FAIR / DOWN TO EARTH</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>30</catValu> 
+		  <labl level="CAT">MISCELLANEOUS PERSONAL CHARACTERISTICS: poise,
+			 well-educated; intelligent; knowledgeable; appearance</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>31</catValu> 
+		  <labl level="CAT">MISCELLANEOUS STANDS ON THE ISSUES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>96</catValu> 
+		  <labl level="CAT">EVERYTHING</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>97</catValu> 
+		  <labl level="CAT">NOTHING</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>98</catValu> 
+		  <labl level="CAT">OTHER</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>99</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+		<notes> categories represent coded answers to open-ended question</notes>
+		
+	 </var> 
+	 <var ID="V13" name="Q11" qstn="Q11"><location StartPos="41" width="1"/> 
+		<labl level="VAR">CLINTON V DOLE</labl> 
+		<qstn ID="Q11" var="V13"><qstnLit>If the 1996 presidential election were
+		  being held today, and the candidates were Bill Clinton, the Democrat, and Bob
+		  Dole, the Republican, would you vote for Bill Clinton or Bob Dole?
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">BILL CLINTON</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">BOB DOLE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">SOMEONE ELSE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">WOULDN'T VOTE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V14" name="Q12" qstn="Q12"><location StartPos="42" width="1"/> 
+		<labl level="VAR">CLINTON V POWELL</labl> 
+		<qstn ID="Q12" var="V14"><qstnLit>If the 1996 presidential election were
+		  being held today, and the candidates were Bill Clinton and Colin Powell, would
+		  you vote for Bill Clinton or Colin Powell? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">BILL CLINTON</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">COLIN POWELL<Link refs="Q34"/></labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">SOMEONE ELSE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">WOULDN'T VOTE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V15" name="Q13" qstn="Q13"><location StartPos="43" width="1"/> 
+		<labl level="VAR">CLNTN V DOLE V PWLL</labl> 
+		<qstn ID="Q13" var="V15"><qstnLit>If the 1996 presidential election were
+		  being held today, and the candidates were Bill Clinton, the Democrat, Bob Dole,
+		  the Republican, and Colin Powell, the independent, would you vote for Bill
+		  Clinton, Bob Dole, or Colin Powell? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">BILL CLINTON</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">BOB DOLE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">COLIN POWELL<Link refs="Q34"/></labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">SOMEONE ELSE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">WOULDN'T VOTE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V16" name="Q14" qstn="Q14"><location StartPos="44" width="1"/> 
+		<labl level="VAR">CLNTN V DOLE V PEROT</labl> 
+		<qstn ID="Q14" var="V16"><qstnLit>If the 1996 presidential election were
+		  being held today, and the candidates were Bill Clinton, the Democrat, Bob Dole,
+		  the Republican, and Ross Perot, the independent, would you vote for Bill
+		  Clinton, Bob Dole, or Ross Perot? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">BILL CLINTON</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">BOB DOLE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">ROSS PEROT</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">SOMEONE ELSE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">WOULDN'T VOTE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V17" name="Q15" qstn="Q15"><location StartPos="45" width="1"/> 
+		<labl level="VAR">CLNTN V DOLE V JCKSN</labl> 
+		<qstn ID="Q15" var="V17"><qstnLit>If the 1996 presidential election were
+		  being held today, and the candidates were Bill Clinton, the Democrat, Bob Dole,
+		  the Republican, and Jesse Jackson, the independent, would you vote for Bill
+		  Clinton, Bob Dole, or Jesse Jackson? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">BILL CLINTON</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">BOB DOLE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">JESSE JACKSON</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">SOMEONE ELSE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">WOULDN'T VOTE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V18" name="Q16" qstn="Q16"><location StartPos="46" width="1"/> 
+		<labl level="VAR">POWELL RUN PRES/VP</labl> 
+		<qstn ID="Q16" var="V18"><qstnLit>Do you think Colin Powell should run as
+		  a candidate for president in 1996, or should he run as a candidate for vice
+		  president in 1996, or don't you think he should run in 1996 at all?
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">RUN FOR PRESIDENT</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">RUN FOR VICE-PRESIDENT</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">NOT RUN</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V19" name="Q17" qstn="Q17"><location width="1" StartPos="47"/> 
+		<labl level="VAR">WIN CLNTN / DOLE / POWELL</labl> 
+		<qstn ID="Q17" var="V19"><qstnLit>In the 1996 presidential election, if
+		  the candidates were Bill Clinton, the Democrat, Bob Dole, the Republican, and
+		  Colin Powell, the independent, who do you think WOULD win? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">BILL CLINTON</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">BOB DOLE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">COLIN POWELL</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">SOMEONE ELSE / NONE OF THEM (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V20" name="Q18" qstn="Q18"><location width="1" StartPos="48"/> 
+		<labl level="VAR">POWELL SUPPORT BECAUSE</labl> 
+		<qstn ID="Q18" var="V20"><qstnLit>Do you think most people who support
+		  Colin Powell for president in 1996 support him because they really want him to
+		  be president, OR do you think most people support him because they just don't
+		  like the candidates who are now running for president? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">POWELL FOR PRESIDENT</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">DON'T LIKE OTHER CANDIDATES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">BOTH EQUALLY (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V21" name="Q19" qstn="Q19"><location width="1" StartPos="49"/> 
+		<labl level="VAR">POWELL ANNOUNCEMENT</labl> 
+		<qstn ID="Q19" var="V21"><qstnLit>Many candidates who plan to run for
+		  president in 1996 have already announced their plans to run. If Colin Powell is
+		  considering running for president in 1996, do you think he should announce that
+		  he is going to run soon, or do you think it's okay for him to wait as long as
+		  he wants to announce? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">ANNOUNCE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">OKAY TO WAIT</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V22" name="Q20" qstn="Q20"><location width="1" StartPos="50"/> 
+		<labl level="VAR">POWELL STRNG QUALITIES</labl> 
+		<qstn ID="Q20" var="V22"><qstnLit>Do you think Colin Powell has strong
+		  qualities of leadership, or not? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">HAS STRONG QUALITIES</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">DOES NOT HAVE STRONG QUALITIES</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V23" name="Q21" qstn="Q21"><location width="1" StartPos="51"/> 
+		<labl level="VAR">CLEAR IDEA POWELL</labl> 
+		<qstn ID="Q21" var="V23"><qstnLit>Do you have a clear idea of what Colin
+		  Powell stands for, or don't you? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">YES</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NO</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V24" name="Q22" qstn="Q22"><location width="1" StartPos="52"/> 
+		<labl level="VAR">POWELL CARES 4 NEEDS</labl> 
+		<qstn ID="Q22" var="V24"><qstnLit>In general, do you think Colin Powell
+		  cares about the needs and problems of people like you, or not?
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">CARES</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">DOESN'T CARE</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V25" name="Q23" qstn="Q23"><location width="1" StartPos="53"/> 
+		<labl level="VAR">POWELL DEAL PROBLEMS</labl> 
+		<qstn ID="Q23" var="V25"><qstnLit>Do you think Colin Powell could be
+		  trusted to deal with all the problems a President has to deal with, or are you
+		  concerned that he might make serious mistakes? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">TRUSTED TO DEAL WITH PROBLEMS</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">CONCERNED MIGHT MAKE SERIOUS MISTAKES</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V26" name="Q24" qstn="Q24"><location width="1" StartPos="54"/> 
+		<labl level="VAR">KNOW ENUF POWELL</labl> 
+		<qstn ID="Q24" var="V26"><qstnLit>Do you think you know enough about
+		  where Colin Powell stands on issues, or do you need to know more?
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">KNOW ENOUGH</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NEED TO KNOW MORE</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V27" name="Q25" qstn="Q25"><location width="1" StartPos="55"/> 
+		<labl level="VAR">POWELL PARTYID</labl> 
+		<qstn ID="Q25" var="V27"><qstnLit>Do you think Colin Powell is a
+		  Republican, is a Democrat, is an Independent, or what? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">REPUBLICAN</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">DEMOCRAT</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">INDEPENDENT<Link refs="Q26"/></labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">OTHER (VOL.)<Link refs="Q26"/></labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">NONE (VOL.)<Link refs="Q26"/></labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA<Link refs="Q26"/></labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V28" name="Q26" qstn="Q26"><location width="1" StartPos="56"/> 
+		<labl level="VAR">POWELL LEAN</labl> 
+		<qstn ID="Q26" var="V28"><backward qstn="Q25"/><ivuInstr>IF
+		  INDEPENDENT/OTHER/NONE/DK, ASK:</ivuInstr><qstnLit>Well, do you think of Colin
+		  Powell as closer to the Republican party or closer to the Democratic party?
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">REPUBLICAN</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">DEMOCRAT</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">INDEPENDENT (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">OTHER (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">NONE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V29" name="Q27" qstn="Q27"><location width="1" StartPos="57"/> 
+		<labl level="VAR">POWELLS VIEWS</labl> 
+		<qstn ID="Q27" var="V29"><qstnLit>How would you describe Colin Powell's
+		  views on most political matters -- Generally, do you think of Colin Powell as
+		  liberal, moderate, or conservative? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">LIBERAL</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">MODERATE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">CONSERVATIVE</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V30" name="Q28" qstn="Q28"><location width="2" StartPos="58"/> 
+		<labl level="VAR">WHT ISSUE POWELL ON</labl> 
+		<qstn ID="Q28" var="V30"><qstnLit>What one issue do you MOST want to know
+		  Colin Powell's position on? </qstnLit></qstn> 
+		<valrng><range min="0" max="99"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">ABORTION</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">GUN CONTROL / RIGHT TO BEAR ARMS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">BALANCING THE BUDGET / GOVERNMENT SPENDING</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">WELFARE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">IMMIGRATION</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>6</catValu> 
+		  <labl level="CAT">AFFIRMATIVE ACTION / HELPING MINORITIES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>7</catValu> 
+		  <labl level="CAT">DEATH PENALTY</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>8</catValu> 
+		  <labl level="CAT">CRIME / DRUGS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">HEALTH CARE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>10</catValu> 
+		  <labl level="CAT">MILITARY SPENDING / DEFENSE ISSUES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>11</catValu> 
+		  <labl level="CAT">BUDGET DEFICIT / NATIONAL DEBT</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>12</catValu> 
+		  <labl level="CAT">HIS POLITICAL PARTY</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>13</catValu> 
+		  <labl level="CAT">ECONOMY / ECONOMIC POLICIES / TAXES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>14</catValu> 
+		  <labl level="CAT">GAYS / LESBIANS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>15</catValu> 
+		  <labl level="CAT">AIDS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>16</catValu> 
+		  <labl level="CAT">SCHOOL PRAYER</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>17</catValu> 
+		  <labl level="CAT">FOREIGN POLICY / U.S. ROLE IN FOREIGN AFFAIRS /
+			 FOREIGN AID</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>18</catValu> 
+		  <labl level="CAT">NUCLEAR WEAPONS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>19</catValu> 
+		  <labl level="CAT">DEALING WITH CONGRESS / FIXING GOVERNMENT</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>20</catValu> 
+		  <labl level="CAT">UNEMPLOYMENT / JOBS / WAGES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>21</catValu> 
+		  <labl level="CAT">PERSONAL CHARACTER ISSUES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>22</catValu> 
+		  <labl level="CAT">SOCIAL SECURITY / MEDICARE / ELDERLY</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>23</catValu> 
+		  <labl level="CAT">EDUCATION</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>90</catValu> 
+		  <labl level="CAT">NONE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>96</catValu> 
+		  <labl level="CAT">EVERYTHING</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>97</catValu> 
+		  <labl level="CAT">NOTHING</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>98</catValu> 
+		  <labl level="CAT">OTHER</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>99</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+		<notes>categories represent coded answers to open-ended question</notes> 
+	 </var> 
+	 <var ID="V31" name="Q29" qstn="Q29"><location width="1" StartPos="60"/> 
+		<labl level="VAR">POWELL ADDRESS RACE</labl> 
+		<qstn ID="Q29" var="V31"><qstnLit>Do you think Colin Powell is better
+		  able to address the needs and problems of African Americans because of his
+		  race, or don't you think his race affects his ability to do that?
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">BETTER ABLE TO ADDRESS AFRO-AMERICAN PROBLEMS</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NO EFFECT ON ABILITIES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V32" name="Q30" qstn="Q30"><location width="1" StartPos="61"/> 
+		<labl level="VAR">NEW PARTY</labl> 
+		<qstn ID="Q30" var="V32"><qstnLit>Some people say the country needs a NEW
+		  political party to compete with the Democratic and Republican parties in
+		  offering the best candidates for political office. Do you agree or disagree?
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">AGREE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">DISAGREE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V33" name="Q31" qstn="Q31"><location width="1" StartPos="62"/> 
+		<labl level="VAR">OTHR PARTY PRES</labl> 
+		<qstn ID="Q31" var="V33"><qstnLit>Do you think a president who was not a
+		  Republican or a Democrat could govern effectively, or do you think such a
+		  president would have serious problems dealing with Congress? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">GOVERN EFFECTIVELY</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">SERIOUS PROBLEMS DEALING WITH CONGRESS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V34" name="Q32" qstn="Q32"><location width="1" StartPos="63"/> 
+		<labl level="VAR">ALL NEW PEOPLE</labl> 
+		<qstn ID="Q32" var="V34"><qstnLit>Do you agree or disagree that the
+		  government would work better if all new people were elected? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">AGREE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">DISAGREE</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V35" name="Q33" qstn="Q33"><location width="2" StartPos="64"/> 
+		<labl level="VAR">ISSUE AGAINST CAND</labl> 
+		<qstn ID="Q33" var="V35"><qstnLit>Is there any ONE issue that you care
+		  about that would make you vote AGAINST a candidate for president? IF YES: What
+		  issue is that?</qstnLit></qstn> 
+		<valrng><range min="0" max="99"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">ABORTION</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">GUN CONTROL / RIGHT TO BEAR ARMS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">BALANCING THE BUDGET / GOVERNMENT SPENDING</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">WELFARE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">IMMIGRATION</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>6</catValu> 
+		  <labl level="CAT">AFFIRMATIVE ACTION / HELPING MINORITIES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>7</catValu> 
+		  <labl level="CAT">DEATH PENALTY</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>8</catValu> 
+		  <labl level="CAT">CRIME / DRUGS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">HEALTH CARE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>10</catValu> 
+		  <labl level="CAT">MILITARY SPENDING / DEFENSE ISSUES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>11</catValu> 
+		  <labl level="CAT">BUDGET DEFICIT / NATIONAL DEBT</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>12</catValu> 
+		  <labl level="CAT">HIS POLITICAL PARTY</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>13</catValu> 
+		  <labl level="CAT">ECONOMY / ECONOMIC POLICIES / TAXES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>14</catValu> 
+		  <labl level="CAT">GAYS / LESBIANS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>15</catValu> 
+		  <labl level="CAT">AIDS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>16</catValu> 
+		  <labl level="CAT">SCHOOL PRAYER</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>17</catValu> 
+		  <labl level="CAT">FOREIGN POLICY / U.S. ROLE IN FOREIGN AFFAIRS /
+			 FOREIGN AID</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>18</catValu> 
+		  <labl level="CAT">NUCLEAR WEAPONS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>19</catValu> 
+		  <labl level="CAT">DEALING WITH CONGRESS / FIXING GOVERNMENT</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>20</catValu> 
+		  <labl level="CAT">UNEMPLOYMENT / JOBS / WAGES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>21</catValu> 
+		  <labl level="CAT">PERSONAL CHARACTER ISSUES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>22</catValu> 
+		  <labl level="CAT">SOCIAL SECURITY / MEDICARE / ELDERLY</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>23</catValu> 
+		  <labl level="CAT">EDUCATION</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>90</catValu> 
+		  <labl level="CAT">NONE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>96</catValu> 
+		  <labl level="CAT">EVERYTHING</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>97</catValu> 
+		  <labl level="CAT">NOTHING</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>98</catValu> 
+		  <labl level="CAT">OTHER</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>99</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+		<notes>categories represent coded answers to open-ended question</notes> 
+	 </var> 
+	 <var ID="V36" name="Q34" qstn="Q34"><location width="1" StartPos="66"/> 
+		<labl level="VAR">POWELL DISAGREED</labl> 
+		<qstn ID="Q34" var="V36"><backward qstn="Q12 Q13"/><qstnLit>ASKED OF COLIN POWELL VOTERS IN QUESTIONS 12
+		  AND 13: If you found out that Colin Powell disagreed with you on an issue that
+		  was important to you, would that make you less likely to vote for him, or
+		  wouldn't it make a difference one way or the other? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">LESS LIKELY</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NO DIFFERENCE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">WOULDN'T VOTE FOR COLIN POWELL (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V37" name="Q35" qstn="Q35"><location width="1" StartPos="67"/> 
+		<labl level="VAR">ABORTION VIEW</labl> 
+		<qstn ID="Q35" var="V37"><qstnLit>Which of these comes closest to your
+		  view? 1. Abortion should be generally available to those who want it; OR 2.
+		  Abortion should be available but under stricter limits than it is now; OR 3.
+		  Abortion should not be permitted? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">GENERALLY AVAILABLE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">AVAILABLE BUT STRICTER LIMITS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">NOT PERMITTED</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V38" name="Q36" qstn="Q36"><location width="1" StartPos="71"/> 
+		<labl level="VAR">$ SPENT ON CLOTHES</labl> 
+		<qstn ID="Q36" var="V38"><qstnLit>Now I have some questions on a
+		  different subject. Think about the money you spend on clothes for yourself.
+		  Would you say that compared with two or three years ago you are spending more
+		  of your income on clothes for yourself, less of your income on clothes for
+		  yourself, or are you spending about the same? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">MORE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">LESS<Link refs="Q37 Q38 Q39"/></labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">ABOUT THE SAME</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V39" name="Q37" qstn="Q37"><location width="1" StartPos="Q72"/> 
+		<labl level="VAR">CLOTHES CUT BCK ON</labl> 
+		<qstn ID="Q37" var="V39"><ivuInstr>ASK QUESTIONS 37-39 OF THOSE WHO ARE
+		  SPENDING LESS </ivuInstr><qstnLit>Which kinds of clothes have you cut back on
+		  -- mostly clothes for work, mostly casual clothes, or mostly formal or party
+		  clothes? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">WORK</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">CASUAL</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">FORMAL OR PARTY</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">ALL (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V40" name="Q38" qstn="Q38"><location width="1" StartPos="73"/> 
+		<labl level="VAR">MAIN REASON LESS</labl> 
+		<qstn ID="Q38" var="V40"><ivuInstr>ASK QUESTIONS 37-39 OF THOSE WHO ARE
+		  SPENDING LESS </ivuInstr><qstnLit>What's the main reason you've managed to
+		  spend less on clothes -- do you buy fewer items of clothing, do you buy more of
+		  your clothes on sale, do you buy more of your clothes from discount stores, or
+		  is it something else? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">FEWER CLOTHES</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">SALES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">DISCOUNT STORES</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">SOMETHING ELSE (SPECIFY)</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V41" name="Q39" qstn="Q39"><location width="2" StartPos="74"/> 
+		<labl level="VAR">USE $ DIFFERENTLY</labl> 
+		<qstn ID="Q39" var="V41"><ivuInstr>ASK QUESTIONS 37-39 OF THOSE WHO ARE
+		  SPENDING LESS </ivuInstr><qstnLit>Are you using the money you had been spending
+		  on clothes for anything specific? </qstnLit><ivuInstr> IF YES,
+		  ASK</ivuInstr><qstnLit>What?</qstnLit></qstn> 
+		<valrng><range min="0" max="99"/> 
+		</valrng> 
+		<catgryGrp catgry="C1V41 C2V41 C3V41 C4V41 C5V41 C6V41" ID="CG1V41"> 
+		  <labl level="CAT GROUP">YES, SPECIFY</labl> 
+		</catgryGrp> 
+		<catgry ID="C1V41"> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">HELP FAMILY MEMBERS / FRIENDS</labl> 
+		</catgry> 
+		<catgry ID="C2V41"> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">PAY BILLS / DEBT</labl> 
+		</catgry> 
+		<catgry missing="N" ID="C3V41"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">PUT MONEY INTO SAVINGS</labl> 
+		</catgry> 
+		<catgry missing="N" ID="C4V41"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">HAVE NEW EXPENSE: HAD A BABY, BOUGHT A HOUSE,
+			 ETC.</labl> 
+		</catgry> 
+		<catgry missing="N" ID="C5V41"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">LOST JOB / LESS INCOME</labl> 
+		</catgry> 
+		<catgry missing="N" ID="C6V41"> 
+		  <catValu>6</catValu> 
+		  <labl level="CAT">DEATH OF WAGE EARNER / ILLNESS</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>90</catValu> 
+		  <labl level="CAT">NO</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>99</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V42" name="Q40" qstn="Q40"><location width="1" StartPos="76"/> 
+		<labl level="VAR">TODAYS CLOTHES BETTR</labl> 
+		<qstn ID="Q40" var="V42"><ivuInstr>ASK OF
+		  EVERYONE</ivuInstr><qstnLit>Compared to the clothes you bought two or three
+		  years ago, are the clothes you're buying today of better quality, the same
+		  quality or not as good quality? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">BETTER</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">SAME</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">NOT AS GOOD</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">HAVEN'T BOUGHT CLOTHES (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V43" name="Q41" qstn="Q41"><location width="1" StartPos="77"/> 
+		<labl level="VAR">IMPRTNT LATEST FASHION</labl> 
+		<qstn ID="Q41" var="V43"><qstnLit>How important is it to you to wear the
+		  latest fashions -- very important, somewhat important, or not important?
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">VERY IMPORTANT</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">SOMEWHAT IMPORTANT</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">NOT IMPORTANT</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V44" name="Q42" qstn="Q42"><location width="1" StartPos="87"/> 
+		<labl level="VAR">SERVED ARMED FORCES</labl> 
+		<qstn ID="Q42" var="V44"><preQTxt>My last few questions are for
+		  background only</preQTxt><qstnLit>Have you yourself ever served in the U.S.
+		  armed forces or the U.S. reserves? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">YES</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NO</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V45" name="RADIO" qstn="Q43"><location width="1" StartPos="88"/> 
+		<labl level="VAR">CALL-IN SHOWS</labl> 
+		<qstn ID="Q43" var="V45"><qstnLit>Do you frequently listen to political
+		  call-in shows on radio, or don't you? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">YES</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NO</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V46" name="Q44" qstn="Q44"><location width="1" StartPos="89"/> 
+		<labl level="VAR">MEMBR RELIGIOUS RGHT</labl> 
+		<qstn ID="Q44" qstn="V46"><qstnLit>Do you think of yourself as a member
+		  of the religious right movement, or don't you? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">YES</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NO</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V47" name="Q45" qstn="Q45"><location width="1" StartPos="90"/> 
+		<labl level="VAR">CURRENT JOB</labl> 
+		<qstn ID="Q45" var="V47"><qstnLit>Are you currently employed?
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">YES</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NO</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V48" name="Q46" qstn="Q46"><location width="1" StartPos="91"/> 
+		<labl level="VAR">SUSCRIBE CABLE</labl> 
+		<qstn ID="Q46" var="V48"><qstnLit> Do you subscribe to cable television?
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">YES (GO TO Q47)<Link refs="Q47"/></labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NO</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">NOT AVAILABLE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V49" name="Q47" qstn="Q47"><location width="1" StartPos="92"/> 
+		<labl level="VAR">WATCH C-SPAN</labl> 
+		<qstn ID="Q47" var="V49"><ivuInstr>IF SUBSCRIBE TO CABLE,
+		  ASK:</ivuInstr><qstnLit>Do you regularly watch C-Span? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">YES</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NO</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">NOT AVAILABLE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V50" name="Q48" qstn="Q48"><location width="1" StartPos="93"/> 
+		<labl level="VAR">ATTENTION POLITICS</labl> 
+		<qstn ID="Q48" var="V50"><qstnLit>How much attention do you pay to news
+		  about politics and government -- a lot, some, or not much? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">A LOT</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">SOME</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">NOT MUCH</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">NONE (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V51" name="REGISTER" qstn="Q52"><location width="1" StartPos="130"/> 
+		<labl level="VAR">REGISTERED TO VOTE</labl> 
+		<qstn ID="Q52" var="V51"><qstnLit>Some people are registered to vote and
+		  others are not. Are you registered to vote in the precinct or election district
+		  where you now live, or aren't you? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">YES </labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NO</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V52" name="VOTE94" qstn="Q53"><location width="1" StartPos="131"/>
+		
+		<labl level="VAR">VOTE 1994</labl> 
+		<qstn ID="Q53" var="V52"><qstnLit>Did you vote for U.S. House of
+		  Representatives in the elections held this past November, did something prevent
+		  you from voting, or did you choose not to vote for U.S. House of
+		  Representatives this past November? </qstnLit><ivuInstr>IF VOTED,
+		  ASK</ivuInstr><qstnLit>Did you vote for the Republican candidate or the
+		  Democratic candidate in your district? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">VOTED REPUBLICAN</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">VOTED DEMOCRAT</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">VOTED, WON'T SAY HOW OR OTHER (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">DIDN'T VOTE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V53" name="VOTE92" qstn="Q54"><location width="1" StartPos="132"/>
+		
+		<labl level="VAR">VOTE 1992</labl> 
+		<qstn ID="Q54" var="V53"><qstnLit>Did you vote for President in 1992, did
+		  something prevent you from voting, or did you choose not to vote for President
+		  in 1992? </qstnLit><ivuInstr>IF VOTED, ASK:</ivuInstr><qstnLit>Did you vote for
+		  George Bush, Bill Clinton or Ross Perot? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">BUSH</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">CLINTON</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">PEROT</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">VOTED, WON'T SAY FOR WHOM OR OTHER (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">DIDN'T VOTE</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V54" name="PARTYID" qstn="Q55"><location width="1" StartPos="147"/> 
+		<labl level="VAR">PARTY ID</labl> 
+		<qstn ID="Q55" var="V54"><qstnLit>Generally speaking, do you usually
+		  consider yourself a Republican, a Democrat, an Independent, or what?
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">REPUBLICAN (GO TO Q49)<Link refs="Q49"/></labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">DEMOCRAT (GO TO Q50)<Link refs="Q50"/></labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">INDEPENDENT</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V55" name="PARTLEAN" qstn="Q56"><location width="1" StartPos="148"/> 
+		<labl level="VAR">PARTY LEAN</labl> 
+		<qstn ID="Q56" var="V55"><qstnLit>Do you think of yourself as closer to
+		  the Republican party or to the Democratic party? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">REPUBLICAN</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">DEMOCRAT</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V56" name="Q49" qstn="Q49"><location width="1" StartPos="94"/> 
+		<labl level="VAR">REPUBLICAN NOMINEE</labl> 
+		<qstn ID="Q49" var="V56"><ivuInstr>ASK ONLY OF
+		  REPUBLICANS</ivuInstr><backward qstn="Q55"/><qstnLit>Who would you
+		  like to see the Republican party nominate as its presidential candidate in 1996
+		  ---- Lamar Alexander, Pat Buchanan, Bob Dole, Robert Dornan, Phil Gramm,
+		  Richard Lugar (LOO-gar), Colin Powell, Arlen Specter, or Pete
+		  Wilson?</qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">LAMAR ALEXANDER</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">PAT BUCHANAN</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">BOB DOLE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">ROBERT DORNAN</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">PHIL GRAMM</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>6</catValu> 
+		  <labl level="CAT">RICHARD LUGAR</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>7</catValu> 
+		  <labl level="CAT">COLIN POWELL</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>8</catValu> 
+		  <labl level="CAT">ARLEN SPECTER</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>0</catValu> 
+		  <labl level="CAT">PETE WILSON</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>-</catValu> 
+		  <labl level="CAT">NONE OF THE ABOVE / OTHER (SPECIFY)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V57" name="Q50" qstn="Q50"><location width="1" StartPos="95"/> 
+		<labl level="VAR">VOTED REP / DEM PREZ</labl> 
+		<qstn ID="Q50" var="V57"><backward qstn="Q55"/><ivuInstr>IF
+		  SELF-IDENTIFIED DEM OR REP, ASK OF OPPOSITE PARTY</ivuInstr><qstnLit>Have you
+		  ever voted for (A DEMOCRAT) (A REPUBLICAN) for President? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">YES</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NO</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V58" name="Q51" qstn="Q51"><location width="1" StartPos="96"/> 
+		<labl level="VAR">POWELL REP / DEM</labl> 
+		<qstn ID="Q51" var="V58"><backward qstn="Q55"/><ivuInstr>IF
+		  SELF-IDENTIFIED DEM OR REP, ASK OF OPPOSITE PARTY</ivuInstr><qstnLit>If you
+		  found out that Colin Powell was a (A DEMOCRAT) (A REPUBLICAN), would that make
+		  you more likely to vote for him, less likely to vote for him, or wouldn't that
+		  matter to you one way or the other? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">MORE LIKELY</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">LESS LIKELY</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">WOULDN'T MATTER</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">WOULDN'T VOTE FOR COLIN POWELL AT ALL (VOL.)</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V59" name="POLPHIL" qstn="Q57"><location width="1" StartPos="149"/> 
+		<labl level="VAR">POLITICAL PHILOSOPHY</labl> 
+		<qstn ID="Q57" var="V59"><qstnLit>How would you describe your views on
+		  most political matters? Generally do you think of yourself as liberal,
+		  moderate, or conservative? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">LIBERAL</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">MODERATE</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">CONSERVATIVE</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V60" name="RELGPREF"><location width="1" StartPos="150"/> 
+		<labl level="VAR">RELIGIOUS PREFERENCE</labl> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V61" name="EDUC"><location width="1" StartPos="231"/> 
+		<labl level="VAR">EDUCATION</labl> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V62" name="ACTAGE"><location width="2" StartPos="232"/> 
+		<labl level="VAR">ACTUAL AGE</labl> 
+		<valrng><range min="18" max="99"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V63" name="AGE"><location width="1" StartPos="234"/> 
+		<labl level="VAR">AGE</labl> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V64" name="MARRIED" qstn="Q61"><location width="1" StartPos="133"/> 
+		<labl level="VAR">MARITAL STATUS</labl> 
+		<qstn ID="Q61" var="V64"><qstnLit>What is your marital status? Are you
+		  now married, widowed, divorced or separated, or have you never been married?
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">MARRIED</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">WIDOWED</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">DIVORCED / SEPARATED</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">NEVER MARRIED</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V65" name="RACE" qstn="Q62"><location width="1" StartPos="235"/> 
+		<labl level="VAR">RACE</labl> 
+		<qstn ID="Q62" var="V65"><qstnLit>Are you white, black, or some other
+		  race? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">WHITE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">BLACK</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">OTHER</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">REFUSED</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V66" name="HISPANIC" qstn="Q63"><location width="1" StartPos="236"/> 
+		<labl level="VAR">HISPANIC</labl> 
+		<qstn ID="Q63" var="V66"><qstnLit>Are you of Hispanic origin or descent,
+		  or not?</qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">HISPANIC</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NOT HISPANIC</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V67" name="INCOME" qstn="Q64 Q64A Q64B"><location width="1" StartPos="237"/> 
+		<labl level="VAR">INCOME 1994</labl> 
+		<qstn ID="Q64" var="V67"><qstnLit>Was your total family income in 1994
+		  UNDER or OVER $30,000? </qstnLit></qstn> 
+		<qstn ID="Q64A" var="V67"><qstnLit>Was it under or over
+		  $15,000?</qstnLit><Link refs="C1Q64A C2Q64A"/> </qstn> 
+		<qstn ID="Q64B" var="V67"><qstnLit>Was it between $30,000 and $50,000, or
+		  between $50,000 and $75,000 or was it over $75,000? </qstnLit><Link refs="C3Q64B C4Q64B C5Q64B"/></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry ID="C1Q64"> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">UNDER (GO TO Q64A)<Link refs="Q64A"/></labl> 
+		</catgry> 
+		<catgry ID="C2Q64"> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">OVER (GO TO Q64B)<Link refs="Q64B"/></labl> 
+		</catgry> 
+		<catgry missing="N" ID="C9Q64"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">REFUSED / NO ANSWER</labl> 
+		</catgry> 
+		<catgry missing="N" ID="C1Q64A"> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">UNDER</labl> 
+		</catgry> 
+		<catgry missing="N" ID="C2Q64A"> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">OVER</labl> 
+		  <labl level="CAT">WON'T SPECIFY / REFUSED</labl> 
+		</catgry> 
+		<catgry missing="N" ID="C3Q64B"> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">$30,000 - $50,000</labl> 
+		  <labl level="CAT">WON'T SPECIFY / REFUSED</labl> 
+		</catgry> 
+		<catgry missing="N" ID="C4Q64B"> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">$50,000 - $75,000</labl> 
+		</catgry> 
+		<catgry missing="N" ID="C5Q64B"> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">OVER $75,000</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V68" name="OTHPHONE" qstn="Q65"><location width="1" StartPos="238"/> 
+		<labl level="VAR">OTHER PHONES</labl> 
+		<qstn ID="Q65" var="V68"><qstnLit>Are there any other telephone numbers
+		  in your home that I could have dialed and reached you on -- I don't mean
+		  extensions, but different telephone numbers?</qstnLit><ivuInstr>IF NECESSARY
+		  SAY:</ivuInstr><qstnLit>We need to know how hard or easy it is to reach people.
+		  </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">YES</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">NO</labl> 
+		</catgry> 
+		<catgry missing="Y"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">DK/NA</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V69" name="NOPHONES" qstn="Q66"><location width="1"/> 
+		<labl level="VAR">NUMBER PHONES</labl> 
+		<qstn ID="Q66" var="V69"><qstnLit>Now I dialed you at TELEPHONE NUMBER,
+		  how many other numbers are there in your home? </qstnLit></qstn> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1 - 7</catValu> 
+		  <labl level="CAT">NUMBER BETWEEN 1 AND 7</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>8</catValu> 
+		  <labl level="CAT">8 OR MORE NUMBERS</labl> 
+		</catgry> 
+		<catgry missing="N"> 
+		  <catValu>9</catValu> 
+		  <labl level="CAT">REFUSED (GO TO Q68)<Link refs="Q68"/></labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V70" name="NAME" qstn="Q68"><location width="8" StartPos="137"/> 
+		<labl level="VAR">RESPONDENT NAME</labl> 
+		<qstn ID="Q68" var="V70"><qstnLit>CBS News and The New York Times may
+		  want to call you back sometime to ask more of your opinions. In order to make
+		  sure we reach you again, may I have your first name only.
+		  </qstnLit><ivuInstr>(Maximum 8 characters) </ivuInstr></qstn> 
+		<valrng><range min="0" max="255"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V71" name="CHATTY"><location width="1" StartPos="240"/> 
+		<labl level="VAR">CHATTY</labl> 
+		<valrng><range min="1" max="3"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V72" name="AREACODE"><location width="3" StartPos="7"/> 
+		<labl level="VAR">AREA CODE</labl> 
+		<valrng><range min="201" max="255"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V73" name="EXCHANGE"><location width="3" StartPos="10"/> 
+		<labl level="VAR">EXCHANGE CODE</labl> 
+		<valrng><range min="201" max="255"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V74" name="LASTFOUR"><location width="4" StartPos="13"/> 
+		<labl level="VAR">LAST FOUR DIGITS</labl> 
+		<valrng><range min="0" max="255"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V75" name="INVIEW"><location width="1" StartPos="17"/> 
+		<labl level="VAR">COMPLETED INTERVIEW</labl> 
+		<valrng><range min="1" max="30"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">YES</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">CONVERTED REFUSAL</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V76" name="CSHEET"><location width="1" StartPos="18"/> 
+		<labl level="VAR">COVER SHEET</labl> 
+		<valrng><range min="1" max="6"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V77" name="ADULTS"><location width="1" StartPos="19"/> 
+		<labl level="VAR">NUMBER OF ADULTS</labl> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V78" name="WOMEN"><location width="1" StartPos="20"/> 
+		<labl level="VAR">NUMBER OF WOMEN</labl> 
+		<valrng><range min="0" max="9"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V79" name="DAY"><location width="1" StartPos="21"/> 
+		<labl level="VAR">DAY OF INTERVIEW</labl> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V80" name="SEX"><location width="1" StartPos="22"/> 
+		<labl level="VAR">SEX</labl> 
+		<valrng><range min="1" max="2"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">MALE</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">FEMALE</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V81" name="VIEWERNO"><location width="3" StartPos="23"/> 
+		<labl level="VAR">INTERVIEWER NUMBER</labl> 
+		<valrng><range min="1" max="255"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V82" name="INTSEX"><location width="1" StartPos="26"/> 
+		<labl level="VAR">INTERVIEWER SEX</labl> 
+		<valrng><range min="1" max="2"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V83" name="INTRACE"><location width="1" StartPos="27"/> 
+		<labl level="VAR">INTERVIEWER RACE</labl> 
+		<valrng><range min="1" max="3"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V84" name="ORIGID"><location width="5" StartPos="167"/> 
+		<labl level="VAR">ORIGINAL CASE ID</labl> 
+		<valrng><range min="0" max="255"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V85" name="CENREG"><location width="1" StartPos="215"/> 
+		<labl level="VAR">CENSUS REGION</labl> 
+		<valrng><range min="1" max="4"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">EAST</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">MIDWEST</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">SOUTH</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">WEST</labl> 
+		</catgry> 
+		<notes>Census Region Codes are same as CBS codes except Delaware,
+		  District of Columbia, Maryland and West Virginia are coded South (not
+		  Northeast)<Link refs="AppT5"/></notes> 
+		<notes>Derived from telephone number</notes> 
+	 </var> 
+	 <var ID="V86" name="CBSREG"><location width="1" StartPos="216"/> 
+		<labl level="VAR">CBS REGION</labl> 
+		<valrng><range min="1" max="4"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="cat">NORTHEAST<Link refs="AppT5"/></labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="cat">NORTHCENTRAL<Link refs="AppT5"/></labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>3</catValu> 
+		  <labl level="cat">SOUTH<Link refs="AppT5"/></labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>4</catValu> 
+		  <labl level="cat">WEST<Link refs="AppT5"/></labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V87" name="STATE"><location width="2" StartPos="217"/> 
+		<labl level="VAR">STATE CODE<Link refs="AppT4"/></labl> 
+		<valrng><range min="1" max="51"/> 
+		</valrng> 
+		<notes>Numbered 01-51 in alphabetical order</notes> 
+	 </var> 
+	 <var ID="V88" name="URBAN"><location width="1" StartPos="219"/> 
+		<labl level="VAR">URBANITY</labl> 
+		<valrng><range min="1" max="5"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">LARGE CENTRAL CITY (OVER 500K)</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">CENTRAL CITY (50 TO 500K)</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">SUBURBS</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">OTHER COMMUNITY (10 TO 50K)</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">RURAL</labl> 
+		</catgry> 
+	 </var> 
+	 <var ID="V89" name="BATCH"><location width="2" StartPos="220"/> 
+		<labl level="VAR">BATCH NUMBER</labl> 
+		<valrng><range min="1" max="255"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V90" name="VARIANCE"><location width="1" StartPos="222"/> 
+		<labl level="VAR">VARIANCE CODE</labl> 
+		<valrng><range min="0" max="9"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V91" name="TIMEZONE"><location width="1" StartPos="223"/> 
+		<labl level="VAR">TIME ZONE</labl> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+		<catgry> 
+		  <catValu>1</catValu> 
+		  <labl level="CAT">EAST</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>2</catValu> 
+		  <labl level="CAT">CENTRAL</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>3</catValu> 
+		  <labl level="CAT">MOUNTAIN</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>4</catValu> 
+		  <labl level="CAT">PACIFIC</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>5</catValu> 
+		  <labl level="CAT">BERING</labl> 
+		</catgry> 
+		<catgry> 
+		  <catValu>6</catValu> 
+		  <labl level="CAT">HAWAII</labl> 
+		</catgry> 
+		<notes>Code by interviewer</notes> 
+	 </var> 
+	 <var ID="V92" name="EXTRA1"><location width="1" StartPos="190"/> 
+		<labl level="VAR">EXTRA 1</labl> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V93" name="EXTRA2"><location width="1" StartPos="191"/> 
+		<labl level="VAR">EXTRA 2</labl> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V94" name="EXTRA3"><location width="1" StartPos="192"/> 
+		<labl level="VAR">EXTRA 3</labl> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V95" name="EXTRA4"><location width="1" StartPos="193"/> 
+		<labl level="VAR">EXTRA 4</labl> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V96" name="EXTRA5"><location width="1" StartPos="194"/> 
+		<labl level="VAR">EXTRA 5</labl> 
+		<valrng><range min="1" max="9"/> 
+		</valrng> 
+	 </var> 
+	 <var ID="V97" name="COL1"><location width="1" StartPos="1"/> 
+		<labl level="VAR">COLLAPSED FIELD 1 - 20<Link refs="NV97"/> </labl> 
+		<valrng><range min="0" max="0"/> 
+		</valrng> 
+		<notes ID="NV97">Processing Note: Please disregard the Collapsed Field
+		  Variable. It is for CBS use only. </notes> 
+	 </var> 
+  </dataDscr> 
+  <otherMat level="study" URI="http://www.icpsr.umich.edu" source="archive"> 
+	 <labl>Codebook Appendix</labl> 
+	 <txt>CBS News / New York Times Poll Documentation</txt> 
+	 <notes ID="AppNote">CENSUS REGION CODES: Same as CBS code except Delaware,
+		District of Columbia, Maryland, and West Virginia are coded as SOUTH (not
+		NORTHEAST)<Link refs="AppT5"/></notes> 
+	 <table> 
+		<titl ID="AppT1">Card #1</titl> 
+		<tgroup cols="3"><colspec colnum="1" colname="col1" colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="1.15*"/><colspec colnum="3" colname="col3" colwidth="3.53*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Column (Starting)</entry> 
+				<entry colname="col2">Length</entry> 
+				<entry colname="col3">Description</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">1</entry> 
+				<entry colname="col2">1(1)</entry> 
+				<entry colname="col3">Card number (1)</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">2</entry> 
+				<entry colname="col2">5(2-6)</entry> 
+				<entry colname="col3">Respondent number</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">7</entry> 
+				<entry colname="col2">3(7-9)</entry> 
+				<entry colname="col3">Area code</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">10</entry> 
+				<entry colname="col2">3(10-12)</entry> 
+				<entry colname="col3">Exchange code</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">17</entry> 
+				<entry colname="col2">1(17)</entry> 
+				<entry colname="col3">Completed interview: 1=yes; 3=converted
+				  refusal</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">18</entry> 
+				<entry colname="col2">1(180</entry> 
+				<entry colname="col3">Cover sheet number</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">19</entry> 
+				<entry colname="col2">1(19)</entry> 
+				<entry colname="col3">Number of adults in household</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">20</entry> 
+				<entry colname="col2">1(20)</entry> 
+				<entry colname="col3">Number of adults at home</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">21</entry> 
+				<entry colname="col2">1(21)</entry> 
+				<entry colname="col3">Number of women at home</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">22</entry> 
+				<entry colname="col2">1(22)</entry> 
+				<entry colname="col3">Respondent's sex: 1=male; 2=female</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">23</entry> 
+				<entry colname="col2">3(23-25)</entry> 
+				<entry colname="col3">Interviewer's ID number</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">26</entry> 
+				<entry colname="col2">1(26)</entry> 
+				<entry colname="col3">Interviewer's sex</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">27</entry> 
+				<entry colname="col2">1(27)</entry> 
+				<entry colname="col3">Interviewer's Race</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">28</entry> 
+				<entry colname="col2">1(28)</entry> 
+				<entry colname="col3">Flip variable</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">30</entry> 
+				<entry colname="col2">1(30)</entry> 
+				<entry colname="col3">Registered / Registration not necessary:
+				  1=Registered / Registration not necessary; 2=Not registered and need to be to
+				  vote; 9=DK</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table> 
+		<titl ID="AppT2">Card #2</titl> 
+		<tgroup cols="3"><colspec colnum="1" colname="col1" colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="1.08*"/><colspec colnum="3" colname="col3" colwidth="3.38*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Column (Starting)</entry> 
+				<entry colname="col2">Length</entry> 
+				<entry colname="col3">Description</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">1</entry> 
+				<entry colname="col2">1(1)</entry> 
+				<entry colname="col3">Card number (2)</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">2</entry> 
+				<entry colname="col2">5 (2-6)</entry> 
+				<entry colname="col3">Respondent number</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">57</entry> 
+				<entry colname="col2">8(57-64)</entry> 
+				<entry colname="col3">Respondent's first name</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">73</entry> 
+				<entry colname="col2">2(73-74)</entry> 
+				<entry colname="col3">Last time voted: 0=Never; 1=1996; 2=1995;
+				  3=1994; 4=1993; 5=1992; 6=1991; 7=1988-90; 8=1986-87; 12=before 1986; 99=DK/NA
+				  (If VOTE92=1,2,3,4 then 99=5).</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table> 
+		<titl ID="AppT3">Card #3 </titl> 
+		<tgroup cols="3"><colspec colnum="1" colname="col1" colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="1.09*"/><colspec colnum="3" colname="col3" colwidth="3.42*"/> 
+		  <thead> 
+			 <row> 
+				<entry colname="col1">Column (Starting)</entry> 
+				<entry colname="col2">Length</entry> 
+				<entry colname="col3">Description</entry> 
+			 </row> 
+		  </thead> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">1</entry> 
+				<entry colname="col2">1(1)</entry> 
+				<entry colname="col3">Card number (3)</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">2</entry> 
+				<entry colname="col2">5(2-6)</entry> 
+				<entry colname="col3">Respondent number</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">12</entry> 
+				<entry colname="col2">1(12)</entry> 
+				<entry colname="col3">3rd flip variable (FLIP3)</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">13</entry> 
+				<entry colname="col2">1(13)</entry> 
+				<entry colname="col3">State vote rolls purged</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">14</entry> 
+				<entry colname="col2">1(14)</entry> 
+				<entry colname="col3">CBS voting eligibility</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">15</entry> 
+				<entry colname="col2">1(15)</entry> 
+				<entry colname="col3">Eligibility residence</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">20</entry> 
+				<entry colname="col2">6(20-25)</entry> 
+				<entry colname="col3">Weight 2 (probably electorate weight)</entry>
+				
+			 </row> 
+			 <row> 
+				<entry colname="col1">40</entry> 
+				<entry colname="col2">6(40-45)</entry> 
+				<entry colname="col3">Weight 3 (Call-back weight if
+				  applicable)</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">49</entry> 
+				<entry colname="col2">6(49-54)</entry> 
+				<entry colname="col3">Standard weight</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">55</entry> 
+				<entry colname="col2">1(55)</entry> 
+				<entry colname="col3">Census region (derived from telephone
+				  number):1=East; 2=Midwest; 3=South; 4=West</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">56</entry> 
+				<entry colname="col2">1(56)</entry> 
+				<entry colname="col3">CBS region: 1=Northeast; 2=Northcentral;
+				  3=South; 4=West.</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">57</entry> 
+				<entry colname="col2">2(57-58)</entry> 
+				<entry colname="col3">State code (numbered 01-51 in alphabetical
+				  order)</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">59</entry> 
+				<entry colname="col2">1(59)</entry> 
+				<entry colname="col3">Urbanity code: 1=Large central city (over
+				  500k); 2=Central city (50 to 500k); 3=Suburbs; 4=Other community (10 to 50k);
+				  5=Rural</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">60</entry> 
+				<entry colname="col2">2(60-61)</entry> 
+				<entry colname="col3">Batch number</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">62</entry> 
+				<entry colname="col2">1(62)</entry> 
+				<entry colname="col3">Metro status code: 1=Central city of
+				  multi-county SMSA; 2=Not in central city, but in county containing all/part of
+				  the central city; 3=Suburban county of the SMSA; 4=In an SMSA consisting of
+				  just one county; 5=Not in an SMSA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">63</entry> 
+				<entry colname="col2">1(63)</entry> 
+				<entry colname="col3">Time zone (code by interviewer): 1=East;
+				  2=Central; 3=Mountain; 4=Pacific; 5=Bering; 6=Hawaii</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table> 
+		<titl ID="AppT4">CBS News State Code List</titl> 
+		<tgroup cols="2" colsep="0" rowsep="0"><colspec colnum="1" colname="col1" colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="4.10*"/> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">01</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">ALABAMA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">02</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">ALASKA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">03</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">ARIZONA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">04</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">ARKANSAS</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">05</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">CALIFORNIA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">06</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">COLORADO</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">07</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">CONNECTICUT</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">08</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">DELAWARE</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">09</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">DISTRICT OF
+				  COLUMBIA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">10</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">FLORIDA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">11</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">GEORGIA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">12</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">HAWAII</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">13</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">IDAHO</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">14</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">ILLINOIS</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">15</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">INDIANA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">16</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">IOWA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">17</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">KANSAS</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">18</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">KENTUCKY</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">19</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">LOUISIANA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">20</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">MAINE</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">21</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">MARYLAND</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">22</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">MASSACHUSETTS</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">23</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">MICHIGAN</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">24</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">MINNESOTA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">25 </entry> 
+				<entry colname="col2" rowsep="0" colsep="0">MISSISSIPPI</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">26</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">MISSOURI</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">27</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">MONTANA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">28</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">NEBRASKA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">29</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">NEVADA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">30</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">HEW HAMPSHIRE</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">31</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">NEW JERSEY</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">32</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">NEW MEXICO</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">33</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">NEW YORK</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">34</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">NORTH CAROLINA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">35</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">NORTH DAKOTA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">36</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">OHIO</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">37</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">OKLAHOMA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">38</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">OREGON</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">39</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">PENNSYLVANIA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">40</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">RHODE ISLAND</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">41</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">SOUTH CAROLINA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">42</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">SOUTH DAKOTA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">43</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">TENNESSEE</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">44</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">TEXAS</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">45</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">UTAH</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">46</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">VERMONT</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">47</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">VIRGINIA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">48</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">WASHINGTON</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">49</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">WEST VIRGINIA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">50</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">WISCONSIN</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1" rowsep="0" colsep="0">51</entry> 
+				<entry colname="col2" rowsep="0" colsep="0">WYOMING</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+	 <table> 
+		<titl ID="AppT5">CBS Region code</titl> 
+		<tgroup cols="2"><colspec colnum="1" colname="col1" colwidth="1.00*"/><colspec colnum="2" colname="col2" colwidth="2.51*"/> 
+		  <tbody> 
+			 <row> 
+				<entry colname="col1">NORTHEAST</entry> 
+				<entry colname="col2">CONNECTICUT, DELAWARE, DISTRICT OF COLUMBIA,
+				  MAINE, MARYLAND, MASSACHUSETTS, NEW HAMPSHIRE, NEW JERSEY, NEW YORK,
+				  PENNSYLVANIA, RHODE ISLAND, VERMONT, WEST VIRGINIA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">NORTHCENTRAL</entry> 
+				<entry colname="col2">ILLINOIS, INDIDANA, IOWA, KANSAS, MICHIGAN,
+				  MINNESOTA, MISSOURI, NEBRASKA, NORTH DAKOTA, OHIO, SOUTH DAKOTA,
+				  WISCONSIN</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">SOUTH</entry> 
+				<entry colname="col2">ALABAMA, ARKANSAS, FLORIDA, GEORGIA,
+				  KENTUCKY, LOUISIANA, MISSISSIPPI, NORTH CAROLINA, OKLAHOMA, SOUTH CAROLINA,
+				  TENNESSEE, TEXAS, VIRGINIA</entry> 
+			 </row> 
+			 <row> 
+				<entry colname="col1">WEST</entry> 
+				<entry colname="col2">ALASKA, ARIZONA, CALIFORNIA, COLORADO,
+				  HAWAII, IDAHO, MONTANA, NEW MEXICO, OREGON, UTAH, WASHINGTON, WYOMING</entry> 
+			 </row> 
+		  </tbody> 
+		</tgroup> 
+	 </table> 
+  </otherMat>
+</codeBook>
