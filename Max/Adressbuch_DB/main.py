@@ -160,11 +160,14 @@ def get_files():
 
 
                 #Alle Kontakte in DB schreiben
-                if len(contacts) > 0:
-                    for contact in contacts:
-                        crud_db.write(contact)
-                    print("\nKontakte importiert!\n")
-                    return
+                try:
+                    if len(contacts) > 0:
+                        for contact in contacts:
+                            crud_db.write(contact)
+                        print("\nKontakte importiert!\n")
+                        return
+                except ValueError:
+                    print("Kontakte konnten nicht importiert werden!")
                 else:
                     print("\nKeine Kontakte vorhanden!\n")
                     return
@@ -691,11 +694,11 @@ def execute():
     while True:
         if welcome:
             print("------------------------------------------------------------------------------------------")
-            print("   0000   0000  0000  0  0  0000   00   0000  0000  0000    0000  0  0  0000  ")
-            print("         0     0  0  00 0   00   0  0  0      00   0       0  0  0  0        ")
-            print(" 0000   0     0  0  0000   00   0000  0      00   0000    0000  0000  0000  ")
-            print("       0     0  0  0 00   00   0  0  0      00      0       0     0          ")
-            print("0000  0000  0000  0  0   00   0  0  0000   00   0000       0     0  0000  ")
+            print("    0000        0000  0000  0  0  0000   00   0000  0000  0000    0000  0  0  ")
+            print("   0           0     0  0  00 0   00   0  0  0      00   0       0  0  0  0  ")
+            print("  0000  0000  0     0  0  0000   00   0000  0      00   0000    0000  0000  ")
+            print(" 0           0     0  0  0 00   00   0  0  0      00      0       0     0  ")
+            print("0000        0000  0000  0  0   00   0  0  0000   00   0000       0     0  ")
             print("------------------------------------------------------------------------------------------")
             welcome = False
 
