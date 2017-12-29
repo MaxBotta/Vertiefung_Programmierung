@@ -6,7 +6,7 @@ from lxml import etree
 
 #datei = './test.xml'
 # Die XML-Datenbasis
-datei = './dblp-2017-05-02.xml'
+datei = './test.xml'
 # die DTD-Datei der XML-Datenbasis, sie ermöglicht ein Validieren von XML-Elementen z.B. während des Parsens.
 dtd = etree.DTD('./dblp-2017-03-29.dtd')
 
@@ -77,47 +77,6 @@ def read_the_first_3_proceedings_and_inproceedings(datei):
 
 
 # TEILAUFGABE 1, NR. 3:
-def convert_the_first_3_inproceedings_and_proceedings_into_dict_and_save_as_readable_json(datei):
-    counter_inproceedings = 0
-    counter_proceedings = 0
-
-    inproceedings = []
-    proceedings = []
-
-    # iterparser zum Einlesen der Datei unter Berücksichtigung ausschließlich der "End"-Events
-    context = etree.iterparse(datei, events=('end', ), load_dtd=True, encoding='ISO-8859-1')
-    # Iterieren über alle Elemente des Iterparser
-    for event, elem in context:
-        # die ersten drei inproceeding-elemente werden als subelemente des root elements hinzugefügt.
-        if elem.tag == 'inproceedings' and counter_inproceedings < 3:
-            counter_inproceedings = counter_inproceedings + 1
-            jsn = convert_elements_into_dict(elem)
-            inproceedings.append(jsn)
-        elif elem.tag == "proceedings" and counter_proceedings < 3:
-            counter_proceedings = counter_proceedings + 1
-            jsn = convert_elements_into_dict(elem)
-            proceedings.append(jsn)
-        elif counter_inproceedings >= 3 and counter_proceedings >= 3:
-            # sobald jeweils 3 Elemente zu den jeweiligen Listen hinzugefügt wurden, werden diese als JSON gespeichert.
-            try:
-                with open('sample_inproceedings.json', 'w') as outfile:
-                    json.dump(inproceedings, outfile, indent=3)
-
-            except IOError:
-                print('An error occured trying to write the JSON file.')
-
-            try:
-                with open('sample_proceedings.json', 'w') as outfile:
-                    json.dump(proceedings, outfile, indent=3)
-
-            except IOError:
-                print('An error occured trying to write the JSON file.')
-            return
-
-
-
-
-
 def convert_elements_into_dict(element):
     element_dict = {}
     child_elements = {}
@@ -165,6 +124,49 @@ def convert_elements_into_dict(element):
     element_dict[element.tag] = child_elements
     return element_dict
 
+
+def convert_the_first_3_inproceedings_and_proceedings_into_dict_and_save_as_readable_json(datei):
+    counter_inproceedings = 0
+    counter_proceedings = 0
+
+    inproceedings = []
+    proceedings = []
+
+    # iterparser zum Einlesen der Datei unter Berücksichtigung ausschließlich der "End"-Events
+    context = etree.iterparse(datei, events=('end', ), load_dtd=True, encoding='ISO-8859-1')
+    # Iterieren über alle Elemente des Iterparser
+    for event, elem in context:
+        # die ersten drei inproceeding-elemente werden als subelemente des root elements hinzugefügt.
+        if elem.tag == 'inproceedings' and counter_inproceedings < 3:
+            counter_inproceedings = counter_inproceedings + 1
+            jsn = convert_elements_into_dict(elem)
+            print(jsn)
+            inproceedings.append(jsn)
+        elif elem.tag == "proceedings" and counter_proceedings < 3:
+            counter_proceedings = counter_proceedings + 1
+            jsn = convert_elements_into_dict(elem)
+            proceedings.append(jsn)
+            print(jsn)
+        elif counter_inproceedings >= 3 and counter_proceedings >= 3:
+
+
+            # sobald jeweils 3 Elemente zu den jeweiligen Listen hinzugefügt wurden, werden diese als JSON gespeichert.
+            try:
+                with open('sample_inproceedings.json', 'w') as outfile:
+                    json.dump(inproceedings, outfile, indent=3)
+
+            except IOError:
+                print('An error occured trying to write the JSON file.')
+
+            try:
+                with open('sample_proceedings.json', 'w') as outfile:
+                    json.dump(proceedings, outfile, indent=3)
+
+            except IOError:
+                print('An error occured trying to write the JSON file.')
+            return
+
+    print(inproceedings)
 
 
 #convert_the_first_3_inproceedings_and_proceedings_into_dict_and_save_as_readable_json(datei)
