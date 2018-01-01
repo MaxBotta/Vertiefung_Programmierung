@@ -3,7 +3,6 @@ import os
 import xml.etree.ElementTree as ET
 
 
-
 def read_json(path):
     try:
         with open(path) as file:

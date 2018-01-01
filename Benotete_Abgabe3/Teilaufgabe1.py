@@ -4,9 +4,9 @@ from lxml import etree
 
 
 
-#datei = './test.xml'
-# Die XML-Datenbasis
 datei = './test.xml'
+# Die XML-Datenbasis
+#datei = './dblp-2017-05-02.xml'
 # die DTD-Datei der XML-Datenbasis, sie ermöglicht ein Validieren von XML-Elementen z.B. während des Parsens.
 dtd = etree.DTD('./dblp-2017-03-29.dtd')
 
