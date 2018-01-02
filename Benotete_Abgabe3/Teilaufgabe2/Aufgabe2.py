@@ -43,7 +43,10 @@ def add_proceedings_to_inproceedings():
             inproceeding.save()
             db.commit()
         except AttributeError:
-            print("No Crossref found")
+            print("No Crossref found: " + str(inproceeding.pk))
+            for key in inproceeding:
+                print(key + ": " + str(inproceeding[key]))
+
         except Proceedings.DoesNotExist:
             print("There is no Proceeding with the crossref: " + crossref)
         except Proceedings.MultipleDocumentsReturned:
