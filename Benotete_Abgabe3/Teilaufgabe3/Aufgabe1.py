@@ -4,6 +4,8 @@ import csv
 from lxml import etree
 
 
+# TODO klären, ob die Klammern der Listen in der CSV entfernt werden müssen
+
 db = FileBackend("../my-db")
 
 class Inproceedings(Document):
