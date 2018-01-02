@@ -1,7 +1,7 @@
 from blitzdb import Document
 from blitzdb import FileBackend
 from lxml import etree
-from ..Teilaufgabe1.Aufgabe1 import *
+from ..Teilaufgabe1.Aufgabe3 import *
 
 
 db = FileBackend("./my-db")
