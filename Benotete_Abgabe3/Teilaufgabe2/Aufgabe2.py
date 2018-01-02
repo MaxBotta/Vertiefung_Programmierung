@@ -15,7 +15,7 @@ class Inproceedings(Document):
 
 
 # 1. Jedes Inproceeding-Objekt durchgehen
-# 2. Entpsrechendes Proceedings-Objekt suchen
+# 2. Entsprechendes Proceedings-Objekt suchen
 # 3. Proceedings Attribute dem Inproceedings-Objekt hinzufügen
 
 def add_proceedings_to_inproceedings():
@@ -32,19 +32,18 @@ def add_proceedings_to_inproceedings():
         # Mit dem crossref zutreffendes Proceeding Objekt suchen
         try:
             crossref = inproceeding.crossref
-        except AttributeError:
-            print("No Crossref found")
-
-        try:
             proceeding = db.get(Proceedings, {'key': crossref})
 
             # Proceeding-Attribute zum Inproceeding hinzufügen
             for key in proceeding:
-                inproceeding["proc:" + key] = proceeding[key]
+                # Vermeiden, dass der PK mit eingetragen wird
+                if not key == "pk":
+                    inproceeding["proc:" + key] = proceeding[key]
 
             inproceeding.save()
             db.commit()
-
+        except AttributeError:
+            print("No Crossref found")
         except Proceedings.DoesNotExist:
             print("There is no Proceeding with the crossref: " + crossref)
         except Proceedings.MultipleDocumentsReturned:
