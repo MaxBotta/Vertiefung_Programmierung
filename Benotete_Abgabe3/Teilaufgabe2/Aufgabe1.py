@@ -1,7 +1,7 @@
 from blitzdb import Document
 from blitzdb import FileBackend
 from lxml import etree
-from Benotete_Abgabe3.Teilaufgabe1 import *
+from ..Teilaufgabe1.Aufgabe1 import *
 
 
 db = FileBackend("./my-db")
@@ -17,9 +17,8 @@ class Inproceedings(Document):
 
 # Die XML-Datenbasis
 #datei = './test.xml'
-datei = "./dblp-2017-05-02.xml"
-# die DTD-Datei der XML-Datenbasis, sie ermöglicht ein Validieren von XML-Elementen z.B. während des Parsens.
-dtd = etree.DTD('./dblp-2017-03-29.dtd')
+#datei = "./dblp-2017-05-02.xml"
+
 
 
 # Teilaufgabe 2, Nr. 1
@@ -68,7 +67,6 @@ def write_inproceedings_into_db(list_of_dicts):
         counter = counter + 1
         new_object = Inproceedings(item["inproceedings"])
         db.save(new_object)
-        print(counter)
     db.commit()
     print("Inproceedings eingetragen!")
 
@@ -80,7 +78,6 @@ def write_proceedings_into_db(list_of_dicts):
         counter = counter + 1
         new_object = Proceedings(item["proceedings"])
         db.save(new_object)
-        print(counter)
     db.commit()
     print("Proceedings eingetragen!")
 
