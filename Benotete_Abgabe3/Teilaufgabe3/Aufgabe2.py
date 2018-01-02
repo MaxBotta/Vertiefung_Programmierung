@@ -14,16 +14,30 @@ class Inproceedings(Document):
     pass
 
 
-def get_inproceedings_by_pages(pages):
+def get_inproceedings_by_pages(article_length):
     # Alle Inproceedings in der DB (Nur der PK)
     inproceedings = db.filter(Inproceedings, {})
     list_of_inproceedings = []
 
+    # Alle inproceedings durchgehen
     for inproceeding in inproceedings:
         try:
-            if inproceeding.pages.isdigit():
-                if int(inproceeding.pages) >= pages:
-                    list_of_inproceedings.append(inproceeding)
+            # Seitenzahlen trennen
+            pages = inproceeding.pages
+            pages = pages.split("-")
+            print(pages)
+
+            # Überprüfen, ob es zwei Angaben sind, wenn ja voneinander abziehen
+            # und Anzahl der Seiten ermitteln
+            if len(pages) > 1:
+                # Überprüfen, ob beide Einträge valide Zahlen sind
+                if pages[1].isdigit() and pages[0].isdigit():
+                    number_of_pages = int(pages[1]) - int(pages[0])
+
+                    # Prüfen, ob es mehr als 10 Seiten sind, wenn ja, zur Liste hinzufügen
+                    if number_of_pages >= article_length:
+                        list_of_inproceedings.append(inproceeding)
+
         except AttributeError:
             print("No Pages Attribute")
 
