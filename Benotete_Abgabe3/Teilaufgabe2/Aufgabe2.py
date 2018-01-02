@@ -24,10 +24,10 @@ def add_proceedings_to_inproceedings():
 
     # Jeden Crossref Verweis auslesen und hinzufügen
     counter = 0
-    for item in inproceedings:
+    for inproceeding in inproceedings:
         counter = counter + 1
         # Inproceeding mit dem pk aus der DB holen
-        inproceeding = db.get(Inproceedings, {'pk': str(item.pk)})
+        #inproceeding = db.get(Inproceedings, {'pk': str(item.pk)})
 
         # Mit dem crossref zutreffendes Proceeding Objekt suchen
         try:
