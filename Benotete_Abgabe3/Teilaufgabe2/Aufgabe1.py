@@ -42,14 +42,13 @@ def get_inproceedings_by_year(datei, year):
     return inproceedings
 
 
-def get_proceedings_by_year(datei, year):
+def get_all_proceedings(datei):
     proceedings = []
     context = etree.iterparse(datei, events=('start', 'end'), tag="proceedings", load_dtd=True, encoding='ISO-8859-1')
     for event, elem in context:
-        if event == "end" and len(list(elem)) > 0:
-            if elem.find("year").text == year:
-                jsn = convert_elements_into_dict(elem)
-                proceedings.append(jsn)
+        if event == "end":
+            jsn = convert_elements_into_dict(elem)
+            proceedings.append(jsn)
 
             elem.clear()
 
@@ -76,14 +75,14 @@ def write_proceedings_into_db(list_of_dicts):
 
 # Proceedings und inproceedings von 1980 auslesen und hinterlegen
 inproceedings_1980 = get_inproceedings_by_year(datei, "1980")
-proceedings_1980 = get_proceedings_by_year(datei, "1980")
+all_proceedings = get_all_proceedings(datei)
 
 print("Inproceedings: " + str(len(inproceedings_1980)))
-print("Proceedings: " + str(len(proceedings_1980)))
+print("Proceedings: " + str(len(all_proceedings)))
 
 
 # Die Listen in die DB eintragen
 write_inproceedings_into_db(inproceedings_1980)
-write_proceedings_into_db(proceedings_1980)
+write_proceedings_into_db(all_proceedings)
 
 

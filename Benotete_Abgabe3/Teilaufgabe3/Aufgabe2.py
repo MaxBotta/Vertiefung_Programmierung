@@ -4,12 +4,11 @@ import csv
 from lxml import etree
 
 
+# FRAGEN:
+# 1. Werden auch die Seitenzahlen ausgewertet, die keine genaue Seitenzahl angeben (z.B. 315-330)?
+
+
 db = FileBackend("../my-db")
-
-
-class Proceedings(Document):
-        pass
-
 
 class Inproceedings(Document):
     pass
@@ -21,9 +20,12 @@ def get_inproceedings_by_pages(pages):
     list_of_inproceedings = []
 
     for inproceeding in inproceedings:
-        if inproceeding.pages.isdigit():
-            if int(inproceeding.pages) >= pages:
-                list_of_inproceedings.append(inproceeding)
+        try:
+            if inproceeding.pages.isdigit():
+                if int(inproceeding.pages) >= pages:
+                    list_of_inproceedings.append(inproceeding)
+        except AttributeError:
+            print("No Pages Attribute")
 
     return list_of_inproceedings
 
@@ -41,5 +43,5 @@ def save_as_csv(filename, data):
 
 
 inproceedings_bigger_10 = get_inproceedings_by_pages(11)
-print(inproceedings_bigger_10)
 save_as_csv("AufsätzeGroeßer10", inproceedings_bigger_10)
+
