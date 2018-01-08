@@ -1,10 +1,8 @@
-
 from blitzdb import Document
 from blitzdb import FileBackend
 from lxml import etree
 import Benotete_Abgabe3.Teilaufgabe1.Aufgabe3 as aufg1
 
-#sys.path.insert(0, "..Teilaufgabe1.Aufgabe3")
 
 
 
