@@ -1,0 +1,51 @@
+[
+   {
+      "inproceedings": {
+         "mdate": "2012-09-18",
+         "key": "persons/Codd74",
+         "title": "Seven Steps to Rendezvous with the Casual User.",
+         "month": "January",
+         "year": "1974",
+         "pages": "179-200",
+         "booktitle": "IFIP Working Conference Data Base Management",
+         "url": "db/conf/ds/dbm74.html#Codd74",
+         "note": "IBM Research Report RJ 1333, San Jose, California",
+         "cdrom": "DS/DS1974/P179.pdf",
+         "author": [
+            "E. F. Codd"
+         ]
+      }
+   },
+   {
+      "inproceedings": {
+         "mdate": "2002-01-03",
+         "key": "persons/JohnLM94",
+         "title": "ROSAR - Rule Oriented System for Analysis of Reflections on Printed Circuit Boards",
+         "pages": "40-43",
+         "year": "1994",
+         "booktitle": "Proc. 11th Int. Symposium on Electromagnetic Compatibility (EMC'94)",
+         "author": [
+            "Werner John",
+            "Dominik Ley",
+            "Joachim M\u00fcller"
+         ]
+      }
+   },
+   {
+      "inproceedings": {
+         "mdate": "2011-06-14",
+         "key": "journals/lncs/CarstensenS91",
+         "title": "Why a Hill Can't be a Valley: Representing Gestalt and Position Properties of Objects with Object Schemata.",
+         "pages": "632-644",
+         "year": "1991",
+         "crossref": "journals/lncs/1991-546",
+         "booktitle": "Text Understanding in LILOG",
+         "url": "db/journals/lncs/lncs546.html#CarstensenS91",
+         "ee": "http://dx.doi.org/10.1007/3-540-54594-8_83",
+         "author": [
+            "Kai-Uwe Carstensen",
+            "Geoffrey Simmons"
+         ]
+      }
+   }
+]

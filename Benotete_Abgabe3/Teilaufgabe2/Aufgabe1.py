@@ -1,7 +1,10 @@
 from blitzdb import Document
 from blitzdb import FileBackend
 from lxml import etree
-from Benotete_Abgabe3.Teilaufgabe1 import *
+import Benotete_Abgabe3.Teilaufgabe1.Aufgabe3 as aufg1
+
+
+
 
 
 db = FileBackend("./my-db")
@@ -16,27 +19,24 @@ class Inproceedings(Document):
 
 
 # Die XML-Datenbasis
-#datei = './test.xml'
-datei = "./dblp-2017-05-02.xml"
-# die DTD-Datei der XML-Datenbasis, sie ermöglicht ein Validieren von XML-Elementen z.B. während des Parsens.
-dtd = etree.DTD('./dblp-2017-03-29.dtd')
+#datei = '../test.xml'
+datei = '../dblp-2017-05-02.xml'
+
 
 
 # Teilaufgabe 2, Nr. 1
 def get_inproceedings_by_year(datei, year):
     inproceedings = []
     # iterparser zum Einlesen der Datei unter Berücksichtigung ausschließlich der "End"-Events
-    context = etree.iterparse(datei, events=('end', ), load_dtd=True, encoding='ISO-8859-1')
+    context = etree.iterparse(datei, events=('end',), load_dtd=True, encoding='ISO-8859-1', huge_tree=True)
     # Iterieren über alle Elemente des Iterparser
     for event, elem in context:
-        # Nochmals überprüfen, ob es sich um ein inproceedings handelt
-        if elem.tag == "inproceedings":
-            # Nur die inproceedings von 1980 hinzufügen
-            if elem.find("year").text == year:
-                jsn = convert_elements_into_dict(elem)
+        # Nochmals überprüfen, ob es sich um ein inproceedings handelt und nur die inproceedings von 1980 hinzufügen
+        if elem.tag == "inproceedings" and elem.find("year").text == year:
+                jsn = aufg1.convert_elements_into_dict(elem)
                 inproceedings.append(jsn)
-
-            # Aus dem Speicher entfernen, um diesen zu entlasten
+        # Aus dem Speicher entfernen, um diesen zu entlasten
+        if event == "end" and len(list(elem)) > 0:
             elem.clear()
             # danach werden die Referenzen auf das besuchte Elementes gelöscht
             while elem.getprevious() is not None:
@@ -50,13 +50,13 @@ def get_all_proceedings(datei):
     context = etree.iterparse(datei, events=('end', ), load_dtd=True, encoding='ISO-8859-1')
     for event, elem in context:
         if elem.tag == "proceedings":
-            jsn = convert_elements_into_dict(elem)
+            jsn = aufg1.convert_elements_into_dict(elem)
             proceedings.append(jsn)
 
-            elem.clear()
-            # danach werden die Referenzen auf das besuchte Elementes gelöscht
-            while elem.getprevious() is not None:
-                del elem.getparent()[0]
+        elem.clear()
+        # danach werden die Referenzen auf das besuchte Elementes gelöscht
+        while elem.getprevious() is not None:
+            del elem.getparent()[0]
 
     return proceedings
 
@@ -68,7 +68,6 @@ def write_inproceedings_into_db(list_of_dicts):
         counter = counter + 1
         new_object = Inproceedings(item["inproceedings"])
         db.save(new_object)
-        print(counter)
     db.commit()
     print("Inproceedings eingetragen!")
 
@@ -80,7 +79,6 @@ def write_proceedings_into_db(list_of_dicts):
         counter = counter + 1
         new_object = Proceedings(item["proceedings"])
         db.save(new_object)
-        print(counter)
     db.commit()
     print("Proceedings eingetragen!")
 

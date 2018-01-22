@@ -1,0 +1,53 @@
+[
+   {
+      "proceedings": {
+         "mdate": "2017-03-30",
+         "key": "reference/genetic/2015",
+         "title": "Handbook of Genetic Programming Applications",
+         "publisher": "Springer",
+         "year": "2015",
+         "isbn": "978-3-319-20882-4",
+         "ee": "http://dx.doi.org/10.1007/978-3-319-20883-1",
+         "url": "db/reference/genetic/genetic2015.html",
+         "editor": [
+            "Amir Hossein Gandomi",
+            "Amir Hossein Alavi",
+            "Conor Ryan"
+         ]
+      }
+   },
+   {
+      "proceedings": {
+         "mdate": "2017-03-30",
+         "key": "reference/med/2013",
+         "title": "Handbook of Medical and Healthcare Technologies",
+         "year": "2013",
+         "publisher": "Springer",
+         "ee": "http://dx.doi.org/10.1007/978-1-4614-8495-0",
+         "isbn": "978-1-4614-8494-3",
+         "url": "db/reference/med/med2013.html",
+         "editor": [
+            "Borko Furht",
+            "Ankur Agarwal"
+         ]
+      }
+   },
+   {
+      "proceedings": {
+         "mdate": "2003-01-21",
+         "key": "journals/lncs/1993-759",
+         "title": "Advanced Database Systems",
+         "booktitle": "Advanced Database Systems",
+         "series": "Lecture Notes in Computer Science",
+         "volume": "759",
+         "publisher": "Springer",
+         "year": "1993",
+         "isbn": "3-540-57507-3",
+         "url": "db/journals/lncs/lncs759.html",
+         "editor": [
+            "Nabil R. Adam",
+            "Bharat K. Bhargava"
+         ]
+      }
+   }
+]

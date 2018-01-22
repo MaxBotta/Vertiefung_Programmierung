@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE dblp SYSTEM 'dblp-2017-03-29.dtd'>
+<dblp><proceedings mdate="2017-03-30" key="reference/genetic/2015">
+<editor>Amir Hossein Gandomi</editor>
+<editor>Amir Hossein Alavi</editor>
+<editor>Conor Ryan</editor>
+<title>Handbook of Genetic Programming Applications</title>
+<publisher>Springer</publisher>
+<year>2015</year>
+<isbn>978-3-319-20882-4</isbn>
+<ee>http://dx.doi.org/10.1007/978-3-319-20883-1</ee>
+<url>db/reference/genetic/genetic2015.html</url>
+</proceedings>
+<proceedings mdate="2017-03-30" key="reference/med/2013">
+<editor>Borko Furht</editor>
+<editor>Ankur Agarwal</editor>
+<title>Handbook of Medical and Healthcare Technologies</title>
+<year>2013</year>
+<publisher>Springer</publisher>
+<ee>http://dx.doi.org/10.1007/978-1-4614-8495-0</ee>
+<isbn>978-1-4614-8494-3</isbn>
+<url>db/reference/med/med2013.html</url>
+</proceedings>
+<proceedings mdate="2003-01-21" key="journals/lncs/1993-759">
+<editor>Nabil R. Adam</editor>
+<editor>Bharat K. Bhargava</editor>
+<title>Advanced Database Systems</title>
+<booktitle>Advanced Database Systems</booktitle>
+<series href="db/journals/lncs.html">Lecture Notes in Computer Science</series>
+<volume>759</volume>
+<publisher>Springer</publisher>
+<year>1993</year>
+<isbn>3-540-57507-3</isbn>
+<url>db/journals/lncs/lncs759.html</url>
+</proceedings>
+
+</dblp>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE dblp SYSTEM 'dblp-2017-03-29.dtd'>
+<dblp><inproceedings mdate="2012-09-18" key="persons/Codd74">
+<author>E. F. Codd</author>
+<title>Seven Steps to Rendezvous with the Casual User.</title>
+<month>January</month>
+<year>1974</year>
+<pages>179-200</pages>
+<booktitle>IFIP Working Conference Data Base Management</booktitle>
+<url>db/conf/ds/dbm74.html#Codd74</url>
+<note>IBM Research Report RJ 1333, San Jose, California</note>
+<cdrom>DS/DS1974/P179.pdf</cdrom>
+</inproceedings>
+
+<inproceedings mdate="2002-01-03" key="persons/JohnLM94">
+<author>Werner John</author>
+<author>Dominik Ley</author>
+<author>Joachim Müller</author>
+<title>ROSAR - Rule Oriented System for Analysis of Reflections on Printed Circuit Boards</title>
+<pages>40-43</pages>
+<year>1994</year>
+<booktitle>Proc. 11th Int. Symposium on Electromagnetic Compatibility (EMC'94)</booktitle>
+</inproceedings>
+<inproceedings mdate="2011-06-14" key="journals/lncs/CarstensenS91">
+<author>Kai-Uwe Carstensen</author>
+<author>Geoffrey Simmons</author>
+<title>Why a Hill Can't be a Valley: Representing Gestalt and Position Properties of Objects with Object Schemata.</title>
+<pages>632-644</pages>
+<year>1991</year>
+<crossref>journals/lncs/1991-546</crossref>
+<booktitle>Text Understanding in LILOG</booktitle>
+<url>db/journals/lncs/lncs546.html#CarstensenS91</url>
+<ee>http://dx.doi.org/10.1007/3-540-54594-8_83</ee>
+</inproceedings>
+</dblp>
