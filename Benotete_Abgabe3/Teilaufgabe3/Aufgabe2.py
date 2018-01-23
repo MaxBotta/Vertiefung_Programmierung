@@ -10,6 +10,7 @@ from lxml import etree
 
 db = FileBackend("../my-db")
 
+
 class Inproceedings(Document):
     pass
 
@@ -25,14 +26,14 @@ def get_inproceedings_by_pages(article_length):
             # Seitenzahlen trennen
             pages = inproceeding.pages
             pages = pages.split("-")
-            print(pages)
+            #print(pages)
 
             # Überprüfen, ob es zwei Angaben sind, wenn ja voneinander abziehen
             # und Anzahl der Seiten ermitteln
             if len(pages) > 1:
                 # Überprüfen, ob beide Einträge valide Zahlen sind
                 if pages[1].isdigit() and pages[0].isdigit():
-                    number_of_pages = int(pages[1]) - int(pages[0])
+                    number_of_pages = (int(pages[1]) - int(pages[0])) + 1
 
                     # Prüfen, ob es mehr als 10 Seiten sind, wenn ja, zur Liste hinzufügen
                     if number_of_pages >= article_length:
