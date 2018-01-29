@@ -1,0 +1,3370 @@
+author,count
+Hans-Jörg Kreowski,8
+Hartmut Ehrig,6
+Gérard Le Lann,6
+Richard J. Lipton,6
+Jaime G. Carbonell,5
+Gary G. Hendrix,5
+Jeffrey D. Ullman,5
+Kenneth J. Thurber,5
+Manfred Broy,5
+Martin Wirsing,5
+John Mylopoulos,5
+Robert Piloty,5
+Thomas P. Barnwell III,5
+L. Peter Deutsch,5
+Dennis McLeod,5
+Lawrence A. Rowe,5
+King-sun Fu,4
+Michel E. Adiba,4
+Giorgio Ausiello,4
+Christos H. Papadimitriou,4
+Jon Louis Bentley,4
+Peter Padawitz,4
+James W. Thatcher,4
+David Harel,4
+Butler W. Lampson,4
+Richard W. Watson,4
+Derick Wood,4
+Joachim Griese,4
+Jacek Leszczylowski,4
+Michael L. Brodie,4
+David A. Plaisted,4
+William Buxton,4
+Richard A. DeMillo,4
+Paul Decitre,4
+Dines Bjørner,4
+Mario Barbacci,4
+Dominique Borrione,4
+Donald L. Dietmeyer,4
+Fredrick J. Hill,4
+Patrick Skelly,4
+Miroslaw Malek,4
+John Makhoul,4
+Martin Morf,4
+Nasir Ahmed 0001,4
+Lawrence R. Rabiner,4
+Ketil Bo,4
+G. Jack Lipovski,4
+Ira P. Goldstein,4
+Brian Ford,4
+R. G. G. Cattell,4
+Gia Toan Nguyen,3
+Andreas Reuter 0001,3
+Witold Litwin,3
+Carlo Batini,3
+Greg N. Frederickson,3
+Kari-Jouko Räihä,3
+Esko Ukkonen,3
+Peter Raulefs,3
+Egidio Astesiano,3
+Gerardo Costa,3
+Philippe Flajolet,3
+Eric G. Manning,3
+Norman I. Badler,3
+Frederic I. Parke,3
+Christopher F. Herot,3
+Ernst G. Schlechtendahl,3
+Philip J. Hayes,3
+Adrian Walker,3
+Peter Honeyman,3
+Ashok K. Chandra,3
+Neil D. Jones,3
+Bernd Mahr,3
+Yat-Sang Kwong,3
+Rod M. Burstall,3
+Georg Winterstein,3
+Hartmut Wedekind,3
+Peter Dadam,3
+Hans Keutgen,3
+Georges Gardarin,3
+Nathan Goodman,3
+Rudolf Munz,3
+Philip A. Bernstein,3
+Daniel J. Rosenkrantz,3
+Harry B. Hunt III,3
+Michael Hammer,3
+Ross A. Overbeek,3
+David R. Musser,3
+Barry L. Wills,3
+Sanand Patel,3
+William T. Reeves,3
+Ronald Baecker,3
+Richard M. Karp,3
+Robert Endre Tarjan,3
+F. Frances Yao,3
+Rohit Parikh,3
+John H. Reif,3
+H. T. Kung,3
+Bertrand Meyer,3
+Shi-Kuo Chang,3
+Benn R. Konsynski,3
+Sidhartha Maitra,3
+Yves Grenier,3
+Aaron E. Rosenberg,3
+Heinrich C. Mayr,3
+Klaus-Peter Löhr,3
+Michael L. Green,3
+Ming T. Liu,3
+Carl Hewitt,3
+Daniel G. Bobrow,3
+Claus-Peter Matt,3
+Rein Turn,3
+Anthony I. Wasserman,3
+Sigram Schindler,3
+Stephen J. Hague,3
+Nobuji Saito,3
+Amir Pnueli,3
+Rajan N. Kapur,3
+Walter E. Ulrich,3
+Robert Balzer,3
+Patrick J. Hayes,3
+Mary Shaw,3
+Stephen N. Zilles,3
+Charles Rich,3
+Jonathan J. King,3
+Barry C. Goldstein,2
+Harold Lorin,2
+Hoo-Min D. Toong,2
+Svein O. Strommen,2
+Earl R. Goodrich II,2
+Douglas Stott Parker Jr.,2
+Elaine Lisboa,2
+Harry Wu,2
+Matthew B. Koll,2
+Janet L. Kolodner,2
+Hans-Jörg Schek,2
+Amar Mukhopadhyay,2
+Matti Jakobsson,2
+Theo Härder,2
+Mary E. S. Loomis,2
+Thomas B. Steel Jr.,2
+Charles W. Bachman,2
+Marina Moscarini,2
+Stefano Ceri,2
+Giancarlo Martella,2
+Giuseppe Pelagatti,2
+Tore Risch,2
+Paul M. B. Vitányi,2
+Harry R. Lewis,2
+Johann A. Makowsky,2
+Grzegorz Rozenberg,2
+J. Albert,2
+Jean Vuillemin,2
+Zvi Galil,2
+Donald B. Johnson,2
+Peter D. Mosses,2
+Adi Shamir,2
+Hartmann J. Genrich,2
+P. S. Thiagarajan,2
+Dexter Kozen,2
+Jan A. Bergstra,2
+Edmund M. Clarke,2
+Valentin F. Turchin,2
+Kurt Mehlhorn,2
+Jean-Marc Steyaert,2
+Ralph-Johan Back,2
+Shimon Even,2
+Yacov Yacobi,2
+Matthew Hennessy,2
+Eric G. Wagner,2
+Jesse B. Wright,2
+Yutaka Ohno,2
+Shoichi Noguchi,2
+Hiroshi Inose,2
+Mamoru Maekawa,2
+Jack B. Dennis,2
+Tosiyasu L. Kunii,2
+J. Dean Brock,2
+Hajime Enomoto,2
+Naoki Yonezaki,2
+Henry Fuchs,2
+Joseph O'Rourke,2
+Robert L. Cook,2
+Aaron Marcus,2
+Fred Lakin,2
+José L. Encarnação,2
+Peter Wißkirchen,2
+Bryan D. Ackland,2
+Neil Weste,2
+Andries van Dam,2
+Ingrid B. Carlbom,2
+Frank W. Bliss,2
+Paul R. Hanau,2
+David R. Lenorovitz,2
+Zvi M. Kedem,2
+Steve Sapiro,2
+Ajoy K. Bose,2
+Hao N. Nham,2
+Edward W. Thompson,2
+Shiu-Ping Chao,2
+Yen-Son Huang,2
+Lap Man Yam,2
+Ernst G. Ulrich,2
+Klim Maling,2
+Isao Shirakawa,2
+Arvind M. Patel,2
+Robert J. Smith II,2
+T. Lamdan,2
+Ralph M. Weischedel,2
+Aravind K. Joshi,2
+Robert Wilensky,2
+Joseph A. Goguen,2
+Douglas E. Appelt,2
+Ben Shneiderman,2
+Bonnie L. Webber,2
+Thomas P. Kehler,2
+Kurt Konolige,2
+Yannis Vassiliou,2
+David A. Schmidt,2
+Stephen R. Kimbleton,2
+Elmar Holler,2
+Donald W. Davies,2
+E. Douglas Jensen,2
+Helmut J. Ludwigs,2
+Thomas Ottmann,2
+Hans-Werner Six,2
+Ivan Hal Sudborough,2
+Burkhard Monien,2
+Manfred Nagl,2
+Alessandro D'Atri,2
+Wolfgang Reisig,2
+Peter Pepper,2
+Peter E. Lauer,2
+Ryszard Janicki,2
+P. R. F. Cunha,2
+T. S. E. Maibaum,2
+Wolfram-Manfred Lippe,2
+Wilhelm K. Hackmann,2
+D. Schmidtmann,2
+Wolfgang J. Paul,2
+Manfred Dausmann,2
+Guido Persch,2
+Wolfgang Wahlster,2
+Hans-H. Meyer,2
+W. Frank King III,2
+Wolfgang Hesse,2
+Patrick Bosc,2
+Reiner W. Hartenstein,2
+Hagen Huwig,2
+H. Werner,2
+S. Keramidis,2
+Peter Stahlknecht,2
+Hans-Josef Jeanrond,2
+Hans vor der Brück,2
+Klaus Wenke,2
+Bruce G. Lindsay 0001,2
+Paula B. Hawthorn,2
+Gerald A. Wilson,2
+Donald R. Deutsch,2
+Dennis Tsichritzis,2
+Bernd Walter,2
+Dushan Z. Badal,2
+C. C. Gotlieb,2
+Michael Stonebraker,2
+Jean Le Bihan,2
+Christian Esculier,2
+L. Treille,2
+Lawrence J. Henschen,2
+Paul Y. Gloess,2
+Ewing L. Lusk,2
+Laurent Kott,2
+Jean-Marie Hullot,2
+Leonard Friedman,2
+Roddy W. Erickson,2
+Luigia Carlucci Aiello,2
+Kimball P. Stickney,2
+Blair D. McKay,2
+Guy Fedorkow,2
+Kenneth C. Smith,2
+Leland Smith,2
+Peter Kümmel,2
+S. Stiller,2
+Wolfgang Kaspar,2
+Reinhard Remke,2
+Jürg Nievergelt,2
+Gerhard Fischer,2
+Gerhard Knorz,2
+Stephen A. Cook,2
+Jia-Wei Hong,2
+Joseph JáJá,2
+Albert R. Meyer,2
+Martin Tompa,2
+Richard P. Brent,2
+Donna J. Brown,2
+Fereidoon Sadri,2
+Grazyna Mirkowska,2
+David P. Dobkin,2
+Vaughan R. Pratt,2
+Janos Simon,2
+Andrzej Wlodzimierz Mostowski,2
+Jacques Guyard,2
+Pierre Lescanne,2
+Gisbert Dittrich,2
+Wolfgang Merzenich,2
+Alberto Pettorossi,2
+C. K. Wong,2
+Zohar Manna,2
+Tsutomu Kawada,2
+Gunter Schlageter,2
+Syunsuke Uemura,2
+Yasuo Sugawara,2
+Janis A. Bubenko Jr.,2
+Ronald M. Kaplan,2
+B. A. Sheil,2
+Kiyoshi Shibayama,2
+Shinji Tomita,2
+Hiroshi Hagiwara,2
+Toshiaki Kitamura,2
+Won Kim,2
+Juan M. Andrade,2
+F. Fernandez,2
+Norbert Szyperski,2
+Maurice Nivat,2
+Barry W. Boehm,2
+Olivier D. Faugeras,2
+Patrice Enjalbert,2
+Tamás Gergely,2
+Toyoaki Nishida,2
+Shuji Doshita,2
+Giovanna Giordano,2
+David S. Burris,2
+Kurt A. Schember,2
+Bill Brown,2
+Thomas G. Windeknecht,2
+Pamela K. Coats,2
+Eugene M. Strand,2
+S. S. Stephenson,2
+Jainendra K. Navlakha,2
+Robert J. McMillen,2
+Howard Jay Siegel,2
+Jay F. Nunamaker Jr.,2
+Richard O. Mason,2
+Gary W. Dickson,2
+Izak Benbasat,2
+Blake Ives,2
+Gordon B. Davis,2
+Charles H. Kriebel,2
+John F. Rockart,2
+Bradley W. Dickinson,2
+Tapio Saramäki,2
+Yrjö Neuvo,2
+Jae S. Lim,2
+David B. Pisoni,2
+Joachim Lenzer,2
+Leah J. Siegel,2
+Charles R. Davis,2
+R. Viswanathan,2
+William Russell,2
+A. Higgins,2
+Michael G. Berouti,2
+Alan V. Oppenheim,2
+Douglas Preis,2
+Harvey F. Silverman,2
+Elliot Singer,2
+Robert E. Wohlford,2
+Fred J. Taylor,2
+Shmuel Winograd,2
+Russell M. Mersereau,2
+Adly T. Fam,2
+C. Richard Johnson Jr.,2
+Simon Haykin,2
+Kenneth Steiglitz,2
+R. Lynn Kirlin,2
+Moustafa M. Fahmy,2
+Daniel T. L. Lee,2
+Subrata K. Das,2
+Carlo Scagliola,2
+Marcian E. Hoff Jr.,2
+Clifford T. Mullis,2
+Richard A. Roberts,2
+John D. Markel,2
+Augustine H. Gray Jr.,2
+James L. Melsa,2
+Chong Kwan Un,2
+David G. Messerschmitt,2
+Robert J. McAulay,2
+Louis L. Scharf,2
+A. A. (Louis) Beex,2
+J. B. Plant,2
+Yiu-Tong Chan,2
+David Malah,2
+James D. Johnston,2
+Allen M. Peterson,2
+Ronald E. Crochiere,2
+José M. Tribolet,2
+Horst Nowacki,2
+A. Alan B. Pritsker,2
+Thomas J. Schriber,2
+H. Becker,2
+H. Dieter Rombach,2
+Peter Rechenberg,2
+Helmut Balzert,2
+Hans H. Kron,2
+Jan Witt,2
+Friedrich W. Beichter,2
+Werner Simonsmeier,2
+Steven I. Kartashev,2
+Svetlana P. Kartashev,2
+Edward Y. S. Lee,2
+Douglas C. Shannon,2
+Samprakash Majumdar,2
+J. Pipper,2
+W. Heinrich,2
+G. Busse,2
+Larry Masinter,2
+Steven S. Muchnick,2
+Erik Sandewall,2
+Henrik Sörensen,2
+Claes Strömberg,2
+Drew V. McDermott,2
+Donald P. McKay,2
+Stuart C. Shapiro,2
+Robert M. Keller,2
+Wilfried Frankenbach,2
+Hartmut Picht,2
+Volker Bihl,2
+Kenneth L. Kraemer,2
+Hanns Püschel,2
+Friedrich Hertweck,2
+Helmut K. Berg,2
+Reinhold Güth,2
+Wolfgang K. Giloi,2
+Lutz Richter,2
+Mars K. Valiev,2
+István Németi,2
+Gordon D. Plotkin,2
+Hajnal Andréka,2
+George I. Davida,2
+Fred B. Schneider,2
+Arndt Bode,2
+Raimund T. Kölsch,2
+Paul Messina,2
+William J. Cody,2
+Edouard André,2
+Herbert Weber,2
+Kurt Lautenbach,2
+Takao Nishizeki,2
+Nissim Francez,2
+Eugene M. Luks,2
+Mihalis Yannakakis,2
+A. J. Kfoury,2
+Stephen R. Mahaney,2
+Gary L. Peterson,2
+U. V. Premkumar,2
+William S. Faught,2
+R. David Snyder,2
+Jay M. Tenenbaum,2
+Harry G. Barrow,2
+Robert C. Bolles,2
+Martin A. Fischler,2
+Lorraine Duvall,2
+John F. Heafner,2
+Frances H. Nielsen,2
+Gio Wiederhold,2
+George P. Copeland,2
+Randy H. Katz,2
+John Miles Smith,2
+Peter Hitchcock,2
+Alexander Borgida,2
+Esen A. Ozkarahan,2
+E. F. Codd,2
+Raymond Reiter,2
+P. Bruce Berra,2
+Joachim W. Schmidt,2
+Diane C. P. Smith,2
+Martin S. Feather,2
+Peter Buneman,2
+Paolo Paolini,2
+William Mark,2
+Judea Pearl,2
+Sho Yoshida,2
+Makoto Nagao,2
+Jun'ichi Tsujii,2
+Yuzuru Hiraga,2
+Yoshihiko Ono,2
+Hisao Yamada,2
+Christian Boitet,2
+Alan J. Demers,2
+James E. Donahue,2
+Bill Hays,1
+Gordon E. Stokes,1
+Theodore A. Norman,1
+Lance Smith,1
+Peter M. G. Apers,1
+John F. Buford,1
+Tarek K. Abdel-Hamid,1
+J.-F. Mergen,1
+Mario Gerla,1
+Aksenti Grnarov,1
+Charlie Bass,1
+Wei C. Yen,1
+Lois M. L. Delcambre,1
+E. Adams,1
+A. Birjandi,1
+M. Farooq,1
+A. Hayatgheyb,1
+C. Lillie,1
+M. K. Sadagopan,1
+Don Vines,1
+Tom B. Wilson,1
+James A. Larson,1
+Akira Fusaoka,1
+Masaharu Hirayama,1
+Tadashi Kanamori,1
+Ram Rao,1
+C. C. Devor,1
+James A. Weeldreyer,1
+James E. Donnelley,1
+John G. Fletcher,1
+Steven F. Jennings,1
+Arthur E. Oldehoeft,1
+Robert G. Felix,1
+Alfred Z. Spector,1
+Thomas H. Acklen,1
+Martha R. Newton,1
+David F. Palmer,1
+Jean Tague,1
+Michael J. Nelson,1
+Carole D. Hafner,1
+Roger C. Schank,1
+Gerald DeJong,1
+Lawrence J. Mazlack,1
+Richard A. Feinauer,1
+Abraham Bookstein,1
+D. R. McGregor,1
+J. R. Malone,1
+Terry Noreault,1
+Michael McGill,1
+Tadeusz Radecki,1
+Chris D. Paice,1
+R. M. Lea,1
+Ernst J. Schuegraf,1
+Christine A. Montgomery,1
+Christopher Landauer,1
+Clinton Mah,1
+Stephen E. Robertson,1
+C. J. van Rijsbergen,1
+Martin F. Porter,1
+Peter Kracsony,1
+Gerald J. Kowalski,1
+Arnold Meltzer,1
+B. C. Brookes,1
+Stephen F. Weiss,1
+Peter Bollmann,1
+Vladimir S. Cherniavsky,1
+Lynette Hirschman,1
+Linda C. Smith,1
+Gerard Salton,1
+Andrew J. Palay,1
+Mark S. Fox,1
+Olli Nevalainen,1
+Henk M. Blanken,1
+S. A. Borkin,1
+Wolfgang Effelsberg,1
+S. Misbah Deen,1
+Donald D. Chamberlin,1
+Frank W. Allen,1
+G. M. Nijssen,1
+Eckhard D. Falkenberg,1
+Patricia G. Selinger,1
+S. Jones,1
+P. J. Mason,1
+Jukka Teuhola,1
+C. Fraboul,1
+Werner Ainhirn,1
+Martin Fürer,1
+Helmut Alt,1
+Andrzej Ehrenfeucht,1
+Karel Culik II,1
+Peter Schlichtiger,1
+Hans Langmaack,1
+Ernst-Rüdiger Olderog,1
+Tommaso Toffoli,1
+Jean-Claude Raoult,1
+Arto Salomaa,1
+Aldo de Luca,1
+Antonio Restivo,1
+Lutz M. Wegner,1
+Rüdiger Reischuk,1
+Jeanette P. Schmidt,1
+Eli Shamir,1
+Ronald I. Becker,1
+Yehoshua Perl,1
+Stephen R. Schach,1
+Mila E. Majster-Cederbaum,1
+J. V. Tucker,1
+E. Allen Emerson,1
+Günter Hornung,1
+Piotr Berman,1
+Jean-Eric Pin,1
+Erik Meineche Schmidt,1
+Richard Kennaway,1
+C. A. R. Hoare,1
+Michael B. Smyth,1
+Jim Gray,1
+Seppo Sippu,1
+Eljas Soisalon-Soininen,1
+Joost Engelfriet,1
+Gilberto Filé,1
+Thiet-Dung Huynh,1
+Patrick Cousot,1
+Radhia Cousot,1
+Dario Bini,1
+Luc Boasson,1
+A. Goralciková,1
+Pavel Goralcik,1
+Václav Koubek,1
+Robin Milner,1
+Marc Snir,1
+Nobuo Saito,1
+Toyohiko Hirota,1
+Koichi Tabata,1
+Laszlo A. Belady,1
+Masatoshi Miyazaki,1
+Shigeru Matsuzawa,1
+Seiziro Obata,1
+Itsujiro Arita,1
+Tadao Saito,1
+Toshihiko Kato,1
+Chiaki Ishikawa,1
+Ken Sakamura,1
+Toru Takeshita,1
+Randal E. Bryant,1
+Yahiko Kambayashi,1
+Hisao Kameda,1
+Katsuo Ikeda,1
+Yoshihiko Ebihara,1
+Michihiro Ishizaka,1
+Takao Fujima,1
+Tomoo Nakamura,1
+Kazuhiko Nakayama,1
+Takashi Masuda,1
+Tong-Haing Fin,1
+Mohamed G. Gouda,1
+Yao-Tin Yu,1
+Hiroyuki Kitagawa,1
+Michiharu Tsukamoto,1
+Yoshizo Takahashi,1
+Arvind,1
+Jon Livesey,1
+Kouichi Wada,1
+Kenichi Hagihara,1
+Toshiro Araki,1
+Nobuki Tokura,1
+Isao Miyamura,1
+Masayuki Sunuma,1
+Dean Ritchie,1
+Springer W. Cox,1
+E. L. Alexander Jr.,1
+James P. Bouhana,1
+William Sweeney,1
+Phillip C. Howard,1
+Edward D. Lazowska,1
+Carl Steidtmann,1
+Herman D. Hughes,1
+Larry Greenhaw,1
+Jerome W. Blaylock,1
+Jeffrey Mohr,1
+Steven G. Penansky,1
+Bob Irwin,1
+Seymour Kraut,1
+Tim Rudy,1
+Rollins Turner,1
+Steve Forgey,1
+Edwin S. Herndon,1
+Barry Brass,1
+Benjamin S. H. Wang,1
+Mel Boksenbaum,1
+Martha R. Gilmore,1
+David S. Lindsay,1
+Allan I. Levy,1
+T. M. Kachigan,1
+Daniel L. Pierson,1
+David R. Vincent,1
+John Sanguinetti,1
+Richard Billington,1
+Herman P. Hoplin,1
+John L. Ferguson,1
+Daniel R. Seligman,1
+Imrich Chlamtac,1
+Connie U. Smith,1
+Shirley I. Linde,1
+Lois Morgan,1
+David Kimball,1
+Marc A. Zammit,1
+Arpad Gallo,1
+Richard P. Wilder,1
+Edwin E. Catmull,1
+Alvy Ray Smith,1
+Ehud Artzy,1
+Gideon Frieder,1
+Gabor T. Herman,1
+Uri Shani,1
+Wm. Randolph Franklin,1
+Kathleen R. McKeown,1
+Richard A. Bolt,1
+Lucky M. Tedrow,1
+Eugene A. Hoerauf,1
+D. Cohen,1
+Bob Sproull,1
+James H. Clark,1
+James Torson,1
+Bruce Kaufman,1
+William Leler,1
+Richard T. Carling,1
+Mark Friedell,1
+David Kramlich,1
+Ken Anderson,1
+Myrl Thompson,1
+D. H. W. Harris,1
+R. Wilson,1
+B. Crowley,1
+C. Boyd,1
+Michael J. Wozny,1
+Eliot Feibush,1
+Marc Levoy,1
+Mervyn Kurlansky,1
+Susan Marcus,1
+Jack Reineck,1
+Gay Reineck,1
+Andrew Lippman,1
+Gary B. Goates,1
+Martin L. Griss,1
+Gary J. Herron,1
+Loren C. Carpenter,1
+Joshua Z. Levin,1
+Patrick Baudelaire,1
+Maureen Stone,1
+Tateyuki Tsurutani,1
+Yutaka Kasahara,1
+Masaru Naniwada,1
+Robert Marshall,1
+Rodger Wilson,1
+Wayne E. Carlson,1
+Richard Shoup,1
+Tom Klimek,1
+Larry Evans,1
+Peter Black,1
+H. Bley,1
+D. Weise,1
+Günter Enderle,1
+Klaus Kansy,1
+G. Nees,1
+J. Weiss,1
+Thomas W. Calvert,1
+John Chapman,1
+Aftab E. Patla,1
+Robert F. Gurwitz,1
+Richard W. Thorne,1
+Andreas von Bechtolsheim,1
+Forest Baskett,1
+Carl F. R. Weiman,1
+Gary W. Meyer,1
+Donald P. Greenberg,1
+Kevin Weiler,1
+James C. Michener,1
+David F. Rogers,1
+Steven G. Satterfield,1
+John E. Warnock,1
+Pieter de Bruyne,1
+William Hankley,1
+Virgil Wallentine,1
+Nelson Max,1
+John Blunden,1
+Gregory D. Laib,1
+Richard Puk,1
+G. Stowell,1
+P. tenHagen,1
+Janet S. Chin,1
+Peter R. Bono,1
+J. Michener,1
+Steven M. Rubin,1
+Turner Whitted,1
+Mary desJardins,1
+A. Frederick Hasler,1
+Alain Fournier,1
+Donald S. Fussell,1
+J. H. Jackson,1
+Carl Machover,1
+Susan Taylor,1
+Allan Schmidt,1
+Paul Birkhahn,1
+June Hament,1
+John J. Quann,1
+Bruce F. Naylor,1
+Gwendolyn L. Fuehring,1
+Sajjan G. Shiva,1
+Koji Sato,1
+Hiroyoshi Shimoyama,1
+Takao Nagai,1
+Masaru Ozaki,1
+Toshihiko Yahara,1
+Dave Clary,1
+Robert Kirk,1
+Charles W. Gwyn,1
+Lawrence H. Goldstein,1
+Evelyn L. Thigpen,1
+Vishwani D. Agrawal,1
+Patrick Kozak,1
+Ernesto Pacas-Skewes,1
+Kenneth D. Yates,1
+James A. Wilmore,1
+Lawrence M. Rosenberg,1
+Keiichi Sato,1
+Charles L. Owen,1
+Prabhakar Goel,1
+Yacoub M. El-Ziq,1
+Hiroshi Shiraishi,1
+Fumiyasu Hirose,1
+V. Jayakumar,1
+Jacob M. Miller,1
+David N. Deutsch,1
+Paul Glick,1
+Patrick G. Karger,1
+W. R. Read Jr.,1
+Don Ross,1
+John Smith,1
+Richard von Blucher,1
+Jin H. Kim,1
+Daniel P. Siewiorek,1
+A. E. Fitch,1
+D. Lacy,1
+N. Phillips,1
+J. Tellier,1
+M. Kearney,1
+T. Elkind,1
+R. Beaven,1
+Walter Heyns,1
+Willy Sansen,1
+Herman Beke,1
+John M. Gould,1
+Teddy M. Edge,1
+Miron Abramovici,1
+Melvin A. Breuer,1
+Wilm E. Donath,1
+Sam Bala Daram,1
+Tohru Sasaki,1
+Akihiko Yamada,1
+Shunichi Kato,1
+Terufumi Nakazawa,1
+Kyoji Tomita,1
+Nobuyoshi Nomizu,1
+Takashi Mitsuhashi,1
+Toshiaki Chiba,1
+Makoto Takashima,1
+Kenji Yoshida,1
+George M. Koppelman,1
+D. E. Bering,1
+Antoni A. Szepieniec,1
+Ralph H. J. M. Otten,1
+Jonathan Allen,1
+Frank Luebbert,1
+Mike Ulrey,1
+Albert E. Casavant,1
+Daniel D. Gajski,1
+David J. Kuck,1
+Frank R. Ramsay,1
+J. Philip Singleton,1
+Nigel R. Crocker,1
+Robert Simpson Frew,1
+R. A. Armstrong,1
+Jirí Soukup,1
+J. Royle,1
+George M. Hyman,1
+R. E. Powell,1
+Fumiya Tada,1
+Kiyoshi Yoshimura,1
+Takashi Kagata,1
+Takeyoshi Shirakawa,1
+Edwin B. Hassler Jr.,1
+Ikuo Nishioka,1
+Takuji Kurimoto,1
+Hisao Nishida,1
+Seiji Yamamoto,1
+Toru Chiba,1
+Toshiaki Nagakawa,1
+Takatsugu Fujioka,1
+Masashi Uchino,1
+Charles M. Eastman,1
+Thomas Sidle,1
+Frank D. Skinner,1
+Sartaj Sahni,1
+Atul Bhatt,1
+Manuel A. d'Abreu,1
+Joe Dyer,1
+Arijit Laha,1
+Ernest J. Moran,1
+William D. Smart,1
+Glenn W. Cox,1
+B. D. Carroll,1
+Noboru Okuda,1
+Takashi Harada,1
+Sadahiro Tani,1
+Hiroshi Ozaki,1
+Thomas M. McWilliams,1
+John B. Macdonald,1
+Mary K. Podlecki,1
+Milt J. Pappas,1
+Carl R. McCaw,1
+J. Duane Northcutt,1
+Wendell E. Cory,1
+William M. van Cleemput,1
+Mark G. Karpovsky,1
+Stephen Y. H. Su,1
+Norbert Giambiasi,1
+A. Miara,1
+D. Muriach,1
+Gregory L. Smith,1
+Sharon A. Stephens,1
+Leonard L. Tripp,1
+Wayne L. Warren,1
+H. D. Schnurmann,1
+R. M. Peters,1
+B. T. David,1
+Benjamin Lee,1
+E. F. Chelotti,1
+D. P. Bossie,1
+Ulrich Lauther,1
+R. M. Jacobs,1
+Michael J. Lorenzetti,1
+D. J. Garvin,1
+Felix P. Mallmann,1
+Arthur H. Altman,1
+Alice C. Parker,1
+Martin B. Roberts,1
+David W. Currier,1
+David W. Hightower,1
+Robert L. Boyd,1
+Jerrier A. Haddad,1
+P. Carmody,1
+A. M. Barone,1
+J. K. Morrell,1
+A. Weiner,1
+John L. Hennessy,1
+Paul Losleben,1
+A. Richard Newton,1
+Valerie K. Smith,1
+Phil A. Preston,1
+L. C. Cote,1
+John Grason,1
+Andrew W. Nagle,1
+Edward J. McGrath,1
+Telle Whitney,1
+Alfred E. Dunlop,1
+Samiha Mourad,1
+Keith A. Duke,1
+Günter Biehl,1
+Werner Grass,1
+P. S. Hall,1
+John A. Darringer,1
+William H. Joyner Jr.,1
+Dan C. Nash,1
+Keith Russell,1
+Paul Silverman,1
+Mary Thiel,1
+Sany M. Leinwand,1
+John E. Black,1
+Wallace L. Chafe,1
+Emanuel A. Schegloff,1
+James Davidson,1
+S. Jerrold Kaplan,1
+Yigal Arens,1
+Barbara J. Grosz,1
+John Carey,1
+Larry R. Harris,1
+Charlotte Linde,1
+Annette Herskovits,1
+Jerry R. Hobbs,1
+Nicholas J. Belkin,1
+B. G. Michell,1
+D. G. Kuehner,1
+David L. Waltz,1
+Sharon C. Salveter,1
+Murray Turoff,1
+Starr Roxanne Hiltz,1
+Kenneth Johnson,1
+Ann Marie Rabke,1
+A. Michael Noll,1
+Kenneth C. Litkowski,1
+Jonathan Slocum,1
+Deborah Tannen,1
+Philip R. Cohen,1
+R. C. Woods,1
+Jon M. Slack,1
+Robert C. Berwick,1
+Mark S. Seidenberg,1
+Michael K. Tanenhaus,1
+Robert H. Thibadeau,1
+Marcel Adam Just,1
+Patricia Carpenter,1
+Kenneth Ward Church,1
+John C. Thomas,1
+Marsden S. Blois,1
+David D. Sherertz,1
+Mark S. Tuttle,1
+William A. Martin,1
+George V. Mouradian,1
+Giacomo Ferrari,1
+Oliviero Stock,1
+Leon S. Levy,1
+David D. McDonald,1
+Eleanor Wynn,1
+Robert F. Simmons,1
+Catriel Beeri,1
+Moshe Y. Vardi,1
+Henry F. Korth,1
+Marc H. Graham,1
+David Maier,1
+Edward Sciore,1
+Jack Heller,1
+Barry E. Jacobs,1
+Hans Meijer,1
+Martin R. Raskovsky,1
+Philip A. Collier,1
+Ole Lehrmann Madsen,1
+Frank DeRemer,1
+Richard Jüllig,1
+David A. Watt,1
+John C. Reynolds,1
+Martti Tienari,1
+Véronique Donzeau-Gouge,1
+Gilles Kahn,1
+Bernard Lang,1
+C. Michael Madsen,1
+Marie-Claude Gaudel,1
+Harald Ganzinger,1
+Pearl Y. Wang,1
+Manfred Schnitzler,1
+Gottfried Tinhofer,1
+Arnold L. Rosenberg,1
+Oliver Vornberger,1
+Horst W. Hamacher,1
+Kurt-Ulrich Witt,1
+Peter Brucker,1
+Peter Läuchli,1
+Hermann A. Maurer,1
+Jürgen Ebert,1
+Jürgen Perl,1
+Gunther Schmidt,1
+Ulrich Derigs,1
+Hartmut Noltemeier,1
+Hans Jürgen Schneider,1
+Peter Kandzia,1
+Margret Mangelmann,1
+Hidenosuke Nishio,1
+C. Henry,1
+Patrick Sallé,1
+F. Ermine,1
+Irène Guessarian,1
+Alan Mycroft,1
+Piero R. Torrigiani,1
+Raymond R. Devillers,1
+Alberto Bertoni,1
+Giancarlo Mauri,1
+Pierangelo Miglioli,1
+Pedro Guerreiro,1
+Michel Sintzoff,1
+Roberto Barbuti,1
+Alberto Martelli,1
+J. L. Weiner,1
+Alexis Koster,1
+John A. Barnden,1
+Brian H. Mayoh,1
+Friedemann H. Simon,1
+Philippe Darondeau,1
+Cyrus F. Nourani,1
+Thanh-Huy Hua,1
+Didier Bert,1
+Ekkart Rudolph,1
+Hans Seidl,1
+Michael Eulenstein,1
+Hans-Joachim Habermann,1
+Jürgen Kirbach,1
+Franz Wagner,1
+G. Müller,1
+L. Dumke,1
+Bernd Meister,1
+Jürgen C. W. Schröder,1
+Klaus R. Dittrich,1
+Karlheinz Hug,1
+Peter Kammerer,1
+Dieter Lienert,1
+Hans Mau,1
+Klaus Wachsmuth,1
+Hermann Bense,1
+J. Riedel,1
+Roger M. Needham,1
+H. Eigemeier,1
+Christoph Knabe,1
+K. Tramer,1
+Ipke Wachsmuth,1
+Peter Göhner,1
+J.-H. Jayez,1
+P. Levasseur,1
+M. Liscouet,1
+Eric Papon,1
+Horst Niggemann,1
+Anthony Jameson,1
+Wolfgang Hoeppner,1
+Eberhard Wegner,1
+Werner Tesch,1
+Michael Böhm,1
+Martin Riemer,1
+Karl Heinz Höhne,1
+Ralf Steinbrüggen,1
+Michael Payer,1
+Dominique Pastre,1
+Klaus-Jürgen Engelberg,1
+Andreas Meier 0001,1
+G. Stamon,1
+Bertrand Zavidovique,1
+Carl August Zehnder,1
+Bertram Thurnherr,1
+Michael Breder,1
+Joseph Weizenbaum,1
+D. Herman,1
+Michel Raynal,1
+Peter Liell,1
+Alain Tarabout,1
+Bernard Maillot,1
+Irène Vatton,1
+Bernd Schmidt,1
+Eike Hagen Riedemann,1
+Wolfgang Ballin,1
+Ralf Hartmut Güting,1
+Hans-Peter Kriegel,1
+Knut Ripken,1
+M. A. Ertel,1
+Horst Kosanke,1
+Raymond Schneider,1
+Peter Klein,1
+Friedhelm Meyer auf der Heide,1
+Heinz Dieter Maas,1
+Claudio Moraga,1
+Edward A. Feigenbaum,1
+Dietrich Seibt,1
+Wilhelm Mülder,1
+Horst Biller,1
+Monika Blum,1
+Jürgen Höhne,1
+Manfred Reitenspieß,1
+J. Reyes,1
+G. Roehmer,1
+Graham Wrightson,1
+Hubert Österle,1
+Bernd Breutmann,1
+Rosmarie Mauer,1
+M. R. King,1
+N. H. Shelness,1
+Walter Dosch,1
+Gianfranco Mascari,1
+Gerhard Jaeschke,1
+Norbert Eisinger,1
+Jörg H. Siekmann,1
+Gert Smolka,1
+E. Unvericht,1
+Christoph Walther,1
+Colette Rolland,1
+Christian Richard,1
+Theo von Bomhard,1
+Norbert Ramsperger,1
+Stefan Reisch,1
+Peter Theobald,1
+N. Bauchrowitz,1
+F. Simon,1
+W. A. Walker,1
+Jonathan V. Post,1
+Abraham Silberschatz,1
+James B. Rothnie Jr.,1
+Harry K. T. Wong,1
+William Kent,1
+David K. Jefferson,1
+Nicolas Spyratos,1
+K. K. Nambiar,1
+Wing Kai Cheng,1
+Geneva G. Belford,1
+Robert Demolombe,1
+Eric K. Clemons,1
+Daniel A. Menascé,1
+Oscar E. Landes,1
+Shamkant B. Navathe,1
+Rudolf Bayer,1
+Klaus Elhardt,1
+Hans Heller,1
+Angelika Reiser,1
+Dorothy A. Phillips,1
+Steven H. Spewak,1
+Per-Åke Larson,1
+Susan J. Eggers,1
+Arie Shoshani,1
+Glenn Thomas,1
+Emile Peeters,1
+Rudi Studer,1
+Barbara T. Blaustein,1
+Robert S. Epstein,1
+Lenny Freilich,1
+Paul J. Sadowski,1
+M. Tamir,1
+T. Missinai,1
+Joel Arditi,1
+E. Raban,1
+S. Sole,1
+S. Timor,1
+E. Zukovsky,1
+S. Sedillort,1
+Stanley B. Zdonik,1
+C. J. Date,1
+Donald E. Swartwout,1
+Larry Wos,1
+Alan Bundy,1
+Bob Welham,1
+Frederick C. Furtek,1
+Alan M. Thompson,1
+Donald W. Loveland,1
+Robert E. Shostak,1
+Helga Noll,1
+Gábor Belovári,1
+J. A. Campbell,1
+Peter B. Andrews,1
+Maurice Bruynooghe,1
+Gérard D. Guiho,1
+Christian Gresse,1
+Alfredo Ferro,1
+Eugenio G. Omodeo,1
+Jacob T. Schwartz,1
+Luís Moniz Pereira,1
+António Porto,1
+Rob Nederpelt,1
+Chris Goad,1
+Jean-Pierre H. Laurent,1
+Richard W. Weyhrauch,1
+Philip T. Cox,1
+Tomasz Pietrzykowski,1
+W. W. Bledsoe,1
+Larry M. Hines,1
+Paul E. Dworak,1
+Philip C. Baczewski,1
+John Strawn,1
+Curtis Abbott,1
+Peter J. Clements,1
+Otto E. Laske,1
+Andrew S. Glassner,1
+Donald Byrd,1
+Daniel Arfib,1
+F. Richard Moore,1
+Michael A. Yantis,1
+Steve Levine,1
+J. William Mauchly,1
+Scott Vance,1
+James Montgomery,1
+John Rogers,1
+John Rockstroh,1
+Deta S. Davis,1
+Hubert S. Howe Jr.,1
+Mark Kahrs,1
+Christopher Fry,1
+Tamas Ungvary,1
+Barry Truax,1
+Charles E. Potter,1
+Dale Teaney,1
+Wesley Fuller,1
+Don Lieberman,1
+Wayne Slawson,1
+David W. Carr,1
+Rosalee Nerheim,1
+Wilber T. England,1
+Kemal Ebcioglu,1
+Brad Albers,1
+Paul Lansky,1
+M. Green,1
+Bruce McLean,1
+Charles Ames,1
+Alexander R. Brinkman,1
+Kevin Jones,1
+Howard A. Peelle,1
+Stuart Smith,1
+Douglas J. Steele,1
+Goffredo Haus,1
+Hélène Charnassé,1
+David Keane,1
+C. G. Marillier,1
+Raymond F. Jurgens,1
+Dorothy Gross,1
+Gary S. Kendall,1
+Franz Kneißl,1
+H. Burkhardt,1
+J. Schöffel,1
+R. Thurmayr,1
+B. Eickenscheidt,1
+S. A. Slaby,1
+Wolfgang A. Slaby,1
+Fritz-Peter Spellman,1
+Jörg Schultze-Bohl,1
+R.-J. Fischer,1
+W. Kaiser,1
+H. Th. Hagmeyer,1
+G. Putze,1
+D. Köberl,1
+W. Geigl,1
+M. Scherer,1
+H. Schier,1
+Paul Schmitz,1
+Friedbert Jochum,1
+Peter Weidner,1
+W. Schneider,1
+Joachim Dudeck,1
+W. Sager,1
+K. Schenke,1
+Allan Borodin,1
+I. S. Filotti,1
+Jack N. Mayer,1
+Errol L. Lloyd,1
+Leonidas J. Guibas,1
+Dana Angluin,1
+Deborah Joseph,1
+Paul Young,1
+Christoph M. Hoffmann,1
+Gary L. Miller,1
+H. Raymond Strong,1
+Chee-Keng Yap,1
+Nicholas Pippenger,1
+Allen Cypher,1
+James A. Storer,1
+David Lichtenstein,1
+Nancy A. Lynch,1
+Peter A. Bloniarz,1
+Oscar H. Ibarra,1
+Brian S. Leininger,1
+Kenneth J. Supowit,1
+Edward M. Reingold,1
+Ravindran Kannan,1
+Mark H. Overmars,1
+Jan van Leeuwen,1
+Ronald Fagin,1
+Michael J. Fischer,1
+Mike Paterson,1
+David A. Carlson,1
+John E. Savage,1
+Bernard Chazelle,1
+Paul G. Spirakis,1
+Sam Toueg,1
+Joos Heintz,1
+Claus-Peter Schnorr,1
+Joel I. Seiferas,1
+C. L. Liu,1
+S. Gill Williamson,1
+Helmut Thiele,1
+A. Pink,1
+Bernard Robinet,1
+Marek Karpinski,1
+Jerzy Tiuryn,1
+Jocelyne Mongy,1
+Norbert Cot,1
+Jean Berstel,1
+Christophe Reutenauer,1
+Axel Poigné,1
+Didier Bégay,1
+Dominique Gouyou-Beauchamps,1
+Werner Damm,1
+Elfriede Fehr,1
+Michio Oyamaguchi,1
+Yasuyoshi Inagaki,1
+Namio Honda,1
+Marco Bozzetti,1
+Pierre Nepomiastchy,1
+John Pollard,1
+Glen Campbell,1
+Manfred R. Klopprogge,1
+Peter C. Lockemann,1
+Alfons J. Jammel,1
+Helmut G. Stiegler,1
+Pavel Vogel,1
+James D. Foley,1
+Walter S. Brainerd,1
+Jeanne Adams,1
+W. F. Smyth,1
+N. W. N. Jayasiri,1
+Susan L. Gerhart,1
+David H. Thompson,1
+D. A. Baker,1
+R. L. Bates,1
+R. L. London,1
+D. G. Taylor,1
+David S. Wile,1
+Pierre Azéma,1
+Bernard Berthomieu,1
+Henry Kanoui,1
+Michel Van Caneghem,1
+Howard L. Morgan,1
+Bas K. Brussaard,1
+Peter A. Tas,1
+Kurt Hässig,1
+Christian J. Jenny,1
+Hans-Dieter Ehrich,1
+Udo W. Lipeck,1
+Kokichi Futatsugi,1
+Koji Okada,1
+Mehmet Dincbas,1
+Kin-Man Chung,1
+Fabrizio Luccio,1
+Bruce I. Blum,1
+Richard J. Johns,1
+Bruce Gilchrist,1
+A. Vaquero,1
+José M. Troya,1
+Philip M. Stanley,1
+Vladimír Vrecion,1
+Françoise Gallouedec Genuys,1
+Jack Foisseau,1
+René Jacquart,1
+Michel Lemaître,1
+Michel Lemoine,1
+J. C. Vignat,1
+Guy Zanon,1
+Kazuyoshi Morino,1
+Osamu Takahashi,1
+Koji Kodama,1
+Jiro Yoshii,1
+Ken-ichi Mori,1
+Toshitsugu Yuba,1
+Akio Kokubu,1
+Ryoichi Ooomote,1
+Alan R. Tyson,1
+James Leslie Keedy,1
+J. D. Lawson,1
+David A. Swayne,1
+Herbert Freeman,1
+A. D. Le Rest,1
+J. Blevanus,1
+M. Ferragu,1
+David Gries,1
+Timothy Johnson,1
+Masatoshi Kubo,1
+Yasushi Taguchi,1
+Kiyoshi Agusa,1
+Claude Delobel,1
+Seymour Papert,1
+Giampio Bracchi,1
+Makoto Terajima,1
+Brian M. Murphy,1
+Jean-Claude Pagès,1
+Dominique Gremillet,1
+Andreas Horst,1
+Jun-ichiro Yokoyama,1
+Akira Fukuda,1
+Kurt Maly,1
+Leonhard Kampa,1
+Makoto Takizawa,1
+Eiji Hamanaka,1
+Teruo Hikita,1
+Satoru Kawai,1
+Alan C. Kay,1
+Katsuhiro Yamazaki,1
+Sebastiaan H. von Solms,1
+Wilhelm Steinmüller,1
+C. Gaude,1
+J. Langet,1
+S. Palassin,1
+Claude Kaiser,1
+Morton M. Astrahan,1
+Mario Schkolnick,1
+A. I. Acil'diev,1
+Yoshikuni Onozato,1
+Sherry Turkle,1
+Daniel Gabay,1
+Marc Guillaume,1
+Arthur J. Catto,1
+John R. Gurd,1
+Barry R. Borgerson,1
+R. H. Johnson,1
+O. Kato,1
+T. Fujita,1
+M. Niwa,1
+T. Morishita,1
+J. Tanahashi,1
+Yves Cohen-Hadria,1
+Ashoke Deb,1
+Miguel A. Hernan,1
+Javier Jiménez,1
+Benoit David,1
+Yvon Gardan,1
+J. Mermet,1
+R. A. Davenport,1
+Eric D. Carlson,1
+Wolfgang Metz,1
+Csaba Gergely,1
+László Háklár,1
+Helmuth Kraenzlein,1
+Paul Bourret,1
+Patrice Cros,1
+Asbjørn Rolstadås,1
+Peter Falster,1
+Yukuo Isomoto,1
+Keiichi Yamagata,1
+Tadashi Ishiketa,1
+Chris Schmandt,1
+Xu Jiafu,1
+Chong Cuihao,1
+N. V. Shulman,1
+Fuqing Yang,1
+Theodor Holm Nelson,1
+Klaus Haefner,1
+Gordon Pask,1
+Osamu Ishii,1
+Teuvo Kohonen,1
+Jack Goldberg,1
+V. A. J. Maller,1
+Preben Folkjär,1
+Giuseppe Gambolati,1
+Giampiero Volpi,1
+Masali Nakagawa,1
+Alain G. Texier,1
+David F. Stevens,1
+Mario Nagata,1
+Teruo Akiyama,1
+Yasutaka Fujikake,1
+Reiji Nakajima,1
+Taiichi Yuasa,1
+Keiji Kojima,1
+Enn Tyugu,1
+Takanobu Baba,1
+Ken Ishikawa,1
+Kenzo Okuda,1
+Hiroyuki Kobayashi,1
+Waltraud Schweikhardt,1
+Roderick A. Matthews,1
+Anthony C. Hearn,1
+Peter T. Kirstein,1
+Marc Berthod,1
+D. R. Thomas,1
+R. B. Maguire,1
+John Cocke,1
+Peter W. Markstein,1
+Michael Yoeli,1
+Abraham Ginzburg,1
+Owe Axelsson,1
+I. Gustafsson,1
+Peter Albrecht,1
+Dominique Comte,1
+Nourredine Hifdi,1
+Jean-Claude Syre,1
+S. Peter de Jong,1
+C. William Gear,1
+Oscar Barros,1
+Alejandro Gomez,1
+Alice Recoque,1
+Guy Cousineau,1
+Jean Salmona,1
+Gregory M. Hunter,1
+Guri I. Marchuk,1
+Valeri P. Il'in,1
+Harlan D. Mills,1
+Alain J. Martin,1
+Takeshi Chusho,1
+Janusz A. Brzozowski,1
+László Úry,1
+Yu. G. Evtushenko,1
+Yu. Pavlovsky,1
+N. J. Livesey,1
+Hideyuki Tokuda,1
+Renato de Mori,1
+Alireza Kavianpour,1
+Arthur D. Friedman,1
+Sheila M. Blackmore,1
+Hosaker N. Mahabala,1
+Mudambi R. Muralidharan,1
+Ghassan A. Kubba,1
+Helmuth Partsch,1
+Vadim E. Kotov,1
+V. V. Zhurin,1
+F. G. Tcheremissine,1
+Erich J. Neuhold,1
+Thomas Olnhoff,1
+T. J. Lincoln,1
+Yuzuru Tanaka,1
+Yukoo Nozaka,1
+Akinari Masuyama,1
+Ian D. G. Macleod,1
+J. J. Jackson,1
+John B. Eulenberg,1
+Sany Leinwand,1
+Leonard Kleinrock,1
+Yechiam Yemini,1
+Wolfgang Leutert,1
+Manfred Riedl,1
+Christof Möller,1
+Günter Schäfer,1
+Ernst Böhm,1
+Erhard Reblin,1
+Reinhart Schmidt,1
+Heinrich Sprenger,1
+Hansheinz Scharf,1
+Hans-Friedrich Hadeler,1
+Klaus Peinze,1
+Friederich Ipsen,1
+Hermann Langer,1
+Wolfgang Wirtz,1
+Josef Gottlob,1
+Tillmann Hüttenhain,1
+Karl Wilms,1
+Edgar Gillich,1
+Martin Heidötting,1
+Manfred Friedrich,1
+Klaus Hansen,1
+Manfred Weyer,1
+Heinz Rettenmaier,1
+Paul Riebel,1
+Walter Heisel,1
+Klaus-Dieter Fröhner,1
+Volkhart Schmidt,1
+Horst Zimmermann,1
+Surendra Batra,1
+Hermann Schmidt,1
+Peter Schehka,1
+Rudolf Schneider,1
+Klaus Adena,1
+Herbert Obermüller,1
+Eckhard Bernshausen,1
+Johannes Puhl,1
+Frank Luther,1
+Rudolf Nechutniß,1
+Hans Henrik Lovengreen,1
+Jørgen Bundgaard,1
+Lennart Schultz,1
+Ole Dommergaard,1
+Ole N. Oest,1
+Jan Storbank Pedersen,1
+H. K. Huang,1
+Menfai Shiu,1
+F. R. Suarez,1
+Isamu Kobayashi,1
+B. S. Lin,1
+R. Walser,1
+Y. Edmund Lien,1
+Susan K. Harris,1
+Ning-San Chang,1
+Y. T. Chien,1
+Theodosios Pavlidis,1
+Hideyuki Tamura,1
+Chung-Chun Yang,1
+Joseph Olu Omolayole,1
+Allen Klinger,1
+J. L. Reuss,1
+Bruce H. McCormick,1
+Edward T. Lee,1
+Murat Kunt,1
+Albert L. Zobrist,1
+Nevin A. Bryant,1
+Bharat K. Bhargava,1
+Albert C. Oosterhof,1
+Robert A. Reiser,1
+James L. Wyatt,1
+Kamala Anandam,1
+Ed Eisel,1
+Lorne Kotler,1
+Wanda S. Talley Staggers,1
+John Glaser,1
+Maria Zemankova,1
+Caroline M. Eastman,1
+E. P. Miles Jr.,1
+Christie D. Michelsen,1
+Wayne D. Dominick,1
+Joseph E. Urban,1
+M. B. Windeknecht,1
+Bruce O. Justham,1
+Janis E. Qualls,1
+Yeu-hsiung Liang,1
+Joan M. Francioni,1
+John C. Peck,1
+Christopher W. Foreman,1
+Steven L. Blumsack,1
+Stephen P. Leach,1
+Janet Craig,1
+Thomas Philip,1
+Robert M. Eastman,1
+Bruce Edwards,1
+David Scott,1
+Elizabeth Davis,1
+Gail Brownlee,1
+Thomas A. Ball,1
+John A. Mantle,1
+James C. Pleasant,1
+Sherwin Gooch,1
+Jesse H. Poore Jr.,1
+John W. Nall,1
+James F. Wirth,1
+Charles K. Woodruff,1
+Myron L. Nack,1
+Hayden S. Porter,1
+Herbert W. Jones,1
+Gordon Bailes,1
+D. E. Swearingen,1
+Eric W. Chamberlain,1
+Arie E. Kaufman,1
+Richard J. LeBlanc,1
+Ben B. Barnes,1
+William R. Spickerman,1
+June Rampy Ponder,1
+Rena A. Haynes,1
+David Blythe,1
+Andrew W. Ferretti,1
+Dimitry Zissermann,1
+William J. Rogers,1
+David F. McAllister,1
+Stephen M. Pizer,1
+John Paul Shen,1
+John P. Hayes,1
+M. D. Ruggiero,1
+Safwat G. Zaky,1
+Kishor S. Trivedi,1
+F. André,1
+Jean-Pierre Banâtre,1
+Hughes Leroy,1
+G. Paget,1
+Florimond Ployette,1
+Jean-Paul Routeau,1
+G. Andrew Boughton,1
+Clement K. C. Leung,1
+Constantine Halatsis,1
+J. Joosten,1
+M. Letheren,1
+Jean-Paul Sansonnet,1
+Michel Castan,1
+Christian Percebois,1
+Jean-Paul Brassard,1
+Jan Gecsei,1
+Jon G. Kuhl,1
+Sudhakar M. Reddy,1
+David B. G. Edwards,1
+Alan E. Knowles,1
+J. V. Woods,1
+Kenneth E. Batcher,1
+V. Carl Hamacher,1
+Gerald S. Shedler,1
+Mary Jane Irwin,1
+Don Heller,1
+Edward S. Davidson,1
+Miguel Garcia Hoffman,1
+Karl-Erwin Großpietsch,1
+Jörg Kaiser,1
+Edgar Nett,1
+Mokhtar Boshra Riad,1
+Robert H. Halstead Jr.,1
+Stephen A. Ward,1
+David Nassimi,1
+Yasushi Hibino,1
+David R. Ditzel,1
+David A. Patterson,1
+Robert M. Lougheed,1
+David L. McCubbrey,1
+Hermann von Issendorff,1
+W. Grunewald,1
+Uwe Hercksen,1
+Rainer Klar,1
+Wolfgang Kleinöder,1
+Anand Jagannathan,1
+Wlodzimierz M. Zuberek,1
+Viktors Berstis,1
+Jeffrey M. Tobias,1
+Kenneth A. Pier,1
+Anshul Kumar,1
+P. C. P. Bhatt,1
+Mario Tokoro,1
+Kiichiro Tamaru,1
+Masaaki Mizuno,1
+Masao Hori,1
+Sudhir Ahuja,1
+Charles S. Roberts,1
+Edward G. Coffman Jr.,1
+Kimming So,1
+Robert H. Kuhn,1
+Philip C. Trevleaven,1
+Geoffrey F. Mole,1
+M. J. Foster,1
+John Palmer,1
+P. Guillier,1
+D. Slosberg,1
+J. Daniel Couger,1
+Martin L. Bariff,1
+Michael J. Ginzberg,1
+Richard J. Welke,1
+William R. King,1
+Margrethe H. Olson,1
+Ralph H. Sprague Jr.,1
+Joyce J. Elam,1
+John C. Henderson,1
+Louis W. Miller,1
+James A. Senn,1
+Jerri L. Frantzve,1
+Jeffrey H. Moore,1
+Mary J. Culnan,1
+Edward A. Stohr,1
+Jon A. Turner,1
+Ronald N. Taylor,1
+Roger Weissinger-Baylon,1
+Wayne Hughs,1
+Scott Adams,1
+Anne Weissinger-Baylon,1
+E. Burton Swanson,1
+Kenneth E. Kendall,1
+Jeffrey A. Hoffer,1
+Alan G. Merten,1
+Scott Hamilton,1
+Peter G. W. Keen,1
+Loren R. McMurray,1
+John Charles Cox,1
+John M. Turner,1
+Daniel Lai,1
+Elwood L. Seifert,1
+Frank Cornett,1
+Richard M. Schwartz,1
+John W. Klovstad,1
+John Aasted Sørensen,1
+Michael A. Krasner,1
+Dan E. Dudgeon,1
+Bill Koral,1
+Louis Schirm,1
+Shlomo Waser,1
+Richard Wiggins,1
+Roger F. Dwyer,1
+Stephen E. Levinson,1
+Kathleen L. Shipley,1
+Robert J. Fontana,1
+Graham A. Jullien,1
+William C. Miller,1
+L. E. Bergeron,1
+Aaron J. Goldberg,1
+Soon Young Kwon,1
+M. Miller,1
+Jared Bernstein,1
+Nicholas Roethe,1
+Alan C. Bessey,1
+David C. Farden,1
+Khalid Sayood,1
+Jean-Pierre Adoul,1
+Jean-Louis Debray,1
+Daniel Dalle,1
+Scott H. Foster,1
+David L. Klepper,1
+Monson H. Hayes,1
+Jean-Marie Pierrel,1
+Jean-Paul Haton,1
+Lonnie C. Ludeman,1
+Carey D. Bunks,1
+Dennis R. Morgan,1
+William J. Vetter,1
+H. F. Vanlandingham,1
+J. F. Bogdanski Jr.,1
+Yutaka Kobayashi,1
+Yasuhisa Niimi,1
+John R. Mick,1
+Bernard New,1
+Herbert Bierfert,1
+M. Kirstein,1
+D. Lance,1
+Guy Hochgesang,1
+Robert V. Lemay,1
+Georges Bienvenu,1
+Laurent Kopp,1
+Nils Rydbeck,1
+Per Tjernlund,1
+Jan Uddenfeldt,1
+Jerald R. Hyde,1
+A. Harold Marshall,1
+Edwin H. Wrench Jr.,1
+B. Patrick Landell,1
+Jhong S. Lee,1
+Leonard E. Miller,1
+Richard R. Kurth,1
+Michael T. McCallig,1
+G. Beresford-Smith,1
+I. M. Mason,1
+James A. Cadzow,1
+James W. Cooley,1
+Gary A. Shaw,1
+Charles K. Chui,1
+Andrew K. Chan,1
+B. A. Fette,1
+R. Gibson,1
+E. Greenwood,1
+P. Ananthakrishna,1
+Sanjit K. Mitra,1
+Hans Gethöffer,1
+Stephen W. Lang,1
+Reinder Nouta,1
+Robert J. Sluyter,1
+H. J. Kotmans,1
+A. V. Leeuwaarden,1
+Kenneth Abend,1
+Sadaoki Furui,1
+Catherine P. Browman,1
+M. R. Baraniecki,1
+Malayappan Shridhar,1
+James P. Reilly,1
+Webster P. Dove,1
+David Y. Wong,1
+Uwe L. Haass,1
+Thomas A. Brubaker,1
+Gerald Wieber,1
+M. J. Irwin,1
+Abraham Peled,1
+Antonio Ruiz,1
+Eli Fogel,1
+Y. F. Huang,1
+Larry Marple,1
+John S. Thompson,1
+James R. Boddie,1
+K. P. Li,1
+T. J. Edwards,1
+Donald W. Tufts,1
+Ramdas Kumaresan,1
+David P. Maher,1
+William H. Haas,1
+Claude S. Lindquist,1
+John Y. Cheung,1
+V. Ramamoorthy,1
+Dennis Morris,1
+David Weinrich,1
+Vijay K. Jain,1
+William L. Collins,1
+David C. Davis,1
+Miron Derkach,1
+Samy A. H. Aly,1
+Jean-Marc Delosme,1
+Benjamin Friedlander,1
+James D. Marr,1
+Lalit R. Bahl,1
+Raimo Bakis,1
+Paul S. Cohen,1
+A. G. Cole,1
+Frederick Jelinek,1
+Burn L. Lewis,1
+Robert L. Mercer,1
+Brian Atkinson,1
+Robert A. Collesidis,1
+Todd A. Dutton,1
+Joseph R. Fisher,1
+N. Rex Dixon,1
+Stephen D. Huffman,1
+Loren W. Nolte,1
+Otis L. Frost,1
+Steven Kay,1
+Aspi B. Wadia,1
+Chrysostomos L. Nikias,1
+R. H. Wiggins,1
+J. H. Parry,1
+Barry L. Clark,1
+John W. Woods,1
+Vinay K. Ingle,1
+R. Hingorani,1
+G. Juskovic,1
+Theodore J. Schultz,1
+John B. O'Neal Jr.,1
+R. R. Koneru,1
+J. P. Agrawal,1
+Dimitri Kazakos,1
+Panayota Papantoni-Kazakos,1
+Ken Davies,1
+Bernard J. Repasky,1
+Ben R. Breed,1
+Tae H. Joo,1
+Theresa C. Speake,1
+B. Groc,1
+D. Tuffelli,1
+Shalhav Zohar,1
+Neviano Dal Degan,1
+Matt Townsend,1
+Jorge I. Galdos,1
+T. Sen Lee,1
+Sharon Hunnicutt,1
+C. Y. Chang,1
+Masud Arjmand,1
+Gwyn Edwards,1
+Melvyn J. Hunt,1
+Matthew Lennig,1
+Paul Mermelstein,1
+J. D. Tomcik,1
+Anthony I. Eller,1
+John F. Miller,1
+Panos Papamichalis,1
+John W. Fay,1
+Stephen A. Dyer,1
+Donald R. Hummels,1
+Jean-François Abramatic,1
+S. U. Lee,1
+Matti Otala,1
+Dusan M. Kodek,1
+Daniel Minoli,1
+Wendell Nakamine,1
+Markku Renfors,1
+Joël Le Roux,1
+Donald G. Childers,1
+J. S. Mott,1
+G. P. Moore,1
+David L. Soldan,1
+Samuel D. Stearns,1
+Michael McLaughlin,1
+Frank Hudziak,1
+Ira A. Gerson,1
+Kevin Kloker,1
+Nick G. Kingsbury,1
+W. A. Amos,1
+Robert A. Gabel,1
+C. E. Schmidt,1
+H. Ravindra,1
+Henri J. Nussbaumer,1
+S. Y. Hwang,1
+Wonyong Sung,1
+C. H. Reddy,1
+P. Karivaratha Rajan,1
+M. N. S. Swamy,1
+Fernand S. Cohen,1
+David B. Cooper,1
+Howard Elliott,1
+Peter F. Symosek,1
+Gordon L. DeMuth,1
+Eugene B. Hogenauer,1
+Marian J. Macchi,1
+Thomas Kailath,1
+Joseph C. Hassab,1
+Brian W. Guimond,1
+Steven C. Nardone,1
+James H. McClellan,1
+Cory S. Myers,1
+A. M. Vural,1
+Claude Guéguen,1
+F. Giannella,1
+W. J. Gelow,1
+W. Steven Bussey,1
+Michael J. Coker,1
+Donald N. Simkins,1
+Michael L. Honig,1
+John R. Treichler,1
+Michael G. Larimore,1
+Peter L. Chu,1
+Colin F. N. Cowan,1
+H. Martin Reekie,1
+John Mavor,1
+John W. Arthur,1
+Peter B. Denyer,1
+W. Marshall Leach Jr.,1
+James L. Caldwell,1
+Marilyn L. Malpass,1
+William S. Hodgkiss,1
+Jean-Pierre Dugré,1
+Ronald S. Cheung,1
+Raimond L. Winslow,1
+Thomas A. Kriz,1
+Dale F. Bachman,1
+D. E. Wight,1
+Francis X. Bostick,1
+R. C. Cox,1
+David M. Robinson,1
+Claude R. Galand,1
+Daniel J. Esteban,1
+G. Robert Redinbo,1
+W. Y. Cheung,1
+Matti Karjalainen,1
+Unto K. Laine,1
+Raimo Toivonen,1
+Ken R. Haymond,1
+R. Jerome Folmar,1
+Joe Wood,1
+Heinz G. Fehn,1
+Peter Noll,1
+Gloria Faye Boudreaux,1
+Thomas W. Parks,1
+Jay G. Wilpon,1
+Dae Hee Youn,1
+Ryohei Nakatsu,1
+Raymond Descout,1
+Jean-Yves Auloge,1
+Bernard Guérin,1
+Jerry D. Gibson 0001,1
+Louis C. Sauter,1
+Michel Chafcouloff,1
+Gérard Chollet,1
+Paul P. Durand,1
+Jacques Guizol,1
+Xavier Rodet,1
+Jesse W. Fussell,1
+Thomas C. Cantwell,1
+Richard D. Wilmot,1
+A. Richard Smith,1
+Marvin R. Sambur,1
+James B. Lee,1
+Satoshi Imai,1
+Yoshiharu Abe,1
+Richard L. Frost,1
+Craig K. Rushforth,1
+Candace M. Anderson,1
+Roger Y. Tsai,1
+Thomas S. Huang,1
+John H. Lodge,1
+David C. Munson Jr.,1
+Bede Liu,1
+Martha E. Hean,1
+Bishnu S. Atal,1
+Manfred R. Schroeder,1
+Andres Buzo,1
+Robert M. Gray,1
+C. S. Joshi,1
+Jack F. McDonald,1
+Randy H. Steinvorth,1
+Masayuki Kawamata,1
+Tatsuo Higuchi 0001,1
+Gérard Thomas,1
+Steven F. Boll,1
+William P. Whyland,1
+Kent Scarbrough,1
+G. Clifford Carter,1
+Richard E. Twogood,1
+John R. Welch,1
+Sheldon C. Oxenberg,1
+A. D. McAulay,1
+W. Clay Choate,1
+R. N. Shurtleff,1
+P. Jeffrey Bloom,1
+Joel A. Feldman,1
+Magnus Moll,1
+Sarah A. Rajala,1
+Rui J. P. de Figueiredo,1
+Roberto Billi,1
+J. Robert Ashley,1
+J. Bee Bednar,1
+William A. Coberly,1
+Raymond Steele,1
+Edward P. Neuburg,1
+Robert B. Fisher III,1
+Andrew C. Callahan,1
+Norman Brenner,1
+William L. Mills,1
+Bernard Gold,1
+Frank K. Soong,1
+Wayne R. Lund,1
+B. Yegnanarayana,1
+Takao Nishitani,1
+Yuichi Kawakami,1
+Rikio Maruta,1
+Akira Sawai,1
+Bharat B. Madan,1
+Richard B. Lauer,1
+Anil K. Jain 0002,1
+Surendra Ranganath,1
+Renato De Mori,1
+Chao H. Huang,1
+Earl E. Swartzlander Jr.,1
+William D. Voiers,1
+J. M. Riley,1
+Michael J. McLane,1
+David L. Cohn,1
+Fred Mintzer,1
+Kil Ho Song,1
+Carey Gibson,1
+Arye Nehorai,1
+Keith Blanton,1
+C. J. M. Hodges,1
+Daniel McWhorter,1
+Gervasio Prado,1
+R. K. Pearson,1
+Lloyd J. Griffiths,1
+Joseph Olive,1
+Dietmar Achilles,1
+L. Thieme,1
+Hugh A. Tucker,1
+Bernd Wingert,1
+Thomas Neuman,1
+Albert L. Klosterman,1
+Jason R. Lemon,1
+S. K. Tolani,1
+Hans Grabowski,1
+Helmut Maier,1
+Otto Manck,1
+E. Emde,1
+V. Erlacher,1
+K. H. Hirschmann,1
+Peter Dietz,1
+Th. von Verschuer,1
+Hans Schlosser,1
+Ulrich Seiffert,1
+H. G. Siepmann,1
+Klaus Leinemann,1
+Michael A. Wesley,1
+Aristides A. G. Requicha,1
+Volkmar Droßmann,1
+G. Pahl,1
+E. Schmidt,1
+Gerhard Engelken,1
+J. Lorey,1
+Wolf-Henryk Menke,1
+Carl J. Bellas,1
+Lewis Corner,1
+Richard Wiener,1
+John S. Dorrenbacher,1
+R. V. Oakford,1
+Arturo Salazar,1
+R. S. Skertchly,1
+William H. Hochstettler,1
+Lawrence L. Rose,1
+Ricardo F. Garzia,1
+Phillip H. Schmidt,1
+Mario R. Garzia,1
+Tuncer I. Ören,1
+Brian Collie,1
+Paul J. Kuzdrall,1
+James E. Hatch,1
+Roger A. More,1
+DeWayne Ketchum,1
+David L. Tweedy,1
+Delton L. Chesser,1
+Charles M. Shub,1
+Deborah J. Medeiros,1
+Randall P. Sadowski,1
+Darrell W. Starks,1
+B. S. Smith,1
+R. D. Doering,1
+Y. A. Hosni,1
+James M. Cargal,1
+Elizabeth R. Ducot,1
+Alexander H. Levis,1
+Melvin M. Cutler,1
+Roger H. Mehl,1
+Edward C. Russell,1
+Thomas D. Clark Jr.,1
+Morton Berman,1
+Murray Geisler,1
+Piero P. Bonissone,1
+Peter A. W. Lewis,1
+Robert C. Bushnell,1
+James T. Low,1
+Edward S. Pearsall,1
+Paul D. Amer,1
+Aaron H. Brown,1
+Charles J. Campbell,1
+Eugene E. Kaczka,1
+Daniel L. Blakley,1
+Kalman J. Cohen,1
+Arie Y. Lewin,1
+Richard C. Morey,1
+Suraj M. Alexander,1
+Gary R. Weckman,1
+Raymond M. Bryant,1
+J. William Schmidt,1
+John H. Blackstone Jr.,1
+Gary L. Hogg,1
+Alton D. Patton,1
+Donald Segal,1
+Claude Dennis Pegden,1
+Julian Reitman,1
+Wilhelm H. Bortels,1
+Newell E. Chiesl,1
+Averill M. Law,1
+John E. Lenz,1
+Gail S. Hines,1
+Daniel V. Goulet,1
+R. E. Stinner,1
+Walter G. Rudd,1
+Donn G. DeCoursey,1
+Harvey J. Gold,1
+Leo J. Boelhouwer,1
+W. Röske,1
+H. Gansera,1
+M. Bittel,1
+G. Kirschner,1
+Wolfgang Renninger,1
+D. Linssen,1
+G. Henning,1
+M. Broßmann,1
+E. Kretz,1
+H. Wagner,1
+E. Steffens,1
+F. N. Stockebrand,1
+K. Heinzelbecker,1
+Th. Thiele,1
+D. Klugmann,1
+U. Morasch,1
+M. Heidötting,1
+G. Wagener,1
+W. Schmidt,1
+L. Feiereisen,1
+Dieter Schütt,1
+E. Wildgrube,1
+W. König,1
+K. J. Becker,1
+L. Birk,1
+Anna-Kristin Pröfrock,1
+Wladyslaw M. Turski,1
+Andreas Schwald,1
+Thorsten Spitta,1
+Dietmar Hoffmann,1
+Udo Voges,1
+Dieter Weber,1
+D. Dafoe,1
+Ekke Weber,1
+J.-P. Behr,1
+Hans P. Zima,1
+Peter H. Yeomans,1
+Peter Haß,1
+Helmut Rzehak,1
+O. Buchegger,1
+Norbert E. Fuchs,1
+Otthein Herzog,1
+Christian Köhler 0005,1
+H. Schelling,1
+Joachim Biewald,1
+Fevzi Belli,1
+Max Herzog,1
+Bernd Kühnel,1
+Matthias Mittelstein,1
+Norbert Heck,1
+Peter Trum,1
+Karl Kleine,1
+Siegfried Florek,1
+Bernd J. Krämer,1
+Heinz W. Schmidt,1
+Gerhard Müller,1
+Gerhard Winkler,1
+Hermann Kopetz,1
+Cliff B. Jones,1
+Hans-Georg Frischkorn,1
+Hans-Ludwig Hausen,1
+Monika Müllerburg,1
+Joachim Christ,1
+Alfred L. Luft,1
+D. Steinbauer,1
+W. Oostendorp,1
+Holger Franck,1
+Michael Timm,1
+K. Hauer,1
+Peter Schnupp,1
+Werner Fey,1
+J. Robert Heath,1
+James Cline,1
+André M. Van Tilborg,1
+Thomas J. Jasinski,1
+Edward A. Starosielec,1
+K. H. Kim,1
+Bharat Deep Rathi,1
+C. P. Hsieh,1
+E. H. Peterson III,1
+David J. Lu,1
+Edward J. McCluskey,1
+Masood Namjoo,1
+Wesley W. Knight,1
+Kang G. Shin,1
+C. Mani Krishna,1
+M. Tsuchiya,1
+Ambuj Goyal,1
+D. V. Satishchandra,1
+Victor P. Nelson,1
+R. H. Hoffman,1
+R. W. Smith,1
+Doug DeGroot,1
+Edith W. Martin,1
+Duen-Ping Tsay,1
+Chung-Ming Li,1
+August J. Ryberg,1
+Donald C. Scarpero,1
+B. Schöfer,1
+Heinrich Bley,1
+Siegfried J. Pöppl,1
+Grit Herrmann,1
+M. Schedy,1
+H. Schedy,1
+Claus-E. Liedtke,1
+Reiner Schröder,1
+Heinrich Niemann,1
+H. Drechsel,1
+R. Schucht,1
+J. Beer,1
+Hans-Georg Zimmer,1
+G. Haussmann,1
+H. Zarschizky,1
+A. Rüter,1
+D. Wittekind,1
+Harry Harms,1
+Hans M. Aus,1
+Horst Linge,1
+Per-Erik Nordal,1
+Svein Otto Kanstad,1
+Martin J. Bastiaans,1
+B. Reuter,1
+P. Vöhringer,1
+Th. Kreis,1
+H. Kreitlow,1
+W. Jüptner,1
+Fritz Merkle,1
+M. Prammer,1
+H. Pichler,1
+Th. Ricker,1
+F. Laeri,1
+B. Schneeberger,1
+T. Tschudi,1
+G. Parry,1
+A. F. Fercher,1
+R. Butt,1
+K. Hinsch,1
+Rüdiger Brennecke,1
+H. J. Hahne,1
+Paul H. Heintzen,1
+Josef Grosch,1
+Jürgen F. H. Winkler,1
+Clemens Stoffel,1
+Kuno Pelz,1
+P. Holleczek,1
+Werner Lindstedt,1
+R. Hansen,1
+E.-G. Hoffmann,1
+Franz Josef Prester,1
+Günter Hommel,1
+A. V. Kurau,1
+R. Rössel,1
+A. Storr,1
+R. Uhl,1
+Guy L. Steele Jr.,1
+Gerald J. Sussman,1
+B. Steele,1
+David B. MacQueen,1
+Donald Sannella,1
+Robert Cartwright,1
+Henry Lieberman,1
+Kent M. Pitman,1
+Mitchell Wand,1
+J. Marti,1
+Uwe F. Pleban,1
+Toshiaki Kurokawa,1
+J. White,1
+W. Rowan,1
+T. J. W. Clarke,1
+P. Gladstone,1
+C. MacLean,1
+A. C. Norman,1
+Richard R. Burton,1
+W. Haugeland,1
+B. Greenberg,1
+L. Morris,1
+J. Schwarz,1
+J. Campbell,1
+John P. Fitch,1
+P. Emanuelson,1
+Anders Haraldsson,1
+M. Model,1
+G. Print,1
+James H. Davenport,1
+Richard D. Jenks,1
+Karl Rihaczek,1
+Erhard Blankenburg,1
+Herbert Schnoor,1
+Roland Makowka,1
+Klaus Grimmer,1
+Dieter Gräßle,1
+Christel Kumbruck,1
+Ralf Reichwald,1
+Georg Poetzsch-Heffter,1
+Jürgen Ostermann,1
+Manfred Weihermüller,1
+Hans Sendler,1
+Klaus Lenk,1
+Wilfried Köhler,1
+Gerhard Stadler,1
+Wolfgang Hartenstein,1
+Gerhard Wittkämper,1
+Peter Fricke,1
+Hinrich E. G. Bonin,1
+Hans-Alexander Kaiserauer,1
+Hans-Joachim Rohrlach,1
+Werner Robert Svoboda,1
+Hans Wülfrath,1
+Peter Schäfer,1
+Ulrich Becker,1
+Klaus Dunker,1
+Jens Krah,1
+Reinhard Oppermann,1
+Wolfgang Schäfer,1
+Karl-Heinz Dittrich,1
+Klaus Dieke,1
+Shalom Rothem,1
+Renate Trost,1
+Frido Wagener,1
+Franz-Martin Fehn,1
+Friedel Hossfeld,1
+Hans-Jochen Schneider,1
+Thomas Barthel,1
+Alfred Dimpker,1
+Eberhard Fehrmann,1
+Alfred Hoffjann,1
+Gerhard Karck,1
+August-Wilhelm Scheer,1
+Werner van Treeck,1
+Werner Jann,1
+Karl Koch,1
+Josef Fabry,1
+Friedrich Simson,1
+Heinrich Reinermann,1
+Klaus Umbreit,1
+Hans Brinckmann,1
+Eckhard Fuchs,1
+John Leslie King,1
+Gerhard Krüger,1
+Manfred Lepper,1
+Herbert Maisl,1
+Hansrainer Bosbach,1
+Wilhelm Albrecht,1
+Klaus Eichhorn,1
+Willi Haas,1
+Hans Hansen,1
+Josef Klinger,1
+Peter Lange-Hellwig,1
+Bernward Löwenberg,1
+Henning Marwedel,1
+Hartmut Niesing,1
+Volker Röske,1
+Alois Langseder,1
+Martin A. Graef,1
+Helmut Pralle,1
+W. Held,1
+Dieter Wall,1
+Th. Hildebrand,1
+B. Wagener,1
+Dieter Haupt,1
+K. Brauer,1
+Adolf Schreiner,1
+G. Bayer,1
+Heinz Billing,1
+Helmar Prechtl,1
+G. Schleich,1
+Reinhard Hartwich,1
+Bruce D. Shriver,1
+Scott Davidson,1
+Peter Kornerup,1
+Rolf Klett,1
+Helmut Berndt,1
+Peter Albrich,1
+Ludwik Czaja,1
+Uwe Petermann,1
+Dimiter Vakarelov,1
+S. R. Radev,1
+Hiroya Kawai,1
+Michal Grabowski,1
+Bogdan S. Chlebus,1
+Andrzej Skowron,1
+Lech Banachowski,1
+Ewa Orlowska,1
+Francine Berman,1
+Hans-Dieter Burkhard,1
+W. W. Bartol,1
+Antoni Kreczmar,1
+A. I. Litwiniuk,1
+H. Oktaba,1
+W. Danko,1
+Lucjan Stapp,1
+Manfred E. Szabo,1
+L. Liu,1
+David A. Bonyun,1
+P. Tucker Withington,1
+S. M. Miranda,1
+Dorothy E. Denning,1
+Martin E. Hellman,1
+P. Barbarino,1
+G. R. Blakley,1
+Gerald Kreissig,1
+Ralph C. Merkle,1
+Steven P. Reiss,1
+Theodore D. Friedman,1
+Lance J. Hoffman,1
+Stanley R. Ames Jr.,1
+James G. Keeton-Williams,1
+Gustavus J. Simmons,1
+Reind P. van de Riet,1
+Martin L. Kersten,1
+Ute Flasche,1
+Juergen Schulze,1
+D. Altenkrüger,1
+Gerd Liefländer,1
+Horst D. Wettstein,1
+Johannes Brauer,1
+Benno Carolus,1
+Wolfgang Hell,1
+H. Auer,1
+Hans-Otto Leilich,1
+W. Teich,1
+Hans Christoph Zeidler,1
+H. Marxen,1
+A. Kroneberg,1
+B. Albert,1
+R. Jacob,1
+R. Klingenstein,1
+Martin Rathke,1
+A. Hesselschwerdt,1
+H. Zoller,1
+Heinz Schweppe,1
+S. Seehusen,1
+Günther Stiege,1
+K. O. Kesser,1
+Axel Lehmann,1
+P. Meinke,1
+W. Thury,1
+P. Busser,1
+J. Dieckmann,1
+Werner Konrad,1
+C. S. Wahan,1
+Joachim Flöthe,1
+M. Ruhle,1
+Hermann Härtig,1
+Thomas Krause,1
+J. N. Lyness,1
+S. M. Nugent,1
+J. J. Du Croz,1
+W. Morven Gentleman,1
+T. J. Dekker,1
+James W. Cerny,1
+Michael A. Steinberg,1
+Carl W. Ballard Jr.,1
+Ronald Blum,1
+Herbert C. Kugel,1
+Doris R. Waggoner,1
+Denise Kervin,1
+Clement L. Luk,1
+Douglas Van Houweling,1
+John E. Bucher,1
+Charles E. Taylor,1
+B. L. Houseman,1
+David M. Clayton,1
+Irene Svagan,1
+James Nichols,1
+Herbert Harris,1
+James A. Buss,1
+Lorraine Borman,1
+Rosemary Karr,1
+J. B. Slater,1
+Mildred S. Joseph,1
+Stephen J. Rogowski,1
+John M. Tyler,1
+Rosemary Rainbolt,1
+Mary C. Boyd,1
+Lincoln Fetcher,1
+Sara K. Graffunder,1
+Thea D. Hodge,1
+Dianne M. Smock,1
+Mary E. Sherer,1
+Margaret E. Rettenmaier,1
+Richard Stillman,1
+John Simon,1
+Bruce Lakin,1
+Scott Luebking,1
+Richard T. Close,1
+Jay O'Dell,1
+Arthur Scott,1
+Mary Ann Drayton,1
+Janice A. Bartleson,1
+James F. Carruth,1
+Paul Heller,1
+Margaret Baker,1
+Arthur O. Cromer,1
+Jane T. Anderson,1
+Sammy W. Pearson,1
+James E. Bailey,1
+Lois J. Secrist,1
+Mike Barnes,1
+A. Sheth,1
+S. S. Swaminathan,1
+Jacky Akoka,1
+Fabio A. Schreiber,1
+Serge Miranda,1
+Chuen-Pu Chou,1
+Ahmed Karmouch,1
+Paul F. Wilms,1
+Radu Popescu-Zeletin,1
+Milan Milenkovic,1
+Wojciech Cellary,1
+Daniel Meyer,1
+L. Dargent,1
+Claude Godart,1
+Carlo Carlesi,1
+E. Ricciardi,1
+Costantino Thanos,1
+C. Petacchi,1
+R. A. C. Thomas,1
+Eszter Kertesz,1
+Judit Polgar,1
+A. Baczko,1
+Franciszek Seredynski,1
+Jan van den Bos,1
+Günter Valdorf,1
+Dieter Schuh,1
+Peter Walter,1
+C. Goerdt,1
+Winfried Materna,1
+Christoph Steigner,1
+Klaus Waldschmidt,1
+Hans-Jürgen Siegert,1
+Werner E. Kluge,1
+Eike Jessen,1
+L. Mackert,1
+D. Conrads,1
+Siegfried Wendt,1
+Peter M. Behr,1
+Harald Kemen,1
+Norbert Schmitt,1
+Franz J. Rammig,1
+Peter Marwedel,1
+H. Hosoya,1
+Satoru Fujishige,1
+Takao Asano,1
+Shunji Kikuchi,1
+T. Hirata,1
+M. Kimura,1
+Jin Akiyama,1
+G. Kishi,1
+Shuji Tsukiyama,1
+Ernest S. Kuh,1
+Tatsuo Ohtsuki,1
+Shoji Shinoda,1
+Tatsuya Kawamoto,1
+K. Takamizawa,1
+Claude Berge,1
+Takao Ozawa,1
+H. Takahashi,1
+Wataru Mayeda,1
+Norishige Chiba,1
+Masakazu Nasu,1
+Takumi Kasai,1
+Akeo Adachi,1
+Masao Iri,1
+Toshinobu Kashiwabara,1
+Ernst-Erich Doberkat,1
+T. C. Hu,1
+M. T. Shing,1
+Patrick W. Dymond,1
+Mark N. Wegman,1
+Robert W. Floyd,1
+Charles E. Leiserson,1
+Paul Chew,1
+Jeffrey Scott Vitter,1
+Barbara Simons,1
+Daniel J. Lehmann,1
+Eitan M. Gurari,1
+Silvio Micali,1
+Vijay V. Vazirani,1
+Dov Harel,1
+Gilles Brassard,1
+J. Ian Munro,1
+Bruno Courcelle,1
+Paul Franchi-Zannettacci,1
+Samuel W. Bent,1
+Daniel Dominic Sleator,1
+Gérard P. Huet,1
+Burchard von Braunmühl,1
+Rutger Verbeek,1
+Neil Immerman,1
+Leonard M. Adleman,1
+Andrea S. LaPaugh,1
+Robert L. Constable,1
+Michael Rodeh,1
+Michael L. Fredman,1
+Michael O. Rabin,1
+Andrew M. Odlyzko,1
+Merrick L. Furst,1
+John E. Hopcroft,1
+Robert A. Mueller,1
+W. J. Meyers,1
+Paul Reilly,1
+Elizabeth Shanahan,1
+Steven Staudaher,1
+Reino Kurki-Suonio,1
+Juha Heinänen,1
+David I. Epstein,1
+Neal R. Firth,1
+Danièle Dromard,1
+François Dromard,1
+Igor Hansen,1
+Henry G. Baker Jr.,1
+Clinton Parker,1
+John Wade Ulrich,1
+James R. Kleinsteiber,1
+Joseph A. Fisher,1
+Karl M. Guttag,1
+Michael D. Poe,1
+Harvey G. Cragon,1
+Marleen Sint,1
+Gilbert R. Berglass,1
+R. K. Bell,1
+Wayne D. Bell,1
+Thayne C. Cooper,1
+T. K. McFarland,1
+Jonathan S. Blau,1
+Charles J. Holland,1
+David L. Keating,1
+Michael F. Kraley,1
+Randall Rettberg,1
+Philip Herman,1
+Robert D. Bressler,1
+Anthony Lake,1
+Pradip K. Srimani,1
+Bhabani P. Sinha,1
+Jay S. Kunin,1
+Matthew C. Sejnowski,1
+Edwin T. Upchurch,1
+Daniel P. S. Charlu,1
+Wesley Chu,1
+Göran Hektor,1
+Anders Ström,1
+Ola Strömfors,1
+Jaak Urmi,1
+Stephen T. Walker,1
+Brendan D. L. Mulhall,1
+Steven M. Jacobs,1
+Susan H. Nycum,1
+Susan Courtney-Saunders,1
+David K. Stevenson,1
+Lowell H. Schiebe,1
+W. E. Bracker,1
+G. G. Gustafson,1
+T. A. Johnson,1
+G. S. Key,1
+John C. Biddle,1
+Russell J. Abbott,1
+Antonio Vallone,1
+Roger M. Firestone,1
+Leon Kaufman,1
+Dale Shosa,1
+P. Horne,1
+David G. Brown,1
+Robert F. Wagner,1
+Mary P. Anderson,1
+Stephen W. Smoliar,1
+Viswanathan Santhanam,1
+John L. McTap,1
+Roger J. Gorg,1
+George N. Baird,1
+Judith A. Parks,1
+Linda Taylor,1
+Makoto Amamiya,1
+Naohisa Takahashi,1
+Yutaka Ogawa,1
+Kenji Koyama,1
+Michael J. McGill,1
+David L. Steinberg,1
+Sakti Pramanik,1
+Richard E. Merwin,1
+Mohammed Mirhakak,1
+David D. Raber,1
+Leigh S. Rosenberg,1
+Brent Baxter,1
+Harold E. O'Kelley,1
+Ivor Ladd,1
+Bruce E. Stock,1
+Miguel A. Ulloa,1
+Paul Herbert Rosenthal,1
+James H. Carlisle,1
+David W. Embley,1
+Joseph G. Finegold,1
+F. Ann Herlevich,1
+Daniel S. Appleton,1
+Patrice J. Capitant,1
+Robert H. Wallis,1
+Dennis Heimbigner,1
+Gary D. Beamer,1
+T. L. McCullough,1
+Robert Epstein,1
+Carolyn L. Cook,1
+M. E. Gordon,1
+W. B. Robinson,1
+Douglas Comer,1
+Thomas G. Albright,1
+Robert J. Wallace,1
+Vincent Y. Lum,1
+John W. White,1
+Steven N. Crane,1
+Richard A. Robb,1
+Barry K. Gilbert,1
+Hubert H. Love Jr.,1
+Kurt F. Fischer,1
+Joan L. Mitchell,1
+William L. Wilder,1
+Graham R. Nudd,1
+Thomas A. Eifler,1
+Devon Nickerson,1
+Helen C. Wolf,1
+Andrew Tescher,1
+Gerard E. Migneault,1
+Kent W. Colton,1
+Kenneth W. Rind,1
+Gene I. Miller,1
+John E. Cochran,1
+S. Young,1
+O. Merrill,1
+R. Knowles,1
+Y. Gupta,1
+Donald J. Reifer,1
+Suzanne Landa,1
+Gene Hilborn,1
+Richard A. Robinson,1
+Emily A. Krzysiak,1
+Berthold K. P. Horn,1
+Gruia-Catalin Roman,1
+Lance A. Leventhal,1
+Masatoshi Iwayama,1
+Atsumu Fujiwara,1
+Philip C. Stover,1
+Thomas Munnecke,1
+Eli Berlinger,1
+Richard B. Davis,1
+Jerome V. V. Kasper,1
+Minoru Harada,1
+Christine L. Braun,1
+Jeffrey B. Holden,1
+Ramez Elmasri,1
+Jean E. De Valpine,1
+Gerald Tomanek,1
+John B. Bowen,1
+Jon Martens,1
+Cleve Moler,1
+John R. Wetmiller,1
+John E. Ruchinskas,1
+Charles W. Steinfield,1
+Lynne L. Svenning,1
+Chester S. Borden,1
+Jean Cochrane Zolnowski,1
+Dick B. Simmons,1
+Mohan Tanniru,1
+Gene Smith,1
+Paul Sagues,1
+James C. Goodlett,1
+Richard C. Pflager,1
+Benjamin W. Wah,1
+S. Bing Yao,1
+Kuo-Chung Tai,1
+Alan L. Tharp,1
+Mark Overgaard,1
+Jerome Lobel,1
+K. V. Sastry,1
+Elizabeth N. Fong,1
+Alyce Jackson,1
+William R. Deitrick,1
+L. S. Baumann,1
+R. D. Coop,1
+Herbert Hecht,1
+Koji Nezu,1
+M. Wayne Shiveley,1
+Stanley Y. W. Su,1
+Hsu Chang,1
+Paul Fisher,1
+Eugene I. Lowenthal,1
+Stewart A. Schuster,1
+William C. Hohn,1
+Fred J. Maryanski,1
+C. Steven Roush,1
+Fumihiko Mori,1
+Hiroshi Tsuji,1
+Takashi Sato,1
+Dan Slater,1
+Rob King,1
+John Gale,1
+Martin A. Reed,1
+Terence D. Smetanka,1
+John F. Palmer,1
+Bev Littlewood,1
+Douglas J. Theis,1
+Levent Ormancioglu,1
+Uwe Kastens,1
+Carlos José Pereira de Lucena,1
+Inge Precht,1
+Ingrid Glasner,1
+Ulrich Möncke,1
+Reinhard Wilhelm,1
+Jakob Schauer,1
+Horst Oberquelle,1
+Rainer Lutze,1
+Hans Ludwig Fischer,1
+Donald F. Nelson,1
+Burkhard Austermühl,1
+Wolfgang Henhapl,1
+Urs Ammann,1
+Thomas Gilb,1
+Flaviu Cristian,1
+Kenneth Keller,1
+Forbes J. Burkowski,1
+Edgar H. Sibley,1
+K. Lam,1
+Clement T. Yu,1
+Richard D. Greenblatt,1
+Thomas F. Knight,1
+John T. Holloway,1
+David A. Moon,1
+Jai Menon 0001,1
+David K. Hsiao,1
+Sol J. Greenspan,1
+David Elliot Shaw,1
+Asuman Dogac,1
+Hector J. Levesque,1
+Ehud Gudes,1
+Shalom Tsur,1
+Brian Berkowitz,1
+Roger L. Haskin,1
+Jayanta Banerjee,1
+Bruce D. Parrello,1
+D. M. Chiu,1
+Yu-Chi Ho,1
+Kamran Parsaye-Ghomi,1
+V. Vemuri,1
+Raymond A. Liuzzi,1
+Joseph P. Cavano,1
+John F. Burger,1
+Eugene Wong,1
+Leonard J. Laub,1
+Clesio Saraiva dos Santos,1
+Antonio L. Furtado,1
+José Mauro Volkmer de Castilho,1
+Sergio E. R. de Carvalho,1
+Gilles Berger-Sabbatel,1
+Philippe Olivier Alexandre Navaux,1
+M. Tamer Özsu,1
+Chin-Chen Chang,1
+Richard C. T. Lee,1
+David Hung-Chang Du,1
+Haran Boral,1
+David J. DeWitt,1
+Jo-Mei Chang,1
+François Bancilhon,1
+Michel Scholl,1
+Burt M. Leavenworth,1
+G. Creutz,1
+F. Kiel,1
+Antonio Albano,1
+Renzo Orsini,1
+Bengt G. Lundberg,1
+Tore Amble,1
+W. Terry Hardgrave,1
+Yutaka Matsushita,1
+Haruaki Yamazaki,1
+Sadayuki Hikita,1
+Isamu Yoshida,1
+G. Wolf,1
+Michel Lacroix,1
+Alain Pirotte,1
+Kjell Bratbergsengen,1
+Rune Larsen,1
+Oddvar Risnes,1
+Terje Aandalen,1
+Tom R. Kibler,1
+James E. Allchin,1
+Arthur M. Keller,1
+Roberto Bisiani,1
+Philip L. Lehman,1
+John F. Sowa,1
+Ellen J. Oliver,1
+Ronnie K. Poon,1
+Kwan Y. Wong,1
+Ira Winston,1
+Peter Kreps,1
+Hirotaka Sakai,1
+Hans J. Berliner,1
+Shamim A. Naqvi,1
+Stephen Fickas,1
+Kathleen McKeown,1
+John L. Goodson,1
+Andrew P. Witkin,1
+Daryl T. Lawton,1
+Richard J. Wood,1
+L. Thorne McCarty,1
+John P. McDermott,1
+Brian P. McCune,1
+Norman Haas,1
+Michael Lebowitz,1
+Michael R. Genesereth,1
+Louis I. Steinberg,1
+Linda G. Shapiro,1
+John D. Moriarty,1
+Prasanna G. Mulgaonkar,1
+Robert M. Haralick,1
+Eugene C. Freuder,1
+Jarrett Rosenberg,1
+Stephen B. Whitehill,1
+Arthur M. Farley,1
+Narendra Ahuja,1
+Robert T. Chien,1
+R. Yen,1
+N. Bridwell,1
+Lance A. Miller,1
+Gordon S. Novak,1
+Agustin A. Araya,1
+Eugene Ball,1
+Vincent J. Digricoli,1
+Rodney A. Brooks,1
+Thomas O. Binford,1
+S. W. Ng,1
+Kenneth Mark Colby,1
+Daniel Christinaz,1
+Santiago Graham,1
+Roger C. Parkison,1
+Stephen Platt,1
+Mary A. Morris,1
+René Reboh,1
+Daniel L. Chester,1
+Richard Fikes,1
+D. Austin Henderson Jr.,1
+Martin Herman,1
+David E. Smith,1
+Jan E. Clayton,1
+Lawrence Birnbaum,1
+Margot Flowers,1
+Rod McGuire,1
+Stephen T. Barnard,1
+Dana S. Nau,1
+Mallory Selfridge,1
+Victor R. Lesser,1
+S. Reed,1
+Jasmina Pavlin,1
+William B. Thompson,1
+Albert Yonas,1
+Janice S. Aikins,1
+Wellington Yu Chiu,1
+Wendy G. Lehnert,1
+Christian C. Wagner,1
+John F. Vinsonhaler,1
+Timothy W. Finin,1
+Eric Mays,1
+David J. Israel,1
+David R. Barstow,1
+Harry C. Reinstein,1
+Nils J. Nilsson,1
+Chuck Rieger,1
+Craig Stanfill,1
+Edwina L. Rissland,1
+Elliot Soloway,1
+Jon A. Webb,1
+Russell Greiner,1
+Douglas B. Lenat,1
+Milton R. Grinberg,1
+Lee D. Erman,1
+Philip London,1
+Chuck Williams,1
+Robert J. Bobrow,1
+John R. Kender,1
+Takeo Kanade,1
+Gerald R. Barber,1
+P. A. Subrahmanyam,1
+Robert Smith,1
+Carl Engelman,1
+Ethan A. Scarl,1
+Charles H. Berg,1
+Michael D. Rychener,1
+Scott E. Fahlman,1
+Richard H. Granger,1
+Thomas G. Dietterich,1
+John Gaschnig,1
+Mike Brady 0001,1
+W. Eric L. Grimson,1
+D. J. Langridge,1
+James R. Meehan,1
+Thomas D. Garvey,1
+Ann E. Robinson,1
+David E. Wilkins,1
+Kenneth D. Forbus,1
+Gerald E. Peterson,1
+Marsha Jo Hannah,1
+Philip Klahr,1
+Steve Tappel,1
+Donald A. Waterman,1
+Mark Peterson,1
+Giuseppe Attardi,1
+Maria Simi,1
+Teruaki Aizawa,1
+Nobuko Hatada,1
+Janusz S. Bien,1
+Krystyna Laus-Maczynska,1
+Stan Szpakowicz,1
+Joachim H. Laubsch,1
+Dietmar F. Rösner,1
+Toru Hitaka,1
+Norihiro Abe,1
+Nobutaka Uemura,1
+Masahiro Higashide,1
+Saburo Tsuji,1
+Marie-France Bruandet,1
+Kei Mitamura,1
+Hideki Hirakawa,1
+Masako Kume,1
+Henry Kucera,1
+Hidetosi Sirai,1
+Dieter Metzing,1
+Takushi Tanaka,1
+Christian Rohrer,1
+F. J. Devadason,1
+Fujio Nishida,1
+Shinobu Takamatsu,1
+Hiroaki Kuroki,1
+Burghard B. Rieger,1
+Bozena Henisz Thompson,1
+Yoshihiro Ueda,1
+M. Takiyama,1
+Zoya M. Shalyapina,1
+Joseph E. Grimes,1
+Hiroshi Nakano,1
+Shin'ichi Tsuchiya,1
+Akio Tsuruoka,1
+Chorkin Chan,1
+Kenji Hanakata,1
+Shigeharu Sugita,1
+Paul L. King,1
+Ian H. Witten,1
+Yoshio Momouchi,1
+Jean Guy Meunier,1
+Th. R. Hofmann,1
+A. Michiels,1
+J. Mullenders,1
+J. Noël,1
+Ernest Grandjean,1
+Gerard Veillon,1
+Richard I. Kittredge,1
+Norman K. Sondheimer,1
+P. A. C. Bailes,1
+L. H. Reeker,1
+Taisuke Sato,1
+Tsutomu Endo,1
+Tuneo Tamati,1
+F. Dreizin,1
+A. Shenhar,1
+H. Bar-ltzhak,1
+Juen-tin Wang,1
+Minoru Shigenaga,1
+Yoshihiro Sekiguchi,1
+Chia-horng Lai,1
+Karl-Heinz Brinkmann,1
+Giovanni Guida,1
+Mantaro J. Hashimoto,1
+Akihiro Furuya,1
+Gary D. Prideaux,1
+Hiroshi Kinukawa,1
+Hiroshi Matsuoka,1
+Mutsuko Kimura,1
+Gisela Zifonun,1
+Nicolas Nedobejkine,1
+Jean-Louis Binot,1
+M. Graitson,1
+Ph. Lemaire,1
+Daniel Ribbens,1
+Bo Ralph,1
+Morris Salkoff,1
+Seiichi Uchinami,1
+Yoshikazu Tezuka,1
+Tsunao Ogino,1
+Alexander S. Narin'yani,1
+Ralph Grishman,1
+Brian Phillips,1
+James A. Hendler,1
+Hiroyuki Yamauchi,1
+Werner Dilger,1
+Hiroshi Uchida,1
+Kenji Sugiyama,1
+Naoyuki Okada,1
+Harald H. Zimmermann,1
+Juhan Tuldava,1
+Hiroshi Makino,1
+Makoto Kizawa,1
+Kosho Shudo,1
+Toshiko Narahara,1
+Jan Svartvik,1
+Philippe Chatelin,1
+P. Daun Fraga,1
+Alan K. Melby,1
+Melvin R. Smith,1
+Jill Peterson,1
+Stephen G. Pulman,1
+Hozumi Tanaka,1
+Jean-Baptiste Berthelin,1
+Hitoshi Ogawa,1
+Junichiro Nishi,1
+Kokichi Tanaka,1
+Takeshi Shimomura,1
+Ferenc Kiefer,1
+Pat Langley,1
+Jan Landsbergen,1
+M. Cassandra Foster Smith,1
+Rob Milne,1
+Chang May See,1
+Jouko J. Seppänen,1
+Francis Jeffry Pelletier,1
+Yutaka Kusanagi,1
+Eva Hajicová,1
+Petr Sgall,1
+Katsuhiko Shirai,1
+Y. Fukazawa,1
+T. Matzui,1
+H. Matzuura,1
+Fumio Mizoguchi,1
+Akihiko Yamamoto,1
+Pierre Plante,1
+María Pozzi,1
+Javier Becerra,1
+Jaime Rangel,1
+Luis Fernando Lara,1
+Shin'ya Amano,1
+Kunio Sakai,1
+Timothy A. Budd,1
+Frederick G. Sayward,1
+Joseph Y. Halpern,1
+John V. Guttag,1
+James J. Horning,1
+Dov M. Gabbay,1
+Saharon Shelah,1
+Jonathan Stavi,1
+Samuel N. Kamin,1
+Norihisa Suzuki,1
+Leslie Lamport,1
+L. Howard Holley,1
+Barry K. Rosen,1
+James H. Morris Jr.,1
+Eric Schmidt,1
+Philip Wadler,1
+Daniel P. Friedman,1
+David S. Wise,1
+William E. Weihl,1
+Paul Klint,1
+Ravi Sethi,1
+Brian K. Reid,1
+Deepak Kapur,1
+Mandayam K. Srivas,1
+Eike Best,1
+Herbert Klaeren,1
+Helena Rasiowa,1
+Giora Slutzki,1
+Tadao Takaoka,1
+Alistair Moffat,1
+Pierpaolo Degano,1
+A. Lomanto,1
+Franco Sirovich,1
+Jan Reiterman,1
+Vera Trnková,1
+Juris Hartmanis,1
+William A. Wulf,1
+Ingbert Kupka,1
+Peter Ruzicka,1
+Stefan Sokolowski,1
+Zbigniew Suraj,1
+Vladimir Yu. Sazonov,1
+M. W. Shields,1
+Horst Reichel,1
+Wolfgang Bibel,1
+Joseph Sifakis,1
+Kurt Jensen,1
+Wiktor Danko,1
+Horst Müller,1
+Hiroakira Ono,1
+Akira Nakamura,1
+André Arnold,1
+Berthold Hoffmann,1
+Ilse-Renate Schmiedecke,1
+Dirk Janssens,1
+Norbert Kraft,1
+Horst Wedde,1
+X. Berenguer,1
+J. Díaz,1
+Ulrich L. Hupbach,1
+Luca Cardelli,1
+Seiichi Okoma,1
+Andrzej Salwicki,1
+Jacek Witaszek,1
+Mario Coppo,1
